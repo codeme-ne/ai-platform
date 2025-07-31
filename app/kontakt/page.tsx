@@ -196,7 +196,7 @@ export default function KontaktPage() {
               <h3 className="font-medium text-neutral-900 mb-2">Feedback & Vorschläge</h3>
               <p className="text-sm text-neutral-600">
                 Du hast einen tollen AI-Trick entdeckt oder Verbesserungsvorschläge für die Plattform? 
-                Ich freue mich über jedes Feedback! Gemeinsam machen wir die AI Tricks Platform zur 
+                Ich freue mich über jedes Feedback! Gemeinsam machen wir die KI Tricks Platform zur 
                 besten Ressource für praktische KI-Anwendungen.
               </p>
             </div>

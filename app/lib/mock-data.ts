@@ -23,18 +23,6 @@ export const mockTricks: AITrick[] = [
     tools: ['ChatGPT', 'GPT-4'],
     timeToImplement: '5 Minuten',
     impact: 'high',
-    steps: [
-      'Kopiere deine Meeting-Notizen oder Transcript in ChatGPT',
-      'Verwende den Prompt: "Erstelle eine strukturierte Zusammenfassung mit folgenden Punkten: Wichtigste Entscheidungen, Action Items mit Verantwortlichen und Deadlines, offene Fragen"',
-      'Lass dir das Ergebnis in einem professionellen Format ausgeben',
-      'Teile die Zusammenfassung mit allen Meeting-Teilnehmern per E-Mail oder Slack',
-      'Übertrage die Action Items in dein Projektmanagement-Tool'
-    ],
-    examples: [
-      'Wöchentliches Team-Meeting mit 6 Teilnehmern wird in 2 Minuten zu einer übersichtlichen Zusammenfassung mit 4 konkreten Aufgaben und Deadlines verarbeitet',
-      'Kundengespräch über Projektanforderungen wird automatisch in strukturierte Anforderungsliste mit Prioritäten umgewandelt',
-      'Brainstorming-Session mit 15 wilden Ideen wird zu kategorisierter Liste mit Bewertung des Umsetzungsaufwands'
-    ],
     slug: generateSlug('Automatische Meeting-Zusammenfassungen mit ChatGPT'),
     createdAt: new Date('2024-01-15'),
     updatedAt: new Date('2024-01-15')
@@ -48,18 +36,6 @@ export const mockTricks: AITrick[] = [
     tools: ['GitHub Copilot', 'VS Code'],
     timeToImplement: '10 Minuten',
     impact: 'high',
-    steps: [
-      'Aktiviere GitHub Copilot in deiner VS Code Entwicklungsumgebung',
-      'Markiere den zu überprüfenden Code-Block oder die gesamte Datei',
-      'Öffne den Copilot Chat und frage: "Review this code for performance, security, and best practices"',
-      'Prüfe die Verbesserungsvorschläge auf Sinnhaftigkeit und mögliche Seiteneffekte',
-      'Implementiere die sinnvollen Änderungen schrittweise mit Tests'
-    ],
-    examples: [
-      'Legacy JavaScript Code wird analysiert und Copilot schlägt moderne ES6+ Syntax und Performance-Verbesserungen vor',
-      'Python-Funktion mit Sicherheitslücken wird überprüft und Copilot zeigt sichere Alternativen für Input-Validierung auf',
-      'React Component wird auf Best Practices geprüft und Copilot empfiehlt Memoization und bessere State-Verwaltung'
-    ],
     slug: generateSlug('Code-Reviews mit GitHub Copilot'),
     createdAt: new Date('2024-01-16'),
     updatedAt: new Date('2024-01-16')
@@ -73,18 +49,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Claude', 'Claude 3'],
     timeToImplement: '15 Minuten',
     impact: 'medium',
-    steps: [
-      'Lade deinen ersten Blog-Artikel Entwurf in Claude hoch',
-      'Bitte um eine Analyse der Struktur, Lesbarkeit und SEO-Potentiale',
-      'Lass dir konkrete Verbesserungsvorschläge für Headlines, Meta-Description und Keyword-Dichte geben',
-      'Überarbeite den Artikel basierend auf den Vorschlägen',
-      'Lasse den finalen Entwurf nochmals auf Ton und Zielgruppen-Ansprache prüfen'
-    ],
-    examples: [
-      'Tech-Blog Artikel über KI wird von 800 auf 1200 Wörter erweitert mit besserer Struktur und 3 zusätzlichen SEO-Keywords',
-      'Unternehmens-Blog Post erhält eine packendere Einleitung und Call-to-Actions die Conversion um 25% steigern',
-      'Tutorial-Artikel wird in verständlichere Sprache umgeschrieben und mit praktischen Beispielen angereichert'
-    ],
     slug: generateSlug('Blog-Artikel mit Claude optimieren'),
     createdAt: new Date('2024-01-17'),
     updatedAt: new Date('2024-01-17')
@@ -98,18 +62,6 @@ export const mockTricks: AITrick[] = [
     tools: ['DALL-E 3', 'ChatGPT Plus'],
     timeToImplement: '20 Minuten',
     impact: 'medium',
-    steps: [
-      'Definiere die Anforderungen: Zielgruppe, Farben, Stil und Funktionen der UI',
-      'Erstelle einen detaillierten Prompt mit Begriffen wie "modern UI mockup", "clean design", spezifischen Farben und Layout-Elementen',
-      'Generiere mehrere Varianten und wähle die beste als Ausgangspunkt',
-      'Verfeinere den Prompt iterativ für Details wie Buttons, Navigation oder Typografie',
-      'Exportiere das finale Mockup und verwende es als Vorlage für die Entwicklung'
-    ],
-    examples: [
-      'E-Commerce App Mockup wird in 10 Minuten erstellt mit modernem Design, Product Cards und Checkout-Flow',
-      'Dashboard für Analytics Tool bekommt übersichtliches Layout mit Charts, Widgets und benutzerfreundlicher Navigation',
-      'Mobile Banking App Konzept entsteht mit sicherem Login, Überweisungsformular und Account-Übersicht'
-    ],
     slug: generateSlug('UI-Mockups mit DALL-E 3 erstellen'),
     createdAt: new Date('2024-01-18'),
     updatedAt: new Date('2024-01-18')
@@ -123,18 +75,6 @@ export const mockTricks: AITrick[] = [
     tools: ['ChatGPT', 'Code Interpreter'],
     timeToImplement: '30 Minuten',
     impact: 'high',
-    steps: [
-      'Lade deine CSV-Datei in ChatGPT Code Interpreter hoch',
-      'Beschreibe deine Analyse-Ziele: "Zeige mir Trends, Ausreißer und Korrelationen in den Daten"',
-      'Lasse automatisch passende Visualisierungen (Diagramme, Heatmaps, Scatter Plots) erstellen',
-      'Bitte um statistische Kennzahlen und Interpretation der Ergebnisse',
-      'Dokumentiere die wichtigsten Insights in einem übersichtlichen Report'
-    ],
-    examples: [
-      'Verkaufsdaten von 12 Monaten werden analysiert und zeigen saisonale Trends sowie die 3 profitabelsten Produktkategorien',
-      'Kundenfeedback aus 500 Umfragen wird ausgewertet und enthüllt die 5 wichtigsten Verbesserungspunkte für das Produkt',
-      'Website Analytics ergeben überraschende Nutzerverhalten-Muster und Optimierungsvorschläge für höhere Conversion'
-    ],
     slug: generateSlug('Datenanalyse mit ChatGPT Code Interpreter'),
     createdAt: new Date('2024-01-19'),
     updatedAt: new Date('2024-01-19')
@@ -148,18 +88,6 @@ export const mockTricks: AITrick[] = [
     tools: ['ChatGPT', 'Notion'],
     timeToImplement: '25 Minuten',
     impact: 'high',
-    steps: [
-      'Definiere dein konkretes Lernziel und dein aktuelles Wissenslevel',
-      'Frage ChatGPT: "Erstelle mir einen 4-Wochen Lernplan für [Skill] mit täglichen 30-Minuten Lektionen"',
-      'Bitte um spezifische Übungen, Ressourcen und Meilensteine für jede Woche',
-      'Übertrage den Plan in Notion oder dein bevorzugtes Tool mit Checkboxen',
-      'Tracke täglich deinen Fortschritt und passe den Plan bei Bedarf an'
-    ],
-    examples: [
-      'Python Programmierung für Anfänger wird in 4-Wochen Plan mit täglichen Übungen und 3 Praxisprojekten strukturiert',
-      'Digital Marketing Lernpfad enthält SEO, Social Media und Analytics mit wochenweisen Zielen und Erfolgsmessung',
-      'Excel Power User Kurs wird individuell angepasst an bestehende Kenntnisse mit fortgeschrittenen Formeln und Makros'
-    ],
     slug: generateSlug('Personalisierte Lernpfade mit ChatGPT'),
     createdAt: new Date('2024-01-20'),
     updatedAt: new Date('2024-01-20')
@@ -173,18 +101,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Zapier', 'ChatGPT', 'Make'],
     timeToImplement: '45 Minuten',
     impact: 'high',
-    steps: [
-      'Identifiziere einen wiederkehrenden Prozess (z.B. Lead-Qualifizierung, Rechnungsstellung)',
-      'Erstelle einen neuen Zapier-Workflow mit dem entsprechenden Trigger',
-      'Füge AI-Aktionen hinzu: ChatGPT für Textverarbeitung oder Formatter für Datenbereinigung',
-      'Konfiguriere die Ausgabe-Aktionen (E-Mail, CRM-Update, Slack-Nachricht)',
-      'Teste den Workflow mit Echtdaten und optimiere die AI-Prompts für bessere Ergebnisse'
-    ],
-    examples: [
-      'Lead-Qualifizierung: Neue Website-Anfragen werden automatisch bewertet und an den passenden Vertriebsmitarbeiter weitergeleitet',
-      'Rechnungsverarbeitung: Eingehende Rechnungen werden gescannt, kategorisiert und zur Freigabe an die Buchhaltung gesendet',
-      'Kundensupport: Häufige Fragen werden automatisch erkannt und mit vorgefertigten Lösungen beantwortet'
-    ],
     slug: generateSlug('Geschäftsprozesse mit Zapier AI automatisieren'),
     createdAt: new Date('2024-01-21'),
     updatedAt: new Date('2024-01-21')
@@ -198,18 +114,6 @@ export const mockTricks: AITrick[] = [
     tools: ['ChatGPT', 'Canva AI', 'Buffer'],
     timeToImplement: '35 Minuten',
     impact: 'medium',
-    steps: [
-      'Definiere deine Zielgruppe, Brand Voice und 3-5 Content-Kategorien',
-      'Generiere mit ChatGPT 30 Post-Ideen mit Hooks, Captions und Hashtags',
-      'Erstelle passende Visuals mit Canva AI unter Verwendung deiner Brand-Farben',
-      'Plane die Posts in Buffer für optimale Posting-Zeiten ein',
-      'Überwache die Performance und passe den Kalender basierend auf Engagement-Daten an'
-    ],
-    examples: [
-      'B2B SaaS Unternehmen erhält 30 LinkedIn Posts mit Industry Insights, Customer Success Stories und Produktupdates',
-      'Lifestyle Blog bekommt Instagram Content-Mix aus Behind-the-Scenes, Tutorials und User-Generated Content mit passenden Hashtags',
-      'E-Commerce Shop erhält saisonalen Content-Kalender mit Produktplatzierungen, Rabattaktionen und Community-Building Posts'
-    ],
     slug: generateSlug('Social Media Content-Kalender mit AI'),
     createdAt: new Date('2024-01-22'),
     updatedAt: new Date('2024-01-22')
@@ -223,18 +127,6 @@ export const mockTricks: AITrick[] = [
     tools: ['GPT-4', 'Gmail', 'Zapier'],
     timeToImplement: '60 Minuten',
     impact: 'high',
-    steps: [
-      'Verbinde dein Gmail-Konto mit Zapier und richte die GPT-4 API ein',
-      'Definiere Kategorien von E-Mails die automatisiert werden sollen (Support, Sales, etc.)',
-      'Erstelle Templates und Prompts für verschiedene E-Mail-Typen in GPT-4',
-      'Konfiguriere Trigger-Regeln basierend auf Absender, Betreff oder Keywords',
-      'Teste die Automatisierung mit wenigen E-Mails und überwache die Qualität der Antworten'
-    ],
-    examples: [
-      'Kundensupport E-Mails werden zu 70% automatisch beantwortet mit personalisierten Lösungen basierend auf Kundenhistorie',
-      'Sales Follow-ups werden automatisch generiert mit relevanten Produktinformationen und individuellen Angeboten',
-      'Newsletter-Anmeldungen erhalten personalisierte Willkommensserie mit branchenspezifischen Inhalten'
-    ],
     slug: generateSlug('Email-Automatisierung mit GPT-4'),
     createdAt: new Date('2024-01-23'),
     updatedAt: new Date('2024-01-23')
@@ -248,18 +140,6 @@ export const mockTricks: AITrick[] = [
     tools: ['GitHub Copilot', 'Jest', 'VS Code'],
     timeToImplement: '15 Minuten',
     impact: 'high',
-    steps: [
-      'Wähle die Funktion oder Klasse aus, für die du Tests benötigst',
-      'Kommentiere über der Funktion: "Generate comprehensive unit tests for this function"',
-      'Lasse Copilot Tests für Happy Path, Edge Cases und Error Handling generieren',
-      'Ergänze manuell spezielle Testfälle die für deine Business Logic wichtig sind',
-      'Führe die Tests aus und passe sie basierend auf Fehlern oder fehlender Coverage an'
-    ],
-    examples: [
-      'E-Commerce Checkout-Funktion erhält 15 Unit Tests für Payment-Validierung, Warenkorb-Logic und Error Handling',
-      'User Authentication System wird mit Tests für Login, Registrierung und Passwort-Reset abgedeckt',
-      'API Endpoints bekommen automatisch Tests für verschiedene HTTP Status Codes und Request-Validierung'
-    ],
     slug: generateSlug('Unit Tests mit GitHub Copilot generieren'),
     createdAt: new Date('2024-01-24'),
     updatedAt: new Date('2024-01-24')
@@ -273,20 +153,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Claude', 'Claude Code', 'Terminal'],
     timeToImplement: '30 Minuten',
     impact: 'high',
-    steps: [
-      'Claude Code CLI installieren: npm install -g @anthropic/claude-code',
-      'API-Key konfigurieren: claude-code config --api-key YOUR_KEY',
-      'Neues Projekt initialisieren: claude-code init my-project',
-      'Projektanforderungen in natürlicher Sprache beschreiben',
-      'Claude generiert komplette Anwendungsstruktur mit allen Dependencies',
-      'Mit claude-code run das Projekt direkt ausführen und testen',
-      'Iterativ verfeinern durch weitere Prompts'
-    ],
-    examples: [
-      'SaaS Dashboard mit Authentication in 20 Minuten erstellt',
-      'E-Commerce Shop mit Stripe Integration als funktionierender Prototyp',
-      'REST API mit Datenbank und vollständiger Dokumentation generiert'
-    ],
     slug: generateSlug('Claude Code CLI für Rapid Prototyping'),
     createdAt: new Date('2025-01-20'),
     updatedAt: new Date('2025-01-20')
@@ -300,19 +166,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Claude', 'Claude Artifacts'],
     timeToImplement: '15 Minuten',
     impact: 'high',
-    steps: [
-      'Claude.ai im Browser öffnen und neuen Chat starten',
-      'App-Idee detailliert beschreiben mit UI-Anforderungen',
-      'Claude mit "Ich erstelle dir eine interaktive App" antworten lassen',
-      'Artifact wird automatisch generiert mit Live-Preview',
-      'Iterativ Änderungen vornehmen durch weitere Beschreibungen',
-      'Fertigen Code exportieren oder direkt teilen'
-    ],
-    examples: [
-      'Interaktiver ROI-Rechner für Berater mit Diagrammen',
-      'Projektmanagement-Dashboard mit Drag-and-Drop Funktionalität',
-      'Kundenfeedback-Tool mit Echtzeit-Visualisierung der Ergebnisse'
-    ],
     slug: generateSlug('AI-Powered Apps ohne Code mit Claude Artifacts'),
     createdAt: new Date('2025-01-19'),
     updatedAt: new Date('2025-01-19')
@@ -326,19 +179,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Claude', 'MCP', 'Python'],
     timeToImplement: '45 Minuten',
     impact: 'high',
-    steps: [
-      'MCP Server für deine Datenquelle einrichten (z.B. PostgreSQL)',
-      'Konfigurationsdatei mit Zugangsdaten erstellen',
-      'MCP in Claude Desktop aktivieren über Einstellungen',
-      'Claude kann nun direkt auf deine Daten zugreifen',
-      'Automatisierte Reports und Analysen erstellen lassen',
-      'Workflows definieren die regelmäßig ausgeführt werden'
-    ],
-    examples: [
-      'Tägliche Umsatzreports aus CRM-System automatisch generieren',
-      'Kundendaten analysieren und Handlungsempfehlungen erstellen',
-      'Inventar-Management mit automatischen Bestellvorschlägen'
-    ],
     slug: generateSlug('Model Context Protocol (MCP) für Business-Automatisierung'),
     createdAt: new Date('2025-01-18'),
     updatedAt: new Date('2025-01-18')
@@ -352,19 +192,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Zapier', 'ChatGPT', 'Google Calendar'],
     timeToImplement: '20 Minuten',
     impact: 'high',
-    steps: [
-      'Zapier Account erstellen und ChatGPT Integration aktivieren',
-      'Trigger definieren: Neue Kalenderbuchung oder E-Mail',
-      'ChatGPT Action hinzufügen für personalisierte Nachrichten',
-      'Template erstellen für Willkommensnachrichten',
-      'Automatische Follow-ups nach Sessions einrichten',
-      'Feedback-Sammlung und Auswertung automatisieren'
-    ],
-    examples: [
-      'Neue Klienten erhalten automatisch personalisierte Onboarding-E-Mails',
-      'Nach jeder Session wird automatisch Feedback eingeholt und ausgewertet',
-      'Terminserinnerungen mit vorbereitenden Fragen werden automatisch versendet'
-    ],
     slug: generateSlug('No-Code KI-Automation für Coaches mit Zapier'),
     createdAt: new Date('2025-01-17'),
     updatedAt: new Date('2025-01-17')
@@ -378,19 +205,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Perplexity', 'Claude', 'ChatGPT'],
     timeToImplement: '25 Minuten',
     impact: 'high',
-    steps: [
-      'Research-Template in Claude erstellen mit klaren Kategorien',
-      'Perplexity für aktuelle Marktdaten und Trends nutzen',
-      'Rohdaten in strukturiertes Format überführen lassen',
-      'Claude für tiefgehende Analyse und Insights einsetzen',
-      'Executive Summary automatisch generieren lassen',
-      'Visualisierungen und Präsentationsfolien erstellen'
-    ],
-    examples: [
-      'Komplette Wettbewerbsanalyse für Kunden in 30 Minuten statt 3 Stunden',
-      'Markteintrittsstrategie mit allen relevanten Daten in einer Session',
-      'Due Diligence Reports mit automatischer Risikobewertung'
-    ],
     slug: generateSlug('KI-Research Workflow für Consultants'),
     createdAt: new Date('2025-01-16'),
     updatedAt: new Date('2025-01-16')
@@ -404,19 +218,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Claude', 'Claude Vision'],
     timeToImplement: '10 Minuten',
     impact: 'medium',
-    steps: [
-      'Screenshot oder Bild in Claude hochladen',
-      'Kontext geben: "Erstelle einen LinkedIn Post basierend auf diesem Chart"',
-      'Claude analysiert die visuellen Elemente',
-      'Passender Content wird automatisch generiert',
-      'Feintuning durch zusätzliche Anweisungen',
-      'Verschiedene Versionen für unterschiedliche Plattformen erstellen'
-    ],
-    examples: [
-      'Aus Whiteboard-Foto wird strukturierter Blogpost',
-      'Dashboard-Screenshot wird zu datengetriebener Story',
-      'Produktfoto wird zu emotionalem Marketing-Text'
-    ],
     slug: generateSlug('Claude Vision für Content Creation'),
     createdAt: new Date('2025-01-15'),
     updatedAt: new Date('2025-01-15')
@@ -430,20 +231,6 @@ export const mockTricks: AITrick[] = [
     tools: ['ChatGPT', 'Claude', 'Gemini'],
     timeToImplement: '35 Minuten',
     impact: 'high',
-    steps: [
-      'Projekt in klare Komponenten aufteilen',
-      'Für jede Komponente spezifischen Kontext definieren',
-      'Rollen-basierte Prompts verwenden ("Als erfahrener Architekt...")',
-      'Schritt-für-Schritt Anweisungen mit Zwischenergebnissen',
-      'Qualitätskriterien explizit definieren',
-      'Iterative Verfeinerung mit Referenz auf vorherige Outputs',
-      'Best Practices in wiederverwendbare Templates speichern'
-    ],
-    examples: [
-      'Komplette Software-Architektur mit 15+ Komponenten systematisch entwickelt',
-      'Mehrstufiger Content-Plan für 6 Monate mit konsistentem Stil',
-      'Detaillierte Geschäftsstrategie mit Marktanalyse und Finanzplanung'
-    ],
     slug: generateSlug('Strukturiertes Prompting für komplexe Projekte'),
     createdAt: new Date('2025-01-14'),
     updatedAt: new Date('2025-01-14')
@@ -457,19 +244,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Claude', 'ChatGPT', 'Python'],
     timeToImplement: '40 Minuten',
     impact: 'high',
-    steps: [
-      'Aufgaben nach Modellstärken aufteilen',
-      'Claude Opus 4 für 7+ Stunden autonome Datenanalyse nutzen',
-      'GPT-4 für kreative Lösungsansätze einsetzen',
-      'Ergebnisse in Python zusammenführen und validieren',
-      'Automatisierte Pipelines für wiederkehrende Analysen bauen',
-      'Dashboard mit Echtzeit-Updates erstellen'
-    ],
-    examples: [
-      'Predictive Analytics mit 95% Genauigkeit durch Modell-Ensemble',
-      'Automatisierte Quartalsberichte mit Trendanalyse und Prognosen',
-      'Echtzeit-Marktüberwachung mit automatischen Handelsempfehlungen'
-    ],
     slug: generateSlug('Hybrid AI Models für Business Intelligence'),
     createdAt: new Date('2025-01-13'),
     updatedAt: new Date('2025-01-13')
@@ -483,19 +257,6 @@ export const mockTricks: AITrick[] = [
     tools: ['Claude', 'Notion AI', 'Slack'],
     timeToImplement: '30 Minuten',
     impact: 'high',
-    steps: [
-      'Zentrale KI-Knowledge-Base in Notion aufbauen',
-      'Slack-Integration für Team-weite KI-Zugriffe einrichten',
-      'Standardisierte Prompt-Templates für häufige Aufgaben',
-      'Rollen-basierte Workflows definieren',
-      'Automatische Dokumentation von Entscheidungen',
-      'KI-gestützte Sprint-Reviews und Retrospektiven'
-    ],
-    examples: [
-      'Design-Team nutzt gemeinsame KI für konsistente Markenkommunikation',
-      'Development-Team automatisiert Code-Reviews und Dokumentation',
-      'Management erhält automatische Projekt-Status-Updates mit Insights'
-    ],
     slug: generateSlug('Collaborative AI Workflows für Teams'),
     createdAt: new Date('2025-01-12'),
     updatedAt: new Date('2025-01-12')
@@ -509,19 +270,6 @@ export const mockTricks: AITrick[] = [
     tools: ['ChatGPT', 'Claude', 'Excel'],
     timeToImplement: '25 Minuten',
     impact: 'high',
-    steps: [
-      'Aktuelle Preisstruktur und Kundendaten sammeln',
-      'Marktanalyse mit KI durchführen lassen',
-      'Kundensegmente identifizieren und bewerten',
-      'Preismodelle für verschiedene Segmente entwickeln',
-      'A/B Testing Strategien erstellen',
-      'Automatisches Monitoring und Anpassungen einrichten'
-    ],
-    examples: [
-      'Berater steigert Umsatz um 35% durch segmentierte Preisgestaltung',
-      'Coach entwickelt 3-stufiges Preismodell das Conversion um 50% erhöht',
-      'Agentur optimiert Projekt-Kalkulation und verbessert Marge um 20%'
-    ],
     slug: generateSlug('KI-gestützte Preisoptimierung für Berater'),
     createdAt: new Date('2025-01-11'),
     updatedAt: new Date('2025-01-11')

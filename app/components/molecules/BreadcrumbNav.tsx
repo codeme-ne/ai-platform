@@ -17,7 +17,7 @@ export const BreadcrumbNav = ({ category, categoryLabel, trickTitle }: Breadcrum
             href="/tricks" 
             className="hover:text-primary-600 transition-colors"
           >
-            AI Tricks
+            KI Tricks
           </Link>
         </li>
         <li className="flex items-center space-x-2">

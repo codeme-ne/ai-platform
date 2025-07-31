@@ -9,7 +9,7 @@ export function Header({ className = '' }: HeaderProps) {
       <div className="container py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-xl font-semibold text-neutral-900 hover:text-primary-600 transition-colors">
-            AI Tricks
+            KI Tricks
           </Link>
           <nav className="flex items-center gap-6">
             <Link 

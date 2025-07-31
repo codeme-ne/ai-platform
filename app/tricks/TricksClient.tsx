@@ -55,7 +55,7 @@ export default function TricksClient() {
             <SearchBar
               value={searchQuery}
               onChange={setSearchQuery}
-              placeholder="Suche nach AI Tricks..."
+              placeholder="Suche nach KI Tricks..."
             />
           </div>
 

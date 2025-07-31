@@ -37,7 +37,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-neutral-900">20+</div>
-              <div className="text-sm text-neutral-600 mt-1">AI Tricks</div>
+              <div className="text-sm text-neutral-600 mt-1">KI Tricks</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-neutral-900">8</div>
@@ -66,22 +66,22 @@ export default function HomePage() {
             <div className="trick-card text-center">
               <div className="text-4xl mb-3">🚀</div>
               <h4 className="font-semibold mb-2">Produktivität</h4>
-              <p className="text-sm text-neutral-600">23 Tricks</p>
+              <p className="text-sm text-neutral-600">3 Tricks</p>
             </div>
             <div className="trick-card text-center">
               <div className="text-4xl mb-3">✍️</div>
               <h4 className="font-semibold mb-2">Content-Erstellung</h4>
-              <p className="text-sm text-neutral-600">18 Tricks</p>
+              <p className="text-sm text-neutral-600">2 Tricks</p>
             </div>
             <div className="trick-card text-center">
               <div className="text-4xl mb-3">💻</div>
               <h4 className="font-semibold mb-2">Programmierung</h4>
-              <p className="text-sm text-neutral-600">21 Tricks</p>
+              <p className="text-sm text-neutral-600">3 Tricks</p>
             </div>
             <div className="trick-card text-center">
               <div className="text-4xl mb-3">🎨</div>
               <h4 className="font-semibold mb-2">Design</h4>
-              <p className="text-sm text-neutral-600">15 Tricks</p>
+              <p className="text-sm text-neutral-600">2 Tricks</p>
             </div>
           </div>
           <div className="text-center mt-8">

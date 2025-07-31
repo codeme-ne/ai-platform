@@ -10,9 +10,9 @@ export const BackButton = () => {
   return (
     <Button
       variant="outline"
-      onClick={() => router.back()}
+      onClick={() => router.push('/tricks')}
       className="gap-2"
-      aria-label="Zurück zur vorherigen Seite"
+      aria-label="Zurück zur Tricks-Übersicht"
     >
       <ArrowLeft className="h-4 w-4" />
       Zurück

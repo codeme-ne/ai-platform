@@ -2,8 +2,8 @@ import { Metadata } from 'next'
 import { PageContainer } from '@/app/components/layout'
 
 export const metadata: Metadata = {
-  title: 'Impressum - AI Tricks Platform',
-  description: 'Impressum und rechtliche Informationen der AI Tricks Platform.',
+  title: 'Impressum - KI Tricks Platform',
+  description: 'Impressum und rechtliche Informationen der KI Tricks Platform.',
   robots: 'noindex, follow',
 }
 

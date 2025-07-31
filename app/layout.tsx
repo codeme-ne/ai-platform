@@ -8,12 +8,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'KI-Automationen & Workflows für Berater | AI Tricks Platform',
+  title: 'KI-Automationen & Workflows für Berater | KI Tricks Platform',
   description: 'Entdecke 20+ praktische KI-Automationen für Berater und Coaches. Steigere deine Produktivität mit Claude, ChatGPT und No-Code Tools. KI-Workflows die funktionieren.',
-  keywords: 'KI-Automationen, KI-Workflows, KI für Berater und Coaches, KI-Claude Code, AI Tricks, Künstliche Intelligenz, ChatGPT, Claude, Produktivität, Automatisierung',
+  keywords: 'KI-Automationen, KI-Workflows, KI für Berater und Coaches, KI-Claude Code, KI Tricks, Künstliche Intelligenz, ChatGPT, Claude, Produktivität, Automatisierung',
   authors: [{ name: 'Lukas Zangerl' }],
   creator: 'Lukas Zangerl',
-  publisher: 'AI Tricks Platform',
+  publisher: 'KI Tricks Platform',
   robots: {
     index: true,
     follow: true,
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'KI-Automationen & Workflows für Berater | AI Tricks Platform',
+    title: 'KI-Automationen & Workflows für Berater | KI Tricks Platform',
     description: 'Entdecke 20+ praktische KI-Automationen für Berater und Coaches. Steigere deine Produktivität mit Claude, ChatGPT und No-Code Tools.',
     type: 'website',
     locale: 'de_DE',
     url: 'https://ai-tricks-platform.vercel.app',
-    siteName: 'AI Tricks Platform',
+    siteName: 'KI Tricks Platform',
   },
   twitter: {
     card: 'summary_large_image',

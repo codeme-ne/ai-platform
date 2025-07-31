@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-neutral-600">
-            © {new Date().getFullYear()} AI Tricks. Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} KI Tricks. Alle Rechte vorbehalten.
           </p>
           <div className="flex items-center gap-6">
             <Link 

@@ -2,11 +2,11 @@ import { Metadata } from 'next'
 import { Header, Footer, PageContainer } from '@/app/components/layout'
 
 export const metadata: Metadata = {
-  title: 'KI für Berater und Coaches | Über AI Tricks Platform',
+  title: 'KI für Berater und Coaches | Über KI Tricks Platform',
   description: 'Erfahre wie KI-Automationen und Workflows Beratern und Coaches helfen, produktiver zu arbeiten. Praktische Anleitungen für ChatGPT, Claude und mehr.',
   keywords: 'KI für Berater, KI für Coaches, AI Beratung, Automatisierung für Berater, KI-Tools für Coaching',
   openGraph: {
-    title: 'KI für Berater und Coaches | AI Tricks Platform',
+    title: 'KI für Berater und Coaches | KI Tricks Platform',
     description: 'Praktische KI-Lösungen speziell für Berater und Coaches.',
   },
 }
@@ -19,12 +19,12 @@ export default function AboutPage() {
       <PageContainer>
         <div className="max-w-3xl mx-auto py-16">
           <h1 className="text-3xl font-bold text-neutral-900 mb-8">
-            Über AI Tricks
+            Über KI Tricks
           </h1>
           
           <div className="prose prose-lg text-neutral-600">
             <p className="text-xl mb-6">
-              AI Tricks ist eine kuratierte Sammlung praktischer AI-Tipps und Tricks, 
+              KI Tricks ist eine kuratierte Sammlung praktischer KI-Tipps und Tricks, 
               die dir helfen, deinen Arbeitsalltag zu optimieren.
             </p>
             

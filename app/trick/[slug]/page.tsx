@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   if (!trick) {
     return {
-      title: 'Trick nicht gefunden - AI Tricks Platform'
+      title: 'Trick nicht gefunden - KI Tricks Platform'
     }
   }
 
   return {
-    title: `${trick.title} - AI Tricks Platform`,
+    title: `${trick.title} - KI Tricks Platform`,
     description: trick.description,
     openGraph: {
       title: trick.title,

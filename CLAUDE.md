@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AI Tricks Platform is a Next.js web application designed to help users discover and implement practical AI tips and tricks in their daily workflow. The platform features a categorized collection of AI tricks with difficulty levels, time estimates, and impact ratings. The UI is in German and follows a minimalistic design inspired by thegrowthlist.co.
+KI Tricks Platform is a Next.js web application designed to help users discover and implement practical AI tips and tricks in their daily workflow. The platform features a categorized collection of KI tricks with difficulty levels, time estimates, and impact ratings. The UI is in German and follows a minimalistic design inspired by thegrowthlist.co.
 
 ## Common Development Commands
 
@@ -64,15 +64,18 @@ app/
 │   └── useFilters.ts      # Custom hook for filter state management with URL sync
 ├── lib/
 │   ├── types.ts           # TypeScript interfaces and type definitions
-│   └── mock-data.ts       # Mock data for AI tricks (10 tricks)
+│   └── mock-data.ts       # Mock data for KI tricks (20 tricks - ohne steps/examples)
 ├── styles/
 │   └── globals.css        # Global styles, Tailwind imports, and animations
 ├── tricks/
 │   └── page.tsx           # Tricks listing page with full filtering
 ├── trick/
-│   └── [slug]/            # TODO: Dynamic route for individual tricks
+│   └── [slug]/            # Dynamic route for individual tricks
 ├── about/
 │   └── page.tsx           # About page
+├── admin/
+│   └── tricks/
+│       └── new/           # Admin interface to add new tricks
 ├── layout.tsx             # Root layout with metadata
 ├── page.tsx               # Homepage with hero section and stats
 ├── error.tsx              # Error boundary
@@ -143,26 +146,29 @@ Categories: productivity, content-creation, programming, design, data-analysis, 
    - Reset filters functionality
 
 4. **Pages**
-   - Homepage with hero section
+   - Homepage with hero section and correct category counts
    - Tricks listing page with full filtering
+   - Individual trick detail pages
+   - Admin interface for adding new tricks
    - About page
    - Error and 404 pages
 
+5. **Navigation Improvements**
+   - Back button always navigates to /tricks (not browser history)
+   - "KI Tricks" branding throughout the application
+
 ### 🚧 TODO
 
-1. **Trick Detail Pages** (`/trick/[slug]`)
-   - Individual trick pages implementation
-   - Breadcrumb navigation
-   - Related tricks section
-
-2. **Data Integration**
+1. **Data Integration**
    - Replace mock data with real backend/API
+   - Integrate localStorage tricks with main display
    - Add data fetching and caching strategy
 
-3. **Enhanced Features**
+2. **Enhanced Features**
    - Dark mode support
    - Favorites functionality
    - Social sharing
+   - User authentication for admin features
 
 ## Key Implementation Details
 
@@ -201,11 +207,14 @@ The application runs on `http://localhost:3000` (or 3001 if port 3000 is occupie
 - `/` - Homepage
 - `/tricks` - Tricks listing with filters
 - `/tricks?[filters]` - Filtered views
+- `/trick/[slug]` - Individual trick pages
+- `/admin/tricks/new` - Add new tricks (saves to localStorage)
 - `/about` - About page
-
-**Not Yet Implemented**:
-- `/trick/[slug]` - Individual trick pages (returns 404)
+- `/kontakt` - Contact page
+- `/impressum` - Legal notice
+- `/datenschutz` - Privacy policy
+- `/claude-code` - Claude Code tutorial page
 
 ## Mock Data
 
-10 AI tricks are available in `app/lib/mock-data.ts` covering all categories, difficulty levels, and various AI tools. Each trick includes realistic German content, implementation steps, and examples.
+20 KI tricks are available in `app/lib/mock-data.ts` covering all categories, difficulty levels, and various AI tools. Steps and examples have been removed to allow users to add their own content via the admin interface. New tricks can be added through `/admin/tricks/new` and are stored in localStorage.
