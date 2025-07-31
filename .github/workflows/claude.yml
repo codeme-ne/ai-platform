@@ -1,0 +1,33 @@
+name: Claude Assistant
+
+on:
+  issue_comment:
+    types: [created]
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened, ready_for_review]
+  pull_request_review_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  claude-response:
+    runs-on: ubuntu-latest
+    # Only run if it's not from a bot
+    if: ${{ !contains(fromJson('["bot", "github-actions[bot]"]'), github.actor) }}
+    
+    steps:
+      - name: Claude Code Assistant
+        uses: anthropics/claude-code-action@beta
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: Configure Claude's behavior
+          model: claude-3-opus-20240229
+          max_tokens: 4096
+          temperature: 0.7
