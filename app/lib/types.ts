@@ -34,7 +34,6 @@ export interface FilterState {
   categories: Category[]
   difficulty: Difficulty[]
   impact: Impact[]
-  tools: string[]
   search: string
 }
 
@@ -98,7 +97,6 @@ export interface FilterGroupProps {
 
 export interface FilterSidebarProps {
   categories: Category[]
-  tools: string[]
   selectedFilters: FilterState
   onFilterChange: (filters: FilterState) => void
   isOpen?: boolean
@@ -125,7 +123,6 @@ export const EMPTY_FILTER_STATE: FilterState = {
   categories: [],
   difficulty: [],
   impact: [],
-  tools: [],
   search: ''
 }
 

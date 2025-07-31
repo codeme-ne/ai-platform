@@ -40,14 +40,13 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
     description: initialData.description || '',
     category: initialData.category || 'productivity',
     difficulty: initialData.difficulty || 'beginner',
-    tools: initialData.tools || [],
+    tools: ['Claude', 'Claude Code'],
     timeToImplement: initialData.timeToImplement || '',
     impact: initialData.impact || 'medium',
     steps: initialData.steps || [],
     examples: initialData.examples || []
   })
 
-  const [newTool, setNewTool] = useState('')
   const [newStep, setNewStep] = useState('')
   const [newExample, setNewExample] = useState('')
 
@@ -59,23 +58,6 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
-  }
-
-  const addTool = () => {
-    if (newTool.trim()) {
-      setFormData(prev => ({
-        ...prev,
-        tools: [...(prev.tools || []), newTool.trim()]
-      }))
-      setNewTool('')
-    }
-  }
-
-  const removeTool = (index: number) => {
-    setFormData(prev => ({
-      ...prev,
-      tools: prev.tools?.filter((_, i) => i !== index)
-    }))
   }
 
   const addStep = () => {
@@ -223,45 +205,6 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
                 ))}
               </select>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Tools */}
-      <div className="bg-white border border-neutral-200 rounded-lg p-6">
-        <h2 className="text-lg font-semibold mb-4">Tools</h2>
-        
-        <div className="space-y-3">
-          <div className="flex gap-2">
-            <input
-              type="text"
-              value={newTool}
-              onChange={(e) => setNewTool(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && (e.preventDefault(), addTool())}
-              className="flex-1 px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-              placeholder="Tool hinzufügen (z.B. ChatGPT)"
-            />
-            <Button type="button" onClick={addTool} variant="outline">
-              <Plus className="w-4 h-4" />
-            </Button>
-          </div>
-          
-          <div className="flex flex-wrap gap-2">
-            {formData.tools?.map((tool, index) => (
-              <span
-                key={index}
-                className="inline-flex items-center gap-1 px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-sm"
-              >
-                {tool}
-                <button
-                  type="button"
-                  onClick={() => removeTool(index)}
-                  className="hover:text-primary-900"
-                >
-                  <X className="w-3 h-3" />
-                </button>
-              </span>
-            ))}
           </div>
         </div>
       </div>

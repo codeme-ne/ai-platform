@@ -20,7 +20,7 @@ export const mockTricks: AITrick[] = [
     description: 'Nutze ChatGPT, um aus Meeting-Notizen automatisch strukturierte Zusammenfassungen mit Action Items zu erstellen.',
     category: 'productivity',
     difficulty: 'beginner',
-    tools: ['ChatGPT', 'GPT-4'],
+    tools: ['Claude'],
     timeToImplement: '5 Minuten',
     impact: 'high',
     slug: generateSlug('Automatische Meeting-Zusammenfassungen mit ChatGPT'),
@@ -33,7 +33,7 @@ export const mockTricks: AITrick[] = [
     description: 'Verwende GitHub Copilot für automatische Code-Reviews und Verbesserungsvorschläge.',
     category: 'programming',
     difficulty: 'intermediate',
-    tools: ['GitHub Copilot', 'VS Code'],
+    tools: ['Claude Code'],
     timeToImplement: '10 Minuten',
     impact: 'high',
     slug: generateSlug('Code-Reviews mit GitHub Copilot'),
@@ -46,7 +46,7 @@ export const mockTricks: AITrick[] = [
     description: 'Nutze Claude, um Blog-Artikel zu strukturieren, SEO zu optimieren und den Schreibstil zu verbessern.',
     category: 'content-creation',
     difficulty: 'beginner',
-    tools: ['Claude', 'Claude 3'],
+    tools: ['Claude'],
     timeToImplement: '15 Minuten',
     impact: 'medium',
     slug: generateSlug('Blog-Artikel mit Claude optimieren'),
@@ -59,7 +59,7 @@ export const mockTricks: AITrick[] = [
     description: 'Erstelle schnelle UI-Mockups und Design-Konzepte mit DALL-E 3.',
     category: 'design',
     difficulty: 'intermediate',
-    tools: ['DALL-E 3', 'ChatGPT Plus'],
+    tools: ['Claude'],
     timeToImplement: '20 Minuten',
     impact: 'medium',
     slug: generateSlug('UI-Mockups mit DALL-E 3 erstellen'),
@@ -72,7 +72,7 @@ export const mockTricks: AITrick[] = [
     description: 'Analysiere CSV-Dateien und erstelle Visualisierungen mit dem Code Interpreter.',
     category: 'data-analysis',
     difficulty: 'advanced',
-    tools: ['ChatGPT', 'Code Interpreter'],
+    tools: ['Claude'],
     timeToImplement: '30 Minuten',
     impact: 'high',
     slug: generateSlug('Datenanalyse mit ChatGPT Code Interpreter'),
@@ -85,7 +85,7 @@ export const mockTricks: AITrick[] = [
     description: 'Erstelle individuelle Lernpläne für neue Fähigkeiten mit ChatGPT.',
     category: 'learning',
     difficulty: 'beginner',
-    tools: ['ChatGPT', 'Notion'],
+    tools: ['Claude'],
     timeToImplement: '25 Minuten',
     impact: 'high',
     slug: generateSlug('Personalisierte Lernpfade mit ChatGPT'),
@@ -98,7 +98,7 @@ export const mockTricks: AITrick[] = [
     description: 'Nutze Zapier AI, um repetitive Geschäftsprozesse zu automatisieren.',
     category: 'business',
     difficulty: 'intermediate',
-    tools: ['Zapier', 'ChatGPT', 'Make'],
+    tools: ['Claude'],
     timeToImplement: '45 Minuten',
     impact: 'high',
     slug: generateSlug('Geschäftsprozesse mit Zapier AI automatisieren'),
@@ -111,7 +111,7 @@ export const mockTricks: AITrick[] = [
     description: 'Erstelle einen vollständigen Content-Kalender für Social Media mit AI-Tools.',
     category: 'marketing',
     difficulty: 'beginner',
-    tools: ['ChatGPT', 'Canva AI', 'Buffer'],
+    tools: ['Claude'],
     timeToImplement: '35 Minuten',
     impact: 'medium',
     slug: generateSlug('Social Media Content-Kalender mit AI'),
@@ -124,7 +124,7 @@ export const mockTricks: AITrick[] = [
     description: 'Automatisiere E-Mail-Antworten und Follow-ups mit GPT-4 Integration.',
     category: 'productivity',
     difficulty: 'advanced',
-    tools: ['GPT-4', 'Gmail', 'Zapier'],
+    tools: ['Claude'],
     timeToImplement: '60 Minuten',
     impact: 'high',
     slug: generateSlug('Email-Automatisierung mit GPT-4'),
@@ -137,7 +137,7 @@ export const mockTricks: AITrick[] = [
     description: 'Erstelle automatisch Unit Tests für deinen Code mit GitHub Copilot.',
     category: 'programming',
     difficulty: 'intermediate',
-    tools: ['GitHub Copilot', 'Jest', 'VS Code'],
+    tools: ['Claude Code'],
     timeToImplement: '15 Minuten',
     impact: 'high',
     slug: generateSlug('Unit Tests mit GitHub Copilot generieren'),
@@ -150,7 +150,7 @@ export const mockTricks: AITrick[] = [
     description: 'Nutze Claude Code Command Line Tool um in Minuten von der Idee zum funktionierenden Prototyp zu kommen. Perfekt für MVPs und Proof-of-Concepts.',
     category: 'programming',
     difficulty: 'advanced',
-    tools: ['Claude', 'Claude Code', 'Terminal'],
+    tools: ['Claude Code'],
     timeToImplement: '30 Minuten',
     impact: 'high',
     slug: generateSlug('Claude Code CLI für Rapid Prototyping'),
@@ -163,7 +163,7 @@ export const mockTricks: AITrick[] = [
     description: 'Erstelle interaktive Web-Anwendungen direkt in Claude ohne eine einzige Zeile Code zu schreiben. Von Dashboards bis zu kompletten Tools.',
     category: 'design',
     difficulty: 'intermediate',
-    tools: ['Claude', 'Claude Artifacts'],
+    tools: ['Claude'],
     timeToImplement: '15 Minuten',
     impact: 'high',
     slug: generateSlug('AI-Powered Apps ohne Code mit Claude Artifacts'),
@@ -176,7 +176,7 @@ export const mockTricks: AITrick[] = [
     description: 'Verbinde Claude mit deinen Unternehmensdaten durch MCP. Automatisiere Workflows mit Zugriff auf Datenbanken, APIs und lokale Dateien.',
     category: 'business',
     difficulty: 'advanced',
-    tools: ['Claude', 'MCP', 'Python'],
+    tools: ['Claude'],
     timeToImplement: '45 Minuten',
     impact: 'high',
     slug: generateSlug('Model Context Protocol (MCP) für Business-Automatisierung'),
@@ -189,7 +189,7 @@ export const mockTricks: AITrick[] = [
     description: 'Automatisiere dein Coaching-Business mit KI-gestützten Zapier Workflows. Von der Terminbuchung bis zum Follow-up - alles läuft automatisch.',
     category: 'productivity',
     difficulty: 'beginner',
-    tools: ['Zapier', 'ChatGPT', 'Google Calendar'],
+    tools: ['Claude'],
     timeToImplement: '20 Minuten',
     impact: 'high',
     slug: generateSlug('No-Code KI-Automation für Coaches mit Zapier'),
@@ -202,7 +202,7 @@ export const mockTricks: AITrick[] = [
     description: 'Spare 50% Zeit bei Client-Research durch strukturierte KI-Workflows. Von der Marktanalyse bis zum Executive Summary in einem Durchgang.',
     category: 'data-analysis',
     difficulty: 'intermediate',
-    tools: ['Perplexity', 'Claude', 'ChatGPT'],
+    tools: ['Claude'],
     timeToImplement: '25 Minuten',
     impact: 'high',
     slug: generateSlug('KI-Research Workflow für Consultants'),
@@ -215,7 +215,7 @@ export const mockTricks: AITrick[] = [
     description: 'Verwandle Screenshots, Skizzen und Bilder in fertigen Content. Claude Vision analysiert visuelle Inputs und generiert passende Texte.',
     category: 'content-creation',
     difficulty: 'beginner',
-    tools: ['Claude', 'Claude Vision'],
+    tools: ['Claude'],
     timeToImplement: '10 Minuten',
     impact: 'medium',
     slug: generateSlug('Claude Vision für Content Creation'),
@@ -228,7 +228,7 @@ export const mockTricks: AITrick[] = [
     description: 'Meistere die Kunst des strukturierten Promptings für konsistente und hochwertige Ergebnisse bei komplexen KI-Aufgaben.',
     category: 'learning',
     difficulty: 'advanced',
-    tools: ['ChatGPT', 'Claude', 'Gemini'],
+    tools: ['Claude'],
     timeToImplement: '35 Minuten',
     impact: 'high',
     slug: generateSlug('Strukturiertes Prompting für komplexe Projekte'),
@@ -241,7 +241,7 @@ export const mockTricks: AITrick[] = [
     description: 'Kombiniere verschiedene KI-Modelle für maximale Business Intelligence. Claude Opus 4 für Analyse, GPT-4 für Kreativität.',
     category: 'data-analysis',
     difficulty: 'advanced',
-    tools: ['Claude', 'ChatGPT', 'Python'],
+    tools: ['Claude'],
     timeToImplement: '40 Minuten',
     impact: 'high',
     slug: generateSlug('Hybrid AI Models für Business Intelligence'),
@@ -254,7 +254,7 @@ export const mockTricks: AITrick[] = [
     description: 'Implementiere KI-gestützte Team-Workflows die die Produktivität des gesamten Teams steigern. Von Brainstorming bis Projektabschluss.',
     category: 'productivity',
     difficulty: 'intermediate',
-    tools: ['Claude', 'Notion AI', 'Slack'],
+    tools: ['Claude'],
     timeToImplement: '30 Minuten',
     impact: 'high',
     slug: generateSlug('Collaborative AI Workflows für Teams'),
@@ -267,7 +267,7 @@ export const mockTricks: AITrick[] = [
     description: 'Nutze KI um deine Beratungspreise zu optimieren. Analysiere Marktdaten, Kundensegmente und erstelle dynamische Preismodelle.',
     category: 'business',
     difficulty: 'intermediate',
-    tools: ['ChatGPT', 'Claude', 'Excel'],
+    tools: ['Claude'],
     timeToImplement: '25 Minuten',
     impact: 'high',
     slug: generateSlug('KI-gestützte Preisoptimierung für Berater'),
@@ -315,7 +315,6 @@ export const filterTricks = (
     categories?: Category[]
     difficulty?: Difficulty[]
     impact?: Impact[]
-    tools?: string[]
     search?: string
   },
   searchQuery?: string
@@ -334,14 +333,6 @@ export const filterTricks = (
     // Impact filter
     if (filters.impact && filters.impact.length > 0) {
       if (!filters.impact.includes(trick.impact)) return false
-    }
-
-    // Tools filter
-    if (filters.tools && filters.tools.length > 0) {
-      const hasMatchingTool = trick.tools.some(tool => 
-        filters.tools!.includes(tool)
-      )
-      if (!hasMatchingTool) return false
     }
 
     // Search filter - check both filters.search and searchQuery parameter

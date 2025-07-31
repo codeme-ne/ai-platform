@@ -29,6 +29,19 @@ export function Footer() {
             </Link>
           </div>
         </div>
+        <div className="mt-6 pt-6 border-t border-neutral-200 text-center">
+          <p className="text-sm text-neutral-600">
+            Mehr zum Thema KI findest du auf{' '}
+            <a 
+              href="https://www.produktiv.me" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary-600 hover:text-primary-700 font-medium transition-colors"
+            >
+              produktiv.me
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   )

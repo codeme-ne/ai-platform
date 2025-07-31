@@ -5,6 +5,7 @@ import { Metadata } from 'next'
 import { PageContainer } from '@/app/components/layout'
 import { Button } from '@/app/components/atoms'
 import { Send, Mail, Github, CheckCircle } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 
 // Metadata wird bei Client Components nicht direkt unterstützt
 // Wir müssen dies in eine separate Server Component auslagern oder anders lösen
@@ -23,17 +24,43 @@ export default function KontaktPage() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Hier würde normalerweise die Form-Submission erfolgen
-    // Für Demo-Zwecke simulieren wir einen erfolgreichen Submit
-    setTimeout(() => {
+    try {
+      // EmailJS initialisieren falls nicht schon geschehen
+      if (process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
+        emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
+      }
+      
+      // Email senden
+      if (process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID && 
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID) {
+        await emailjs.send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            to_email: 'zangerl.luk@gmail.com'
+          }
+        )
+        
+        setIsSubmitted(true)
+        // Reset form nach 3 Sekunden
+        setTimeout(() => {
+          setIsSubmitted(false)
+          setFormData({ name: '', email: '', subject: '', message: '' })
+        }, 3000)
+      } else {
+        // Fallback wenn EmailJS nicht konfiguriert
+        alert('Das Kontaktformular ist noch nicht konfiguriert. Bitte sende eine E-Mail an zangerl.luk@gmail.com')
+      }
+    } catch (error) {
+      console.error('Fehler beim Senden der E-Mail:', error)
+      alert('Fehler beim Senden der Nachricht. Bitte versuche es später erneut.')
+    } finally {
       setIsSubmitting(false)
-      setIsSubmitted(true)
-      // Reset form nach 3 Sekunden
-      setTimeout(() => {
-        setIsSubmitted(false)
-        setFormData({ name: '', email: '', subject: '', message: '' })
-      }, 3000)
-    }, 1000)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

@@ -22,7 +22,6 @@ export const useFilters = () => {
       categories: parseArrayParam(searchParams.get('categories')) as Category[],
       difficulty: parseArrayParam(searchParams.get('difficulty')) as Difficulty[],
       impact: parseArrayParam(searchParams.get('impact')) as Impact[],
-      tools: parseArrayParam(searchParams.get('tools')),
       search: searchParams.get('search') || ''
     }
     
@@ -46,10 +45,6 @@ export const useFilters = () => {
     
     if (newFilters.impact.length > 0) {
       params.set('impact', serializeArrayParam(newFilters.impact))
-    }
-    
-    if (newFilters.tools.length > 0) {
-      params.set('tools', serializeArrayParam(newFilters.tools))
     }
     
     if (newFilters.search.trim() !== '') {

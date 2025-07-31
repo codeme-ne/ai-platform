@@ -6,7 +6,7 @@ import { SearchBar } from '@/app/components/molecules'
 import { Button } from '@/app/components/atoms'
 import { Menu } from 'lucide-react'
 import { useFilters } from '@/app/hooks/useFilters'
-import { mockTricks, getAllCategories, getAllTools, filterTricks } from '@/app/lib/mock-data'
+import { mockTricks, getAllCategories, filterTricks } from '@/app/lib/mock-data'
 import { hasActiveFilters } from '@/app/lib/utils'
 import { AITrick } from '@/app/lib/types'
 
@@ -21,7 +21,6 @@ export default function TricksClient() {
   }, [searchQuery, filters])
 
   const availableCategories = useMemo(() => getAllCategories(), [])
-  const availableTools = useMemo(() => getAllTools(), [])
 
   return (
     <>
@@ -33,7 +32,7 @@ export default function TricksClient() {
           className="w-full"
         >
           <Menu className="h-4 w-4" />
-          Filter ({hasActiveFilters(filters) ? filters.categories.length + filters.difficulty.length + filters.impact.length + filters.tools.length : 0})
+          Filter ({hasActiveFilters(filters) ? filters.categories.length + filters.difficulty.length + filters.impact.length : 0})
         </Button>
       </div>
 
@@ -41,7 +40,6 @@ export default function TricksClient() {
         {/* Sidebar - handles both desktop and mobile internally */}
         <FilterSidebar
           categories={availableCategories}
-          tools={availableTools}
           selectedFilters={filters}
           onFilterChange={updateFilters}
           isOpen={isSidebarOpen}

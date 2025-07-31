@@ -9,7 +9,6 @@ import { Button, Checkbox, FilterSection } from '@/app/components/atoms'
 
 export function FilterSidebar({
   categories,
-  tools,
   selectedFilters,
   onFilterChange,
   isOpen = false,
@@ -55,11 +54,6 @@ export function FilterSidebar({
     onFilterChange
   )
   
-  const handleToolChange = createFilterHandler<string>(
-    selectedFilters, 
-    'tools', 
-    onFilterChange
-  )
 
   // Reset all filters
   const handleReset = () => {
@@ -143,22 +137,6 @@ export function FilterSidebar({
           ))}
         </FilterSection>
 
-        {/* Tools */}
-        <FilterSection 
-          title="Tools" 
-          count={selectedFilters.tools.length}
-        >
-          <div className="max-h-48 overflow-y-auto space-y-3">
-            {tools.map((tool) => (
-              <Checkbox
-                key={tool}
-                label={tool}
-                checked={selectedFilters.tools.includes(tool)}
-                onChange={(checked) => handleToolChange(tool, checked)}
-              />
-            ))}
-          </div>
-        </FilterSection>
       </div>
 
       {/* Footer */}

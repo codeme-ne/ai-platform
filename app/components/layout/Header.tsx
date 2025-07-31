@@ -8,8 +8,13 @@ export function Header({ className = '' }: HeaderProps) {
     <header className={`border-b border-neutral-200 bg-white sticky top-0 z-50 ${className}`}>
       <div className="container py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-xl font-semibold text-neutral-900 hover:text-primary-600 transition-colors">
-            KI Tricks
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="bg-primary-600 text-white px-3 py-1.5 rounded-lg font-bold text-lg group-hover:bg-primary-700 transition-colors">
+              KI
+            </div>
+            <span className="text-xl font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors">
+              Tricks
+            </span>
           </Link>
           <nav className="flex items-center gap-6">
             <Link 

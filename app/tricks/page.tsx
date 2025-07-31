@@ -17,22 +17,12 @@ export default function TricksPage() {
   return (
     <PageContainer>
       <div className="mb-8">
-        <div className="flex items-start justify-between">
-          <div>
-            <h1 className="text-3xl font-bold text-neutral-900 mb-2">
-              Entdecke KI Tricks
-            </h1>
-            <p className="text-lg text-neutral-600">
-              Finde praktische KI-Tipps und Tricks für deinen Arbeitsalltag
-            </p>
-          </div>
-          <a 
-            href="/admin/tricks/new" 
-            className="btn-primary"
-          >
-            Trick hinzufügen
-          </a>
-        </div>
+        <h1 className="text-3xl font-bold text-neutral-900 mb-2">
+          Entdecke KI Tricks
+        </h1>
+        <p className="text-lg text-neutral-600">
+          Finde praktische KI-Tipps und Tricks für deinen Arbeitsalltag
+        </p>
       </div>
 
       <Suspense fallback={<div>Lade...</div>}>
