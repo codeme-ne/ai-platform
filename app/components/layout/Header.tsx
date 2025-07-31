@@ -19,6 +19,12 @@ export function Header({ className = '' }: HeaderProps) {
               Alle Tricks
             </Link>
             <Link 
+              href="/claude-code" 
+              className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
+            >
+              Claude Code
+            </Link>
+            <Link 
               href="/about" 
               className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
             >

@@ -263,6 +263,268 @@ export const mockTricks: AITrick[] = [
     slug: generateSlug('Unit Tests mit GitHub Copilot generieren'),
     createdAt: new Date('2024-01-24'),
     updatedAt: new Date('2024-01-24')
+  },
+  {
+    id: '11',
+    title: 'Claude Code CLI für Rapid Prototyping',
+    description: 'Nutze Claude Code Command Line Tool um in Minuten von der Idee zum funktionierenden Prototyp zu kommen. Perfekt für MVPs und Proof-of-Concepts.',
+    category: 'programming',
+    difficulty: 'advanced',
+    tools: ['Claude', 'Claude Code', 'Terminal'],
+    timeToImplement: '30 Minuten',
+    impact: 'high',
+    steps: [
+      'Claude Code CLI installieren: npm install -g @anthropic/claude-code',
+      'API-Key konfigurieren: claude-code config --api-key YOUR_KEY',
+      'Neues Projekt initialisieren: claude-code init my-project',
+      'Projektanforderungen in natürlicher Sprache beschreiben',
+      'Claude generiert komplette Anwendungsstruktur mit allen Dependencies',
+      'Mit claude-code run das Projekt direkt ausführen und testen',
+      'Iterativ verfeinern durch weitere Prompts'
+    ],
+    examples: [
+      'SaaS Dashboard mit Authentication in 20 Minuten erstellt',
+      'E-Commerce Shop mit Stripe Integration als funktionierender Prototyp',
+      'REST API mit Datenbank und vollständiger Dokumentation generiert'
+    ],
+    slug: generateSlug('Claude Code CLI für Rapid Prototyping'),
+    createdAt: new Date('2025-01-20'),
+    updatedAt: new Date('2025-01-20')
+  },
+  {
+    id: '12',
+    title: 'AI-Powered Apps ohne Code mit Claude Artifacts',
+    description: 'Erstelle interaktive Web-Anwendungen direkt in Claude ohne eine einzige Zeile Code zu schreiben. Von Dashboards bis zu kompletten Tools.',
+    category: 'design',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'Claude Artifacts'],
+    timeToImplement: '15 Minuten',
+    impact: 'high',
+    steps: [
+      'Claude.ai im Browser öffnen und neuen Chat starten',
+      'App-Idee detailliert beschreiben mit UI-Anforderungen',
+      'Claude mit "Ich erstelle dir eine interaktive App" antworten lassen',
+      'Artifact wird automatisch generiert mit Live-Preview',
+      'Iterativ Änderungen vornehmen durch weitere Beschreibungen',
+      'Fertigen Code exportieren oder direkt teilen'
+    ],
+    examples: [
+      'Interaktiver ROI-Rechner für Berater mit Diagrammen',
+      'Projektmanagement-Dashboard mit Drag-and-Drop Funktionalität',
+      'Kundenfeedback-Tool mit Echtzeit-Visualisierung der Ergebnisse'
+    ],
+    slug: generateSlug('AI-Powered Apps ohne Code mit Claude Artifacts'),
+    createdAt: new Date('2025-01-19'),
+    updatedAt: new Date('2025-01-19')
+  },
+  {
+    id: '13',
+    title: 'Model Context Protocol (MCP) für Business-Automatisierung',
+    description: 'Verbinde Claude mit deinen Unternehmensdaten durch MCP. Automatisiere Workflows mit Zugriff auf Datenbanken, APIs und lokale Dateien.',
+    category: 'business',
+    difficulty: 'advanced',
+    tools: ['Claude', 'MCP', 'Python'],
+    timeToImplement: '45 Minuten',
+    impact: 'high',
+    steps: [
+      'MCP Server für deine Datenquelle einrichten (z.B. PostgreSQL)',
+      'Konfigurationsdatei mit Zugangsdaten erstellen',
+      'MCP in Claude Desktop aktivieren über Einstellungen',
+      'Claude kann nun direkt auf deine Daten zugreifen',
+      'Automatisierte Reports und Analysen erstellen lassen',
+      'Workflows definieren die regelmäßig ausgeführt werden'
+    ],
+    examples: [
+      'Tägliche Umsatzreports aus CRM-System automatisch generieren',
+      'Kundendaten analysieren und Handlungsempfehlungen erstellen',
+      'Inventar-Management mit automatischen Bestellvorschlägen'
+    ],
+    slug: generateSlug('Model Context Protocol (MCP) für Business-Automatisierung'),
+    createdAt: new Date('2025-01-18'),
+    updatedAt: new Date('2025-01-18')
+  },
+  {
+    id: '14',
+    title: 'No-Code KI-Automation für Coaches mit Zapier',
+    description: 'Automatisiere dein Coaching-Business mit KI-gestützten Zapier Workflows. Von der Terminbuchung bis zum Follow-up - alles läuft automatisch.',
+    category: 'productivity',
+    difficulty: 'beginner',
+    tools: ['Zapier', 'ChatGPT', 'Google Calendar'],
+    timeToImplement: '20 Minuten',
+    impact: 'high',
+    steps: [
+      'Zapier Account erstellen und ChatGPT Integration aktivieren',
+      'Trigger definieren: Neue Kalenderbuchung oder E-Mail',
+      'ChatGPT Action hinzufügen für personalisierte Nachrichten',
+      'Template erstellen für Willkommensnachrichten',
+      'Automatische Follow-ups nach Sessions einrichten',
+      'Feedback-Sammlung und Auswertung automatisieren'
+    ],
+    examples: [
+      'Neue Klienten erhalten automatisch personalisierte Onboarding-E-Mails',
+      'Nach jeder Session wird automatisch Feedback eingeholt und ausgewertet',
+      'Terminserinnerungen mit vorbereitenden Fragen werden automatisch versendet'
+    ],
+    slug: generateSlug('No-Code KI-Automation für Coaches mit Zapier'),
+    createdAt: new Date('2025-01-17'),
+    updatedAt: new Date('2025-01-17')
+  },
+  {
+    id: '15',
+    title: 'KI-Research Workflow für Consultants',
+    description: 'Spare 50% Zeit bei Client-Research durch strukturierte KI-Workflows. Von der Marktanalyse bis zum Executive Summary in einem Durchgang.',
+    category: 'data-analysis',
+    difficulty: 'intermediate',
+    tools: ['Perplexity', 'Claude', 'ChatGPT'],
+    timeToImplement: '25 Minuten',
+    impact: 'high',
+    steps: [
+      'Research-Template in Claude erstellen mit klaren Kategorien',
+      'Perplexity für aktuelle Marktdaten und Trends nutzen',
+      'Rohdaten in strukturiertes Format überführen lassen',
+      'Claude für tiefgehende Analyse und Insights einsetzen',
+      'Executive Summary automatisch generieren lassen',
+      'Visualisierungen und Präsentationsfolien erstellen'
+    ],
+    examples: [
+      'Komplette Wettbewerbsanalyse für Kunden in 30 Minuten statt 3 Stunden',
+      'Markteintrittsstrategie mit allen relevanten Daten in einer Session',
+      'Due Diligence Reports mit automatischer Risikobewertung'
+    ],
+    slug: generateSlug('KI-Research Workflow für Consultants'),
+    createdAt: new Date('2025-01-16'),
+    updatedAt: new Date('2025-01-16')
+  },
+  {
+    id: '16',
+    title: 'Claude Vision für Content Creation',
+    description: 'Verwandle Screenshots, Skizzen und Bilder in fertigen Content. Claude Vision analysiert visuelle Inputs und generiert passende Texte.',
+    category: 'content-creation',
+    difficulty: 'beginner',
+    tools: ['Claude', 'Claude Vision'],
+    timeToImplement: '10 Minuten',
+    impact: 'medium',
+    steps: [
+      'Screenshot oder Bild in Claude hochladen',
+      'Kontext geben: "Erstelle einen LinkedIn Post basierend auf diesem Chart"',
+      'Claude analysiert die visuellen Elemente',
+      'Passender Content wird automatisch generiert',
+      'Feintuning durch zusätzliche Anweisungen',
+      'Verschiedene Versionen für unterschiedliche Plattformen erstellen'
+    ],
+    examples: [
+      'Aus Whiteboard-Foto wird strukturierter Blogpost',
+      'Dashboard-Screenshot wird zu datengetriebener Story',
+      'Produktfoto wird zu emotionalem Marketing-Text'
+    ],
+    slug: generateSlug('Claude Vision für Content Creation'),
+    createdAt: new Date('2025-01-15'),
+    updatedAt: new Date('2025-01-15')
+  },
+  {
+    id: '17',
+    title: 'Strukturiertes Prompting für komplexe Projekte',
+    description: 'Meistere die Kunst des strukturierten Promptings für konsistente und hochwertige Ergebnisse bei komplexen KI-Aufgaben.',
+    category: 'learning',
+    difficulty: 'advanced',
+    tools: ['ChatGPT', 'Claude', 'Gemini'],
+    timeToImplement: '35 Minuten',
+    impact: 'high',
+    steps: [
+      'Projekt in klare Komponenten aufteilen',
+      'Für jede Komponente spezifischen Kontext definieren',
+      'Rollen-basierte Prompts verwenden ("Als erfahrener Architekt...")',
+      'Schritt-für-Schritt Anweisungen mit Zwischenergebnissen',
+      'Qualitätskriterien explizit definieren',
+      'Iterative Verfeinerung mit Referenz auf vorherige Outputs',
+      'Best Practices in wiederverwendbare Templates speichern'
+    ],
+    examples: [
+      'Komplette Software-Architektur mit 15+ Komponenten systematisch entwickelt',
+      'Mehrstufiger Content-Plan für 6 Monate mit konsistentem Stil',
+      'Detaillierte Geschäftsstrategie mit Marktanalyse und Finanzplanung'
+    ],
+    slug: generateSlug('Strukturiertes Prompting für komplexe Projekte'),
+    createdAt: new Date('2025-01-14'),
+    updatedAt: new Date('2025-01-14')
+  },
+  {
+    id: '18',
+    title: 'Hybrid AI Models für Business Intelligence',
+    description: 'Kombiniere verschiedene KI-Modelle für maximale Business Intelligence. Claude Opus 4 für Analyse, GPT-4 für Kreativität.',
+    category: 'data-analysis',
+    difficulty: 'advanced',
+    tools: ['Claude', 'ChatGPT', 'Python'],
+    timeToImplement: '40 Minuten',
+    impact: 'high',
+    steps: [
+      'Aufgaben nach Modellstärken aufteilen',
+      'Claude Opus 4 für 7+ Stunden autonome Datenanalyse nutzen',
+      'GPT-4 für kreative Lösungsansätze einsetzen',
+      'Ergebnisse in Python zusammenführen und validieren',
+      'Automatisierte Pipelines für wiederkehrende Analysen bauen',
+      'Dashboard mit Echtzeit-Updates erstellen'
+    ],
+    examples: [
+      'Predictive Analytics mit 95% Genauigkeit durch Modell-Ensemble',
+      'Automatisierte Quartalsberichte mit Trendanalyse und Prognosen',
+      'Echtzeit-Marktüberwachung mit automatischen Handelsempfehlungen'
+    ],
+    slug: generateSlug('Hybrid AI Models für Business Intelligence'),
+    createdAt: new Date('2025-01-13'),
+    updatedAt: new Date('2025-01-13')
+  },
+  {
+    id: '19',
+    title: 'Collaborative AI Workflows für Teams',
+    description: 'Implementiere KI-gestützte Team-Workflows die die Produktivität des gesamten Teams steigern. Von Brainstorming bis Projektabschluss.',
+    category: 'productivity',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'Notion AI', 'Slack'],
+    timeToImplement: '30 Minuten',
+    impact: 'high',
+    steps: [
+      'Zentrale KI-Knowledge-Base in Notion aufbauen',
+      'Slack-Integration für Team-weite KI-Zugriffe einrichten',
+      'Standardisierte Prompt-Templates für häufige Aufgaben',
+      'Rollen-basierte Workflows definieren',
+      'Automatische Dokumentation von Entscheidungen',
+      'KI-gestützte Sprint-Reviews und Retrospektiven'
+    ],
+    examples: [
+      'Design-Team nutzt gemeinsame KI für konsistente Markenkommunikation',
+      'Development-Team automatisiert Code-Reviews und Dokumentation',
+      'Management erhält automatische Projekt-Status-Updates mit Insights'
+    ],
+    slug: generateSlug('Collaborative AI Workflows für Teams'),
+    createdAt: new Date('2025-01-12'),
+    updatedAt: new Date('2025-01-12')
+  },
+  {
+    id: '20',
+    title: 'KI-gestützte Preisoptimierung für Berater',
+    description: 'Nutze KI um deine Beratungspreise zu optimieren. Analysiere Marktdaten, Kundensegmente und erstelle dynamische Preismodelle.',
+    category: 'business',
+    difficulty: 'intermediate',
+    tools: ['ChatGPT', 'Claude', 'Excel'],
+    timeToImplement: '25 Minuten',
+    impact: 'high',
+    steps: [
+      'Aktuelle Preisstruktur und Kundendaten sammeln',
+      'Marktanalyse mit KI durchführen lassen',
+      'Kundensegmente identifizieren und bewerten',
+      'Preismodelle für verschiedene Segmente entwickeln',
+      'A/B Testing Strategien erstellen',
+      'Automatisches Monitoring und Anpassungen einrichten'
+    ],
+    examples: [
+      'Berater steigert Umsatz um 35% durch segmentierte Preisgestaltung',
+      'Coach entwickelt 3-stufiges Preismodell das Conversion um 50% erhöht',
+      'Agentur optimiert Projekt-Kalkulation und verbessert Marge um 20%'
+    ],
+    slug: generateSlug('KI-gestützte Preisoptimierung für Berater'),
+    createdAt: new Date('2025-01-11'),
+    updatedAt: new Date('2025-01-11')
   }
 ]
 
