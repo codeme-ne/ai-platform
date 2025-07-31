@@ -30,7 +30,7 @@ export default function DatenschutzPage() {
             <p className="mb-2"><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
             <p className="mb-4">
               Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen 
-              Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle" in dieser 
+              Kontaktdaten können Sie dem Abschnitt &bdquo;Hinweis zur Verantwortlichen Stelle&ldquo; in dieser 
               Datenschutzerklärung entnehmen.
             </p>
 
@@ -73,7 +73,7 @@ export default function DatenschutzPage() {
             <h3 className="text-lg font-semibold mb-2 mt-4">Vercel</h3>
             <p className="mb-4">
               Diese Website wird bei Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA 
-              (nachfolgend: „Vercel") gehostet. Wenn Sie unsere Website besuchen, werden Ihre 
+              (nachfolgend: &bdquo;Vercel&ldquo;) gehostet. Wenn Sie unsere Website besuchen, werden Ihre 
               personenbezogenen Daten (IP-Adresse, Browsertyp, Betriebssystem, Referrer-URL, 
               Hostname des zugreifenden Rechners sowie Zeitpunkt der Serveranfrage) an Server von 
               Vercel übertragen.

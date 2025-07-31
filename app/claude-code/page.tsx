@@ -101,7 +101,7 @@ export default function ClaudeCodePage() {
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg mb-2">Full-Stack Anwendungen</h3>
                   <p className="text-neutral-600 mb-3">
-                    "Erstelle eine Todo-App mit React, TypeScript und Tailwind CSS" - Claude generiert 
+                    &ldquo;Erstelle eine Todo-App mit React, TypeScript und Tailwind CSS&rdquo; - Claude generiert 
                     die komplette Anwendung inklusive Backend-API und Datenbank-Schema.
                   </p>
                   <Link href="/tricks?search=full-stack" className="text-primary-600 hover:underline text-sm font-medium">
@@ -119,7 +119,7 @@ export default function ClaudeCodePage() {
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg mb-2">Datenanalyse & Automation</h3>
                   <p className="text-neutral-600 mb-3">
-                    "Analysiere diese CSV-Datei und erstelle ein interaktives Dashboard" - Claude 
+                    &ldquo;Analysiere diese CSV-Datei und erstelle ein interaktives Dashboard&rdquo; - Claude 
                     verarbeitet deine Daten und generiert Visualisierungen mit Python oder JavaScript.
                   </p>
                   <Link href="/tricks?categories=data-analysis" className="text-primary-600 hover:underline text-sm font-medium">
