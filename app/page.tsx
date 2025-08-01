@@ -1,7 +1,24 @@
 import { Header, Footer } from '@/app/components/layout'
 import Link from 'next/link'
+import { 
+  getTotalTricksCount, 
+  getTotalCategoriesCount, 
+  getAllTools,
+  getAverageImplementationTime,
+  getTrickCountByCategory,
+  getAllCategories
+} from '@/app/lib/mock-data'
+import { categoryLabels, categoryEmojis } from '@/app/lib/constants'
 
 export default function HomePage() {
+  // Calculate dynamic statistics
+  const totalTricks = getTotalTricksCount()
+  const totalCategories = getTotalCategoriesCount()
+  const totalTools = getAllTools().length
+  const avgImplementationTime = getAverageImplementationTime()
+  const tricksByCategory = getTrickCountByCategory()
+  const allCategories = getAllCategories()
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -36,19 +53,19 @@ export default function HomePage() {
         <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-neutral-900">20+</div>
+              <div className="text-3xl font-bold text-neutral-900">{totalTricks}</div>
               <div className="text-sm text-neutral-600 mt-1">KI Tricks</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-neutral-900">8</div>
+              <div className="text-3xl font-bold text-neutral-900">{totalCategories}</div>
               <div className="text-sm text-neutral-600 mt-1">Kategorien</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-neutral-900">15+</div>
+              <div className="text-3xl font-bold text-neutral-900">{totalTools}</div>
               <div className="text-sm text-neutral-600 mt-1">KI Tools</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-neutral-900">5min</div>
+              <div className="text-3xl font-bold text-neutral-900">{avgImplementationTime}min</div>
               <div className="text-sm text-neutral-600 mt-1">Durchschnittliche Umsetzungszeit</div>
             </div>
           </div>
@@ -62,27 +79,24 @@ export default function HomePage() {
             Tricks nach Kategorien
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Category Cards - These will be dynamic later */}
-            <div className="trick-card text-center">
-              <div className="text-4xl mb-3">🚀</div>
-              <h4 className="font-semibold mb-2">Produktivität</h4>
-              <p className="text-sm text-neutral-600">3 Tricks</p>
-            </div>
-            <div className="trick-card text-center">
-              <div className="text-4xl mb-3">✍️</div>
-              <h4 className="font-semibold mb-2">Content-Erstellung</h4>
-              <p className="text-sm text-neutral-600">2 Tricks</p>
-            </div>
-            <div className="trick-card text-center">
-              <div className="text-4xl mb-3">💻</div>
-              <h4 className="font-semibold mb-2">Programmierung</h4>
-              <p className="text-sm text-neutral-600">3 Tricks</p>
-            </div>
-            <div className="trick-card text-center">
-              <div className="text-4xl mb-3">🎨</div>
-              <h4 className="font-semibold mb-2">Design</h4>
-              <p className="text-sm text-neutral-600">2 Tricks</p>
-            </div>
+            {/* Dynamic Category Cards */}
+            {allCategories
+              .filter(category => (tricksByCategory[category] || 0) > 0) // Only show categories with tricks
+              .sort((a, b) => (tricksByCategory[b] || 0) - (tricksByCategory[a] || 0)) // Sort by trick count
+              .slice(0, 8) // Show top 8 categories
+              .map(category => (
+                <Link 
+                  key={category} 
+                  href={`/tricks?categories=${category}`}
+                  className="trick-card text-center hover:shadow-lg transition-shadow"
+                >
+                  <div className="text-4xl mb-3">{categoryEmojis[category]}</div>
+                  <h4 className="font-semibold mb-2">{categoryLabels[category]}</h4>
+                  <p className="text-sm text-neutral-600">
+                    {tricksByCategory[category] || 0} {(tricksByCategory[category] || 0) === 1 ? 'Trick' : 'Tricks'}
+                  </p>
+                </Link>
+              ))}
           </div>
           <div className="text-center mt-8">
             <Link href="/tricks" className="btn-secondary">

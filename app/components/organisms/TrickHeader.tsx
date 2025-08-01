@@ -2,32 +2,10 @@ import { KITrick } from '@/app/lib/types'
 import { Badge } from '@/app/components/atoms'
 import { BackButton } from '@/app/components/atoms'
 import { BreadcrumbNav, TrickMeta } from '@/app/components/molecules'
+import { categoryLabels, difficultyLabels, difficultyVariants } from '@/app/lib/constants'
 
 interface TrickHeaderProps {
   trick: KITrick
-}
-
-const categoryLabels = {
-  'productivity': 'Produktivität',
-  'content-creation': 'Content-Erstellung',
-  'programming': 'Programmierung',
-  'design': 'Design',
-  'data-analysis': 'Datenanalyse',
-  'learning': 'Lernen',
-  'business': 'Business',
-  'marketing': 'Marketing'
-}
-
-const difficultyLabels = {
-  'beginner': 'Anfänger',
-  'intermediate': 'Fortgeschritten',
-  'advanced': 'Experte'
-}
-
-const difficultyVariants = {
-  'beginner': 'success' as const,
-  'intermediate': 'warning' as const,
-  'advanced': 'danger' as const
 }
 
 export const TrickHeader = ({ trick }: TrickHeaderProps) => {

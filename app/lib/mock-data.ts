@@ -1511,3 +1511,39 @@ export const getRelatedTricks = (currentTrick: KITrick, limit: number = 3): KITr
     )
     .slice(0, limit)
 }
+
+// Get total number of tricks
+export const getTotalTricksCount = (): number => {
+  return mockTricks.length
+}
+
+// Get total number of categories with at least one trick
+export const getTotalCategoriesCount = (): number => {
+  const categoriesWithTricks = new Set(mockTricks.map(trick => trick.category))
+  return categoriesWithTricks.size
+}
+
+// Calculate average implementation time
+export const getAverageImplementationTime = (): number => {
+  const times = mockTricks.map(trick => {
+    const timeStr = trick.timeToImplement.toLowerCase()
+    
+    // Extract numbers from strings like "5 Minuten", "10-15 Minuten", "45-60 Minuten"
+    const numbers = timeStr.match(/\d+/g)
+    if (!numbers || numbers.length === 0) return 0
+    
+    // If it's a range, take the average
+    if (numbers.length === 2) {
+      return (parseInt(numbers[0]) + parseInt(numbers[1])) / 2
+    }
+    
+    // Single number
+    return parseInt(numbers[0])
+  })
+  
+  const total = times.reduce((sum, time) => sum + time, 0)
+  const average = total / times.length
+  
+  // Round to nearest 5 minutes
+  return Math.round(average / 5) * 5
+}
