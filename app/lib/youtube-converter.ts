@@ -712,4 +712,4 @@ export async function saveTipsToFile(tips: ExtractedTip[], outputPath: string): 
 }
 
 // Export für die Verwendung im Admin-Interface
-export { ExtractedTip }
+export type { ExtractedTip }
