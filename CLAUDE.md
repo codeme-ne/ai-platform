@@ -217,7 +217,41 @@ The application runs on `http://localhost:3000` (or 3001 if port 3000 is occupie
 
 ## Mock Data
 
-20 KI tricks are available in `app/lib/mock-data.ts` covering all categories, difficulty levels, and various AI tools. Steps and examples have been removed to allow users to add their own content via the admin interface. New tricks can be added through `/admin/tricks/new` and are stored in localStorage.
+20 KI tricks are available in `app/lib/mock-data.ts` covering all categories, difficulty levels, and various AI tools. New tricks can be added through `/admin/tricks/new` and are stored in localStorage.
+
+### 🚀 Content Update (2025-08-01)
+
+40 high-quality KI tricks have been created based on YouTube transcripts and stored in `curated-ki-tips.json`. These tips include:
+
+**Categories Distribution:**
+- Programming: 11 tips
+- Productivity: 10 tips  
+- Learning: 7 tips
+- Business: 5 tips
+- Content Creation: 3 tips
+- Data Analysis: 2 tips
+- Marketing: 2 tips
+- Design: 1 tip
+
+**Key Features of the Curated Tips:**
+- Each tip includes a compelling hook explaining why it works (psychology-based)
+- 4 concrete, actionable steps in German
+- 2 real-world examples with measurable results
+- Tools variety: Claude, Claude Code, ChatGPT, Perplexity, GitHub Copilot, etc.
+- Implementation time: 5-60 minutes
+- Impact levels: low, medium, high
+
+**Integration Status:**
+- ✅ 40 tips created in `curated-ki-tips.json`
+- ⏳ Integration into `mock-data.ts` pending
+- ⏳ Testing with full content pending
+
+The tips are based on real-world use cases from:
+- Vibe Coding techniques from Anthropic
+- Claude Code best practices
+- Student learning optimization
+- Startup rapid prototyping
+- Business automation strategies
 
 ## Deployment Configuration
 

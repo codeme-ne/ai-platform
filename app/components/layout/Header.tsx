@@ -24,22 +24,10 @@ export function Header({ className = '' }: HeaderProps) {
               Alle Tricks
             </Link>
             <Link 
-              href="/claude-code" 
-              className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
-            >
-              Claude Code
-            </Link>
-            <Link 
-              href="/about" 
-              className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
-            >
-              Über uns
-            </Link>
-            <Link 
               href="https://www.produktiv.me/kiz/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 px-4 py-2 rounded-lg transition-colors"
+              className="text-sm text-neutral-600 hover:text-neutral-900 transition-colors"
             >
               KI Kurs
             </Link>

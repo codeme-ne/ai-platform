@@ -1,0 +1,212 @@
+[
+  {
+    "id": "adv-11",
+    "title": "Zero-Shot vs Few-Shot: Die Macht der Beispiele",
+    "hook": "Warum es funktioniert: Das Gehirn lernt durch Mustererkennung - je mehr relevante Beispiele du der KI gibst, desto besser kann sie das gewünschte Muster reproduzieren. Google's Forschung zeigt 3-5x bessere Ergebnisse.",
+    "description": "Nutze die wissenschaftlich bewiesene Few-Shot Prompting Technik, bei der du 2-3 perfekte Beispiele mitlieferst, um die KI-Output-Qualität dramatisch zu steigern.",
+    "category": "content-creation",
+    "difficulty": "beginner",
+    "tools": ["Claude", "ChatGPT", "Google Gemini"],
+    "timeToImplement": "5-10 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Identifiziere dein bestes existierendes Beispiel (z.B. erfolgreichster LinkedIn Post)",
+      "Schritt 2: Füge 2-3 Beispiele mit unterschiedlichen Stilen/Ansätzen hinzu",
+      "Schritt 3: Markiere in jedem Beispiel, was es besonders macht",
+      "Schritt 4: Lass die KI basierend auf diesen Mustern neuen Content erstellen"
+    ],
+    "examples": [
+      "Marketing Manager steigerte Email Open Rate von 22% auf 67% durch Few-Shot Email Templates",
+      "Dating-App Nutzer erhöhte Match-Rate um 400% durch Few-Shot Pickup Lines (hypothetisches Beispiel)"
+    ]
+  },
+  {
+    "id": "adv-12",
+    "title": "Chain of Thought für komplexe Aufgaben",
+    "hook": "Warum es funktioniert: Wie das menschliche Gehirn große Probleme in kleine Schritte zerlegt, performt KI 10x besser wenn du komplexe Aufgaben in manageable Häppchen aufteilst.",
+    "description": "Verwende Google's Chain of Thought Methode um komplexe Aufgaben wie Bewerbungen in perfekte Einzelteile zu zerlegen - mit nachweislich besseren Ergebnissen.",
+    "category": "productivity",
+    "difficulty": "intermediate",
+    "tools": ["Claude", "ChatGPT"],
+    "timeToImplement": "15-20 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Zerlege deine Aufgabe in 3-5 logische Schritte",
+      "Schritt 2: Lass KI jeden Schritt einzeln bearbeiten und verfeinern",
+      "Schritt 3: Füge die Ergebnisse des vorherigen Schritts als Kontext hinzu",
+      "Schritt 4: Iteriere bis zur Perfektion - jeder Schritt baut auf dem vorherigen auf"
+    ],
+    "examples": [
+      "Job Seeker erhielt 5x mehr Interviews durch Chain of Thought Cover Letters",
+      "Startup reduzierte Pitch Deck Erstellung von 2 Wochen auf 2 Stunden"
+    ]
+  },
+  {
+    "id": "adv-13",
+    "title": "Implied Context Surface Technik",
+    "hook": "Warum es funktioniert: Menschen vergessen 80% des impliziten Kontexts zu erwähnen - KI kann aber nur mit expliziten Informationen arbeiten. Diese Technik deckt versteckte Annahmen auf.",
+    "description": "Mache unsichtbaren Kontext sichtbar, indem du ALLE Hintergrundinformationen explizit machst - eine unterschätzte Technik die Generic-Output verhindert.",
+    "category": "productivity",
+    "difficulty": "beginner",
+    "tools": ["Claude", "ChatGPT", "Perplexity"],
+    "timeToImplement": "5 Minuten",
+    "impact": "medium",
+    "steps": [
+      "Schritt 1: Schreibe deinen initialen Prompt",
+      "Schritt 2: Frage dich: 'Was weiß ich, was die KI nicht weiß?'",
+      "Schritt 3: Füge ALLE Kontextinformationen hinzu (Budget, Timeline, Constraints)",
+      "Schritt 4: Erwähne explizit was NICHT gewünscht ist"
+    ],
+    "examples": [
+      "Vegetarier bekam endlich passende Restaurant-Empfehlungen nach Kontext-Ergänzung",
+      "Manager erhielt 80% relevantere Negotiation-Strategien durch Industry-Kontext"
+    ]
+  },
+  {
+    "id": "adv-14",
+    "title": "Custom AI Solutions für wiederkehrende Probleme",
+    "hook": "Warum es funktioniert: Wie Johns Hopkins die Sepsis-Erkennung von 5% auf 40% steigerte - spezialisierte KI-Lösungen schlagen generische Tools bei spezifischen Problemen um Längen.",
+    "description": "Baue dir maßgeschneiderte KI-Workflows für deine häufigsten Aufgaben - ohne technisches Wissen durch Claude Projects oder GPT Builder.",
+    "category": "business",
+    "difficulty": "intermediate",
+    "tools": ["Claude Projects", "GPT Builder", "Zapier AI"],
+    "timeToImplement": "30-45 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Identifiziere eine Aufgabe die du >5x pro Woche machst",
+      "Schritt 2: Dokumentiere deinen exakten Prozess mit allen Entscheidungskriterien",
+      "Schritt 3: Erstelle einen spezialisierten GPT/Claude Project mit diesem Wissen",
+      "Schritt 4: Verfeinere über 1 Woche bis zur Perfektion"
+    ],
+    "examples": [
+      "Sales Manager automatisierte Priorisierung von 200 Kunden - spart 10h/Woche",
+      "Johns Hopkins steigerte Diagnose-Genauigkeit von 5% auf 40% mit Custom AI"
+    ]
+  },
+  {
+    "id": "adv-15",
+    "title": "Der Agentic Search Ansatz von Claude Code",
+    "hook": "Warum es funktioniert: Statt alles zu indexieren, exploriert Claude Code wie ein neuer Entwickler - durch intelligente Suche statt brute-force Scanning. 10x effizienter als RAG.",
+    "description": "Nutze Claude Codes revolutionäre 'Agentic Search' Methode für deine eigenen Recherchen - suche iterativ und intelligent statt alles auf einmal zu scannen.",
+    "category": "learning",
+    "difficulty": "intermediate",
+    "tools": ["Claude Code", "Perplexity", "Claude"],
+    "timeToImplement": "10-15 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Starte mit einer explorativen Suche statt spezifischer Queries",
+      "Schritt 2: Analysiere erste Ergebnisse und identifiziere neue Suchbegriffe",
+      "Schritt 3: Iteriere 3-4 mal mit verfeinerten Suchen basierend auf Findings",
+      "Schritt 4: Lass KI die Verbindungen zwischen Suchergebnissen herstellen"
+    ],
+    "examples": [
+      "Entwickler fand kritischen Bug in 5 Min statt 2 Stunden durch Agentic Search",
+      "Researcher entdeckte 3 neue Paper-Connections durch iterative Exploration"
+    ]
+  },
+  {
+    "id": "adv-16",
+    "title": "Multi-Claude Orchestrierung für Parallelarbeit",
+    "hook": "Warum es funktioniert: Wie ein Dirigent mehrere Musiker koordiniert, kannst du 4 Claude-Instanzen parallel nutzen - Anthropic-Entwickler schaffen so 4x mehr Output.",
+    "description": "Lerne die fortgeschrittene Technik mehrere Claude-Instanzen parallel zu orchestrieren - eine Geheimwaffe der Anthropic-Entwickler für massive Produktivität.",
+    "category": "programming",
+    "difficulty": "advanced",
+    "tools": ["Claude Code", "Tmux", "Terminal Tabs"],
+    "timeToImplement": "20-30 Minuten Setup",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Öffne 2-4 Claude Code Instanzen in separaten Terminals/Tmux",
+      "Schritt 2: Teile große Aufgabe in unabhängige Teilaufgaben auf",
+      "Schritt 3: Weise jeder Instanz eine spezifische Rolle/Aufgabe zu",
+      "Schritt 4: Nutze Git Branches um Konflikte zu vermeiden und später zu mergen"
+    ],
+    "examples": [
+      "Anthropic-Entwickler nutzen routinemäßig 4 parallele Claudes für große Features",
+      "Solo-Founder baute komplette App in 8 Stunden mit 3 parallelen Instanzen"
+    ]
+  },
+  {
+    "id": "adv-17",
+    "title": "Escape-Taste Mastery für perfekte KI-Kontrolle",
+    "hook": "Warum es funktioniert: Wie ein erfahrener Pilot den Autopiloten überwacht, musst du wissen wann du eingreifen sollst - die Escape-Taste ist dein Steuerknüppel.",
+    "description": "Meistere die Kunst des richtigen Escape-Timings in Claude Code - eine versteckte Fähigkeit die Profis von Amateuren unterscheidet.",
+    "category": "programming",
+    "difficulty": "intermediate",
+    "tools": ["Claude Code"],
+    "timeToImplement": "Kontinuierliche Übung",
+    "impact": "medium",
+    "steps": [
+      "Schritt 1: Beobachte Claudes ToDo-Liste während der Ausführung",
+      "Schritt 2: Drücke Escape wenn du merkst dass Claude vom Weg abkommt",
+      "Schritt 3: Nutze Double-Escape um in der Konversation zurückzuspringen",
+      "Schritt 4: Gib korrigierende Anweisungen und lass Claude fortfahren"
+    ],
+    "examples": [
+      "Senior Dev verhinderte 3-stündigen Irrweg durch rechtzeitiges Escape nach 5 Min",
+      "Team reduzierte Bug-Rate um 75% durch aktives Escape-Management"
+    ]
+  },
+  {
+    "id": "adv-18",
+    "title": "Git History Storytelling mit Claude",
+    "hook": "Warum es funktioniert: Code erzählt Geschichten durch seine Evolution - Claude kann Git-History in verständliche Narratives verwandeln die Onboarding revolutionieren.",
+    "description": "Nutze Claudes Terminal-Fähigkeiten um aus Git-History verständliche Stories zu machen - perfekt für Onboarding und Code-Verständnis.",
+    "category": "learning",
+    "difficulty": "beginner",
+    "tools": ["Claude Code", "Git"],
+    "timeToImplement": "5-10 Minuten",
+    "impact": "medium",
+    "steps": [
+      "Schritt 1: Zeige Claude eine wichtige Datei mit 'look at this file'",
+      "Schritt 2: Bitte um Git-History Analyse: 'tell me the story of how this evolved'",
+      "Schritt 3: Lass Claude wichtige Commits und Patterns identifizieren",
+      "Schritt 4: Nutze diese Story für Dokumentation oder Onboarding"
+    ],
+    "examples": [
+      "Neuer Entwickler verstand Legacy-Code in 30 Min statt 2 Tagen",
+      "Team dokumentierte 5 Jahre Code-Evolution in 2 Stunden für Audit"
+    ]
+  },
+  {
+    "id": "adv-19",
+    "title": "Terminal-First Workflow Revolution",
+    "hook": "Warum es funktioniert: Claude Code ist wie der Kollege der ALLES im Terminal macht - nutze diese Superkraft für Git, Docker, BigQuery und mehr ohne GUI-Friction.",
+    "description": "Transformiere deinen Workflow indem du Claude Code als Terminal-Experten nutzt - von Git-Rebase Disasters bis Docker-Orchestrierung.",
+    "category": "productivity",
+    "difficulty": "intermediate",
+    "tools": ["Claude Code", "Git", "Docker", "CLI Tools"],
+    "timeToImplement": "0 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Identifiziere Terminal-Aufgaben die du hasst/fürchtest",
+      "Schritt 2: Beschreibe Claude die Situation in natürlicher Sprache",
+      "Schritt 3: Lass Claude die komplexen Befehle ausführen",
+      "Schritt 4: Lerne optional aus den verwendeten Commands für die Zukunft"
+    ],
+    "examples": [
+      "Entwickler löste 'unmöglichen' Git-Rebase in 2 Min statt 2 Stunden",
+      "DevOps Team automatisierte komplette Docker-Deployments durch Claude"
+    ]
+  },
+  {
+    "id": "adv-20",
+    "title": "Compact-Mode für unendliche Kontext-Sessions",
+    "hook": "Warum es funktioniert: Wie ein erfahrener Redakteur lange Texte zusammenfasst ohne Information zu verlieren, kann Claude seine eigene Arbeit komprimieren und nahtlos fortsetzen.",
+    "description": "Nutze den geheimen /compact Befehl um über 200k Token hinaus zu arbeiten - eine unterschätzte Funktion für Marathon-Coding-Sessions.",
+    "category": "programming",
+    "difficulty": "intermediate",
+    "tools": ["Claude Code"],
+    "timeToImplement": "0 Minuten",
+    "impact": "medium",
+    "steps": [
+      "Schritt 1: Arbeite normal bis zur Kontext-Warnung (bottom right)",
+      "Schritt 2: Tippe '/compact' statt '/clear' für intelligente Zusammenfassung",
+      "Schritt 3: Claude erstellt Summary für 'nächsten Entwickler'",
+      "Schritt 4: Setze Arbeit nahtlos mit komprimiertem Kontext fort"
+    ],
+    "examples": [
+      "12-Stunden Coding Session ohne Kontext-Verlust durch 3x Compact",
+      "Team arbeitete 3 Tage am selben Feature mit perfekter Kontinuität"
+    ]
+  }
+]

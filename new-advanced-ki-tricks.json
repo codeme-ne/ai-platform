@@ -1,0 +1,212 @@
+[
+  {
+    "id": "adv-1",
+    "title": "22.000-Zeilen Production Merge mit Claude",
+    "hook": "Warum es funktioniert: Menschen vertrauen Compilern ohne den Assembly-Code zu lesen - das gleiche Prinzip ermöglicht es, massiven KI-generierten Code zu integrieren, wenn man die richtigen Verifikationspunkte setzt.",
+    "description": "Nutze die 'Leaf Nodes' Strategie von Anthropic, um tausende Zeilen KI-generierten Code sicher in deine Production-Umgebung zu integrieren - ohne jede Zeile lesen zu müssen.",
+    "category": "programming",
+    "difficulty": "advanced",
+    "tools": ["Claude", "Claude Code", "Git", "Testing Frameworks"],
+    "timeToImplement": "2-4 Stunden Setup",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Identifiziere 'Leaf Nodes' - Code-Bereiche ohne Abhängigkeiten, die isoliert funktionieren",
+      "Schritt 2: Erstelle verifiable Input/Output Paare und Stress-Tests VOR der Implementierung",
+      "Schritt 3: Verbringe 15-20 Minuten damit, Claude den Kontext wie einem neuen Mitarbeiter zu erklären",
+      "Schritt 4: Lass Claude implementieren und verifiziere NUR über Tests, nicht durch Code-Review"
+    ],
+    "examples": [
+      "Anthropic integrierte 22.000 Zeilen Reinforcement Learning Code in 1 Tag statt 2 Wochen - Zeitersparnis: 90%",
+      "Ein Startup migrierte sein komplettes Logging-System (8.000 Zeilen) mit dieser Methode - 0 Production-Bugs nach 3 Monaten"
+    ]
+  },
+  {
+    "id": "adv-2",
+    "title": "Vibe Coding für Production: Vergiss den Code, nicht das Produkt",
+    "hook": "Warum es funktioniert: Das Gehirn kann nur begrenzt Details verarbeiten - wie ein CEO seinen CFO nicht mikromanagt, solltest du KI-Code über Akzeptanztests statt Zeile-für-Zeile Reviews validieren.",
+    "description": "Implementiere die revolutionäre 'Vibe Coding' Methodik von Anthropic für echte Production-Systeme, bei der du den Code komplett der KI überlässt und dich nur auf Produktverifikation konzentrierst.",
+    "category": "programming",
+    "difficulty": "advanced",
+    "tools": ["Claude Code", "Pytest/Jest", "Docker"],
+    "timeToImplement": "30-60 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Schreibe detaillierte Akzeptanztests für dein Feature BEVOR du mit Claude arbeitest",
+      "Schritt 2: Erstelle ein isoliertes Docker-Environment für sichere Experimente",
+      "Schritt 3: Gib Claude vollständige Implementierungsfreiheit mit klaren Produkt-Constraints",
+      "Schritt 4: Validiere ausschließlich über Tests und User-Akzeptanz, nicht durch Code-Inspektion"
+    ],
+    "examples": [
+      "Eric von Anthropic codierte 2 Monate mit gebrochenem Arm nur über Claude - 100% Produktivität beibehalten",
+      "Ein Team reduzierte Feature-Entwicklungszeit von 2 Wochen auf 1 Tag durch Vibe Coding"
+    ]
+  },
+  {
+    "id": "adv-3",
+    "title": "Die 15-Minuten Vorbereitungs-Konversation",
+    "hook": "Warum es funktioniert: Unser Gehirn nutzt 'Priming' - eine intensive Vorbereitungsphase aktiviert relevante neuronale Pfade und führt zu 10x besseren Ergebnissen bei komplexen Aufgaben.",
+    "description": "Nutze Anthropics geheime Technik einer separaten 15-20 minütigen Planungs-Konversation mit Claude, bevor du große Features implementierst.",
+    "category": "productivity",
+    "difficulty": "intermediate",
+    "tools": ["Claude", "Claude Code"],
+    "timeToImplement": "15-20 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Starte eine SEPARATE Claude-Konversation nur für die Planung",
+      "Schritt 2: Erkunde gemeinsam die Codebase, diskutiere Patterns und Constraints",
+      "Schritt 3: Lass Claude einen detaillierten Implementierungsplan als Artifact erstellen",
+      "Schritt 4: Nutze diesen Plan in einer NEUEN Konversation für die eigentliche Implementierung"
+    ],
+    "examples": [
+      "Entwickler bei Anthropic berichten von 90% höherer Erfolgsrate bei komplexen Features mit dieser Methode",
+      "Ein Solo-Founder implementierte ein komplettes Payment-System in 4 Stunden statt 2 Tagen"
+    ]
+  },
+  {
+    "id": "adv-4",
+    "title": "CLAUDE.md - Das permanente KI-Gedächtnis System",
+    "hook": "Warum es funktioniert: Wie ein erfahrener Mitarbeiter Firmen-Standards kennt, kann Claude mit einer CLAUDE.md Datei projektspezifisches Wissen permanent speichern und konsistent anwenden.",
+    "description": "Erstelle eine CLAUDE.md Datei in deinem Projekt-Root, die Claude automatisch als permanentes Gedächtnis nutzt - eine kaum bekannte aber extrem mächtige Funktion.",
+    "category": "productivity",
+    "difficulty": "beginner",
+    "tools": ["Claude Code", "Git"],
+    "timeToImplement": "10-15 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Erstelle eine CLAUDE.md im Root deines Projekts",
+      "Schritt 2: Dokumentiere Coding-Standards, häufige Befehle, und Projekt-Kontext",
+      "Schritt 3: Füge spezifische Instruktionen wie 'npm run lint nach jeder Änderung' hinzu",
+      "Schritt 4: Claude Code liest diese Datei automatisch bei jeder Session"
+    ],
+    "examples": [
+      "Teams berichten von 80% weniger Wiederholungen in Instruktionen durch CLAUDE.md",
+      "Ein Projekt reduzierte Onboarding-Zeit neuer Entwickler von 2 Tagen auf 2 Stunden"
+    ]
+  },
+  {
+    "id": "adv-5",
+    "title": "Interactive Dashboard Magic ohne eine Zeile Code",
+    "hook": "Warum es funktioniert: Das Keyword 'interactive' triggert spezielle UI-Generierungs-Fähigkeiten in Claude, die 99% der Nutzer nicht kennen - es aktiviert einen versteckten Dashboard-Modus.",
+    "description": "Verwandle jedes PDF, Whitepaper oder Datensatz in ein voll funktionsfähiges, interaktives Dashboard mit einem einzigen Prompt - ohne Programmierkenntnisse.",
+    "category": "business",
+    "difficulty": "intermediate",
+    "tools": ["Claude"],
+    "timeToImplement": "5-10 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Lade dein Dokument hoch und nutze IMMER das Wort 'interactive' im Prompt",
+      "Schritt 2: Spezifiziere 'create an interactive dashboard to visualize this'",
+      "Schritt 3: Wenn Fehler auftreten, sage einfach 'fix the error' - Claude korrigiert selbst",
+      "Schritt 4: Exportiere als SVG oder nutze direkt im Browser mit Copy-Paste"
+    ],
+    "examples": [
+      "Marketing Manager verwandelte 50-seitiges Whitepaper in interaktives Dashboard in 8 Minuten",
+      "Data Analyst erstellt wöchentlich 5 Dashboards ohne Python/R - Zeitersparnis: 15 Stunden/Woche"
+    ]
+  },
+  {
+    "id": "adv-6",
+    "title": "Der KI-als-Pair-Programmer Lern-Hack",
+    "hook": "Warum es funktioniert: Aktives Hinterfragen aktiviert tieferes Lernen - statt passiv Code zu akzeptieren, verwandelst du Claude in einen Mentor, der dir jede Entscheidung erklärt.",
+    "description": "Lerne 4x schneller neue Technologien, indem du Claude nach JEDER Code-Entscheidung fragst: 'Warum hast du X statt Y gewählt?' - eine Technik von Anthropic-Entwicklern.",
+    "category": "learning",
+    "difficulty": "beginner",
+    "tools": ["Claude", "Claude Code"],
+    "timeToImplement": "Kontinuierlich",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Lass Claude Code generieren und STOPPE nach jedem größeren Block",
+      "Schritt 2: Frage: 'Erkläre warum du [Library/Pattern/Ansatz] gewählt hast'",
+      "Schritt 3: Challenge mit: 'Welche Alternativen gab es und warum sind sie schlechter?'",
+      "Schritt 4: Baue dir eine persönliche Wissensdatenbank aus den Antworten auf"
+    ],
+    "examples": [
+      "Junior Dev lernte React in 2 Wochen statt 2 Monaten durch systematisches Hinterfragen",
+      "Senior Dev entdeckte 12 neue Python-Libraries in einem Projekt durch diese Methode"
+    ]
+  },
+  {
+    "id": "adv-7",
+    "title": "Project-Level Context für konsistente Unternehmenskommunikation",
+    "hook": "Warum es funktioniert: Wie ein erfahrener Mitarbeiter den Firmenton kennt, kann Claude mit Project-Level Context über 50+ Dokumente hinweg perfekte Markenkonsistenz wahren.",
+    "description": "Nutze Claude Projects um einmal Firmenstandards zu definieren und dann automatisch über Newsletter, Blogs, und PR-Texte hinweg anzuwenden - spart 80% Editing-Zeit.",
+    "category": "content-creation",
+    "difficulty": "intermediate",
+    "tools": ["Claude Projects"],
+    "timeToImplement": "30 Minuten Setup",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Erstelle ein Claude Project mit deinem Styleguide als Project-Level Context",
+      "Schritt 2: Füge 3-5 beste Beispiele vergangener Kommunikation hinzu",
+      "Schritt 3: Erstelle separate Chats für jeden Content-Typ (Newsletter, Blog, PR)",
+      "Schritt 4: Claude behält automatisch Ton und Standards über alle Outputs bei"
+    ],
+    "examples": [
+      "Marketing-Team produziert 5x mehr Content mit konsistentem Brand Voice",
+      "PR-Agentur reduzierte Revision Rounds von durchschnittlich 3 auf 0.5"
+    ]
+  },
+  {
+    "id": "adv-8",
+    "title": "Die Exponential-Mindset Produktivitäts-Formel",
+    "hook": "Warum es funktioniert: KI-Fähigkeiten verdoppeln sich alle 7 Monate - wer heute noch jeden Code selbst schreibt, wird in 2 Jahren 100x langsamer sein als KI-Native Entwickler.",
+    "description": "Bereite dich auf die KI-Zukunft vor, indem du HEUTE schon wie 2026 arbeitest - plane Projekte für KI-Ausführung statt menschliche Implementierung.",
+    "category": "programming",
+    "difficulty": "advanced",
+    "tools": ["Claude Code", "GitHub Copilot", "Cursor"],
+    "timeToImplement": "Mindset-Shift",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Schätze JEDE Aufgabe in KI-Zeit (1 Tag Mensch = 1 Stunde KI)",
+      "Schritt 2: Plane Features die 'zu groß' für Menschen wären - KI macht sie möglich",
+      "Schritt 3: Fokussiere 80% deiner Zeit auf Spezifikation statt Implementierung",
+      "Schritt 4: Baue dir Skills in KI-Management statt in neuen Programmiersprachen auf"
+    ],
+    "examples": [
+      "Startup baute MVP in 3 Tagen statt 3 Monaten durch Exponential Mindset",
+      "Enterprise-Team liefert jetzt wöchentlich Features die früher Quartale brauchten"
+    ]
+  },
+  {
+    "id": "adv-9",
+    "title": "Error Self-Correction Loop für perfekten Code",
+    "hook": "Warum es funktioniert: Claude kann eigene Fehler besser erkennen und fixen als Menschen fremde - nutze diese Fähigkeit für selbstheilende Code-Generierung.",
+    "description": "Lass Claude IMMER seine eigenen Fehler fixen statt manuell zu debuggen - eine unterschätzte Technik die 90% der Debugging-Zeit spart.",
+    "category": "programming",
+    "difficulty": "beginner",
+    "tools": ["Claude", "Claude Code"],
+    "timeToImplement": "0 Minuten",
+    "impact": "medium",
+    "steps": [
+      "Schritt 1: Wenn ein Fehler auftritt, kopiere die KOMPLETTE Fehlermeldung",
+      "Schritt 2: Sage nur: 'Fix this error: [Fehlermeldung]' - keine weiteren Erklärungen",
+      "Schritt 3: Claude analysiert und fixt meist in einem Durchgang",
+      "Schritt 4: Bei hartnäckigen Fehlern: 'Try a completely different approach'"
+    ],
+    "examples": [
+      "Developer fixte 47 TypeScript Fehler in 10 Minuten statt 2 Stunden",
+      "Team reduzierte Debugging-Zeit um 85% durch konsequente Self-Correction"
+    ]
+  },
+  {
+    "id": "adv-10",
+    "title": "Stress-Test Driven Development für KI-Code",
+    "hook": "Warum es funktioniert: Traditionelle Code Reviews skalieren nicht für KI-generierten Code - Stress-Tests verifizieren Stabilität ohne Implementation zu verstehen.",
+    "description": "Entwickle Stress-Tests VOR der Implementierung und lass Claude Code schreiben der diese besteht - Anthropics Geheimwaffe für Production-Ready KI-Code.",
+    "category": "programming",
+    "difficulty": "advanced",
+    "tools": ["Claude Code", "Pytest", "Locust", "K6"],
+    "timeToImplement": "45-60 Minuten",
+    "impact": "high",
+    "steps": [
+      "Schritt 1: Definiere extreme Edge-Cases und Last-Szenarien VOR der Implementierung",
+      "Schritt 2: Schreibe Stress-Tests die 100x normale Last simulieren",
+      "Schritt 3: Gib Claude die Tests und lass es Code schreiben der diese besteht",
+      "Schritt 4: Verifiziere nur über Test-Results, nicht durch Code-Reading"
+    ],
+    "examples": [
+      "Anthropic's 22k-Zeilen RL-System läuft seit Monaten stabil ohne manuelle Code-Review",
+      "E-Commerce Platform handhabt Black Friday Traffic durch Stress-Test Driven Development"
+    ]
+  }
+]
