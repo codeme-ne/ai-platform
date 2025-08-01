@@ -1,8 +1,8 @@
 import { Clock, Zap, Calendar, Wrench } from 'lucide-react'
-import { AITrick } from '@/app/lib/types'
+import { KITrick } from '@/app/lib/types'
 
 interface TrickMetaProps {
-  trick: AITrick
+  trick: KITrick
 }
 
 const impactLabels = {

@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Badge } from '@/app/components/atoms'
-import { AITrick, TrickCardProps, categoryMetadata, impactMetadata } from '@/app/lib/types'
+import { KITrick, TrickCardProps, categoryMetadata, impactMetadata } from '@/app/lib/types'
 import { ArrowRight, Clock } from 'lucide-react'
 
 export const TrickCard = React.memo(function TrickCard({ trick, onClick }: TrickCardProps) {

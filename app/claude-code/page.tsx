@@ -7,7 +7,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Claude Code Tutorial | KI-Programmierung für Entwickler',
   description: 'Lerne Claude Code CLI, Artifacts und MCP. Praktische Anleitungen für KI-basierte Entwicklung und Automation. Von Anfänger bis Experte.',
-  keywords: 'Claude Code, KI-Claude Code, Claude CLI, Claude Artifacts, MCP, Model Context Protocol, AI Coding, KI-Programmierung',
+  keywords: 'Claude Code, KI-Claude Code, Claude CLI, Claude Artifacts, MCP, Model Context Protocol, KI Coding, KI-Programmierung',
   openGraph: {
     title: 'Claude Code - Das ultimative KI-Tool für Entwickler',
     description: 'Entdecke die Macht von Claude Code für deine Entwicklungsprojekte.',

@@ -8,7 +8,7 @@ import { Menu } from 'lucide-react'
 import { useFilters } from '@/app/hooks/useFilters'
 import { mockTricks, getAllCategories, filterTricks } from '@/app/lib/mock-data'
 import { hasActiveFilters } from '@/app/lib/utils'
-import { AITrick } from '@/app/lib/types'
+import { KITrick } from '@/app/lib/types'
 
 export default function TricksClient() {
   const { filters, updateFilters } = useFilters()

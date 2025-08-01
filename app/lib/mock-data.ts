@@ -1,4 +1,4 @@
-import { AITrick, Category, Difficulty, Impact } from './types'
+import { KITrick, Category, Difficulty, Impact } from './types'
 
 // Helper function to generate slugs
 const generateSlug = (title: string): string => {
@@ -12,8 +12,8 @@ const generateSlug = (title: string): string => {
     .replace(/^-+|-+$/g, '')
 }
 
-// Mock data for AI tricks
-export const mockTricks: AITrick[] = [
+// Mock data for KI tricks
+export const mockTricks: KITrick[] = [
   // From curated-ki-tips.json
   {
     id: '1',
@@ -548,7 +548,7 @@ export const mockTricks: AITrick[] = [
   },
   {
     id: '24',
-    title: 'Custom AI Solutions für wiederkehrende Probleme',
+    title: 'Custom KI Solutions für wiederkehrende Probleme',
     description: 'Baue dir maßgeschneiderte KI-Workflows für deine häufigsten Aufgaben - ohne technisches Wissen durch Claude Projects oder GPT Builder.',
     category: 'business',
     difficulty: 'intermediate',
@@ -563,9 +563,9 @@ export const mockTricks: AITrick[] = [
     ],
     examples: [
       'Sales Manager automatisierte Priorisierung von 200 Kunden - spart 10h/Woche',
-      'Johns Hopkins steigerte Diagnose-Genauigkeit von 5% auf 40% mit Custom AI'
+      'Johns Hopkins steigerte Diagnose-Genauigkeit von 5% auf 40% mit Custom KI'
     ],
-    slug: generateSlug('Custom AI Solutions für wiederkehrende Probleme'),
+    slug: generateSlug('Custom KI Solutions für wiederkehrende Probleme'),
     createdAt: new Date('2025-08-01'),
     updatedAt: new Date('2025-08-01')
   },
@@ -743,7 +743,7 @@ export const getTrickCountByCategory = (): Record<Category, number> => {
 
 // Filter tricks with support for FilterState and separate searchQuery
 export const filterTricks = (
-  tricks: AITrick[],
+  tricks: KITrick[],
   filters: {
     categories?: Category[]
     difficulty?: Difficulty[]
@@ -751,7 +751,7 @@ export const filterTricks = (
     search?: string
   },
   searchQuery?: string
-): AITrick[] => {
+): KITrick[] => {
   return tricks.filter(trick => {
     // Category filter
     if (filters.categories && filters.categories.length > 0) {
@@ -784,12 +784,12 @@ export const filterTricks = (
 }
 
 // Get trick by slug
-export const getTrickBySlug = (slug: string): AITrick | undefined => {
+export const getTrickBySlug = (slug: string): KITrick | undefined => {
   return mockTricks.find(trick => trick.slug === slug)
 }
 
 // Get related tricks (same category, excluding current)
-export const getRelatedTricks = (currentTrick: AITrick, limit: number = 3): AITrick[] => {
+export const getRelatedTricks = (currentTrick: KITrick, limit: number = 3): KITrick[] => {
   return mockTricks
     .filter(trick => 
       trick.category === currentTrick.category && 

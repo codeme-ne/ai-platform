@@ -1,10 +1,10 @@
-import { AITrick } from '@/app/lib/types'
+import { KITrick } from '@/app/lib/types'
 import { Badge } from '@/app/components/atoms'
 import { BackButton } from '@/app/components/atoms'
 import { BreadcrumbNav, TrickMeta } from '@/app/components/molecules'
 
 interface TrickHeaderProps {
-  trick: AITrick
+  trick: KITrick
 }
 
 const categoryLabels = {

@@ -13,7 +13,7 @@ export type Difficulty = 'beginner' | 'intermediate' | 'advanced'
 
 export type Impact = 'low' | 'medium' | 'high'
 
-export interface AITrick {
+export interface KITrick {
   id: string
   title: string
   description: string
@@ -80,7 +80,7 @@ export interface CheckboxProps {
 }
 
 export interface TrickCardProps {
-  trick: AITrick
+  trick: KITrick
   variant?: 'default' | 'compact'
   onClick?: () => void
   className?: string
@@ -105,7 +105,7 @@ export interface FilterSidebarProps {
 }
 
 export interface TrickGridProps {
-  tricks: AITrick[]
+  tricks: KITrick[]
   loading?: boolean
   emptyState?: React.ReactNode
   className?: string

@@ -1,4 +1,4 @@
-import { AITrick, Category, Difficulty, Impact } from './types'
+import { KITrick, Category, Difficulty, Impact } from './types'
 
 // Interface für YouTube-Skript Struktur
 interface YouTubeScript {
@@ -13,7 +13,7 @@ interface YouTubeScript {
 }
 
 // Interface für extrahierte Tipps mit zusätzlicher Psychologie
-interface ExtractedTip extends AITrick {
+interface ExtractedTip extends KITrick {
   psychologie: string
 }
 
@@ -489,10 +489,10 @@ function determineSmartCategory(content: string, videoIndex: number): Category {
     0: 'programming', // Vibe Coding
     1: 'productivity', // Claude Code Best Practices
     2: 'business', // Startup Innovation
-    3: 'learning', // AI Essentials
+    3: 'learning', // KI Essentials
     4: 'learning', // Student Innovation
     5: 'productivity', // 50% Workload
-    6: 'content-creation' // Emotional AI
+    6: 'content-creation' // Emotional KI
   }
   
   if (videoCategories[videoIndex]) {

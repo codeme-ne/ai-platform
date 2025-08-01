@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-KI Tricks Platform is a Next.js web application designed to help users discover and implement practical AI tips and tricks in their daily workflow. The platform features a categorized collection of KI tricks with difficulty levels, time estimates, and impact ratings. The UI is in German and follows a minimalistic design inspired by thegrowthlist.co.
+KI Tricks Platform is a Next.js web application designed to help users discover and implement practical KI tips and tricks in their daily workflow. The platform features a categorized collection of KI tricks with difficulty levels, time estimates, and impact ratings. The UI is in German and follows a minimalistic design inspired by thegrowthlist.co.
 
 ## Common Development Commands
 
@@ -84,16 +84,16 @@ app/
 
 ### Data Model
 
-The core data structure is the `AITrick` interface:
+The core data structure is the `KITrick` interface:
 
 ```typescript
-interface AITrick {
+interface KITrick {
   id: string
   title: string
   description: string
   category: Category // 8 predefined categories
   difficulty: 'beginner' | 'intermediate' | 'advanced'
-  tools: string[] // AI tools used (ChatGPT, Claude, etc.)
+  tools: string[] // KI tools used (ChatGPT, Claude, etc.)
   timeToImplement: string
   impact: 'low' | 'medium' | 'high'
   steps?: string[]
@@ -217,7 +217,7 @@ The application runs on `http://localhost:3000` (or 3001 if port 3000 is occupie
 
 ## Mock Data
 
-20 KI tricks are available in `app/lib/mock-data.ts` covering all categories, difficulty levels, and various AI tools. New tricks can be added through `/admin/tricks/new` and are stored in localStorage.
+20 KI tricks are available in `app/lib/mock-data.ts` covering all categories, difficulty levels, and various KI tools. New tricks can be added through `/admin/tricks/new` and are stored in localStorage.
 
 ### 🚀 Content Update (2025-08-01)
 

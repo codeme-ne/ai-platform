@@ -4,9 +4,9 @@ import { Header, Footer, PageContainer } from '@/app/components/layout'
 import TricksClient from './TricksClient'
 
 export const metadata: Metadata = {
-  title: 'KI-Workflows für Professionals | Praktische AI-Tricks 2025',
+  title: 'KI-Workflows für Professionals | Praktische KI-Tricks 2025',
   description: 'Filtere durch kategorisierte KI-Tricks für Produktivität, Content-Creation und Business. Mit Schwierigkeitsgrad und Zeitschätzung. KI-Automationen die wirklich funktionieren.',
-  keywords: 'KI-Workflows, KI-Tricks, AI Automation, ChatGPT Tricks, Claude Tipps, KI für Business, Produktivität steigern',
+  keywords: 'KI-Workflows, KI-Tricks, KI Automation, ChatGPT Tricks, Claude Tipps, KI für Business, Produktivität steigern',
   openGraph: {
     title: 'KI-Workflows für Professionals | KI Tricks Platform',
     description: 'Entdecke praktische KI-Tricks mit detaillierten Anleitungen und Beispielen.',

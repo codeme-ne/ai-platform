@@ -11,10 +11,10 @@ export default function HomePage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
-              Entdecke* bewährte AI-Tricks
+              Entdecke* bewährte KI-Tricks
             </h2>
             <p className="text-lg text-neutral-600 mb-8">
-              Eine kuratierte Sammlung praktischer AI-Tricks und Tipps, um deinen Arbeitsalltag zu optimieren.
+              Eine kuratierte Sammlung praktischer KI-Tricks und Tipps, um deinen Arbeitsalltag zu optimieren.
             </p>
             <div className="flex items-center justify-center gap-4">
               <Link href="/tricks" className="btn-primary">
@@ -45,7 +45,7 @@ export default function HomePage() {
             </div>
             <div>
               <div className="text-3xl font-bold text-neutral-900">15+</div>
-              <div className="text-sm text-neutral-600 mt-1">AI Tools</div>
+              <div className="text-sm text-neutral-600 mt-1">KI Tools</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-neutral-900">5min</div>

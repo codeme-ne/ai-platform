@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { PageContainer } from '@/app/components/layout'
 import { TrickForm } from '@/app/components/organisms/TrickForm'
-import { AITrick } from '@/app/lib/types'
+import { KITrick } from '@/app/lib/types'
 import { Button } from '@/app/components/atoms'
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
@@ -13,14 +13,14 @@ export default function NewTrickPage() {
   const router = useRouter()
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = async (trickData: Partial<AITrick>) => {
+  const handleSubmit = async (trickData: Partial<KITrick>) => {
     setIsSubmitting(true)
     
     try {
       // Hier würde normalerweise die API-Integration stattfinden
       // Für den Moment speichern wir in localStorage
       const existingTricks = JSON.parse(localStorage.getItem('customTricks') || '[]')
-      const newTrick: AITrick = {
+      const newTrick: KITrick = {
         id: `custom-${Date.now()}`,
         ...trickData,
         slug: trickData.title?.toLowerCase()
@@ -32,7 +32,7 @@ export default function NewTrickPage() {
           .replace(/^-+|-+$/g, '') || '',
         createdAt: new Date(),
         updatedAt: new Date()
-      } as AITrick
+      } as KITrick
       
       existingTricks.push(newTrick)
       localStorage.setItem('customTricks', JSON.stringify(existingTricks))

@@ -1,4 +1,4 @@
-import { FilterState, AITrick, Category, Difficulty, Impact } from './types'
+import { FilterState, KITrick, Category, Difficulty, Impact } from './types'
 
 /**
  * Utility functions for filtering and array manipulation

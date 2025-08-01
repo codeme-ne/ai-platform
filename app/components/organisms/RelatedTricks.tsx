@@ -1,10 +1,10 @@
-import { AITrick } from '@/app/lib/types'
+import { KITrick } from '@/app/lib/types'
 import { TrickCard } from '@/app/components/molecules'
 
 interface RelatedTricksProps {
   currentTrickId: string
   category: string
-  tricks: AITrick[]
+  tricks: KITrick[]
 }
 
 export const RelatedTricks = ({ currentTrickId, category, tricks }: RelatedTricksProps) => {

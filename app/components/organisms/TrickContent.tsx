@@ -1,8 +1,8 @@
-import { AITrick } from '@/app/lib/types'
+import { KITrick } from '@/app/lib/types'
 import { StepCard, ExampleCard } from '@/app/components/molecules'
 
 interface TrickContentProps {
-  trick: AITrick
+  trick: KITrick
 }
 
 export const TrickContent = ({ trick }: TrickContentProps) => {

@@ -2,11 +2,11 @@
 
 import React from 'react'
 import { TrickCard, SkeletonCard } from '@/app/components/molecules'
-import { AITrick } from '@/app/lib/types'
+import { KITrick } from '@/app/lib/types'
 import { Search, Frown } from 'lucide-react'
 
 interface TrickGridProps {
-  tricks: AITrick[]
+  tricks: KITrick[]
   isLoading?: boolean
   emptyStateMessage?: string
 }
@@ -57,7 +57,7 @@ export function TrickGrid({
           </h3>
           <p className="text-neutral-500 text-sm max-w-md">
             Versuche deine Suchkriterien zu ändern oder andere Filter zu verwenden, 
-            um passende AI-Tricks zu finden.
+            um passende KI-Tricks zu finden.
           </p>
         </div>
       </div>

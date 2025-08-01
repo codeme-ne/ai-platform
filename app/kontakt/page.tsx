@@ -75,7 +75,7 @@ export default function KontaktPage() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold text-neutral-900 mb-2">Kontakt</h1>
         <p className="text-lg text-neutral-600 mb-8">
-          Hast du Fragen, Feedback oder möchtest einen neuen AI-Trick vorschlagen? Ich freue mich von dir zu hören!
+          Hast du Fragen, Feedback oder möchtest einen neuen KI-Trick vorschlagen? Ich freue mich von dir zu hören!
         </p>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -222,7 +222,7 @@ export default function KontaktPage() {
             <div className="mt-8 p-6 bg-neutral-50 rounded-lg">
               <h3 className="font-medium text-neutral-900 mb-2">Feedback & Vorschläge</h3>
               <p className="text-sm text-neutral-600">
-                Du hast einen tollen AI-Trick entdeckt oder Verbesserungsvorschläge für die Plattform? 
+                Du hast einen tollen KI-Trick entdeckt oder Verbesserungsvorschläge für die Plattform? 
                 Ich freue mich über jedes Feedback! Gemeinsam machen wir die KI Tricks Platform zur 
                 besten Ressource für praktische KI-Anwendungen.
               </p>

@@ -2,13 +2,13 @@
 
 import { useState } from 'react'
 import { Button } from '@/app/components/atoms'
-import { AITrick, Category, Difficulty, Impact } from '@/app/lib/types'
+import { KITrick, Category, Difficulty, Impact } from '@/app/lib/types'
 import { Plus, X } from 'lucide-react'
 
 interface TrickFormProps {
-  onSubmit: (data: Partial<AITrick>) => void
+  onSubmit: (data: Partial<KITrick>) => void
   isSubmitting?: boolean
-  initialData?: Partial<AITrick>
+  initialData?: Partial<KITrick>
 }
 
 const categories: { value: Category; label: string }[] = [
@@ -35,7 +35,7 @@ const impacts: { value: Impact; label: string }[] = [
 ]
 
 export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: TrickFormProps) => {
-  const [formData, setFormData] = useState<Partial<AITrick>>({
+  const [formData, setFormData] = useState<Partial<KITrick>>({
     title: initialData.title || '',
     description: initialData.description || '',
     category: initialData.category || 'productivity',
