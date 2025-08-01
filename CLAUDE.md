@@ -218,3 +218,109 @@ The application runs on `http://localhost:3000` (or 3001 if port 3000 is occupie
 ## Mock Data
 
 20 KI tricks are available in `app/lib/mock-data.ts` covering all categories, difficulty levels, and various AI tools. Steps and examples have been removed to allow users to add their own content via the admin interface. New tricks can be added through `/admin/tricks/new` and are stored in localStorage.
+
+## Deployment Configuration
+
+### Setting up Environment Variables in Vercel
+
+1. **Login to Vercel Dashboard**
+   - Go to https://vercel.com/dashboard
+   - Select your project (ai-platform-lilac)
+
+2. **Navigate to Settings**
+   - Click on the "Settings" tab in your project
+   - Select "Environment Variables" from the left sidebar
+
+3. **Add Required Environment Variables**
+   
+   Add the following variables:
+
+   **For Admin Authentication:**
+   ```
+   Name: ADMIN_PASSWORD
+   Value: [your-secure-password]
+   Environment: Production, Preview, Development
+   ```
+
+   **For EmailJS Integration:**
+   ```
+   Name: NEXT_PUBLIC_EMAILJS_SERVICE_ID
+   Value: [your-emailjs-service-id]
+   Environment: Production, Preview, Development
+   ```
+
+   ```
+   Name: NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+   Value: [your-emailjs-template-id]
+   Environment: Production, Preview, Development
+   ```
+
+   ```
+   Name: NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+   Value: [your-emailjs-public-key]
+   Environment: Production, Preview, Development
+   ```
+
+4. **Getting EmailJS Credentials**
+   - Register at https://www.emailjs.com/
+   - Create a new service (e.g., Gmail)
+   - Create an email template with variables: `from_name`, `from_email`, `subject`, `message`, `to_email`
+   - Copy your Service ID, Template ID, and Public Key
+
+5. **Deploy with New Variables**
+   - After adding all variables, trigger a new deployment
+   - The variables will be automatically available in your application
+
+### How Admin Authentication Works
+
+Once the environment variables are set in Vercel:
+
+1. **Access Admin Area**
+   - Navigate to: https://ai-platform-lilac.vercel.app/admin/tricks/new
+   - A browser authentication popup will appear
+
+2. **Login Credentials**
+   - Username: Can be anything (e.g., "admin")
+   - Password: The value you set in ADMIN_PASSWORD
+
+3. **Security Details**
+   - Uses Basic Authentication via Next.js middleware
+   - All routes under `/admin/*` are protected
+   - Authentication is handled by `middleware.ts`
+   - Session persists in browser until you close it
+
+4. **Adding New Tricks**
+   - Once authenticated, you can access the admin form
+   - New tricks are saved to localStorage
+   - Only Claude and Claude Code are available as tools
+
+### Testing Authentication Locally
+
+For local development:
+1. Create a `.env.local` file (copy from `.env.local.example`)
+2. Set your environment variables
+3. Run `npm run dev`
+4. Access http://localhost:3000/admin/tricks/new
+
+## Recent Updates (2025-08-01)
+
+### ✅ Completed UI Improvements
+
+1. **Header Logo Visibility**
+   - Fixed: Header and Footer were missing from the `/tricks` page
+   - Solution: Added Header and Footer components to `app/tricks/page.tsx`
+   - The KI logo is now visible on all pages and clickable for navigation
+
+2. **KI Kurs Link Added**
+   - Added prominent "KI Kurs" button in the header navigation
+   - Link: https://www.produktiv.me/kiz/
+   - Style: Blue background button with white text (stands out from other navigation items)
+   - Position: Right side of the navigation menu
+   - Opens in new tab with proper security attributes
+
+## Security Notes
+
+- Never commit `.env.local` file to version control
+- Use strong passwords for admin authentication
+- Regularly rotate passwords and API keys
+- Consider implementing rate limiting for the contact form
