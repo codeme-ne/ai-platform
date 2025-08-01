@@ -706,6 +706,720 @@ export const mockTricks: KITrick[] = [
     slug: generateSlug('Compact-Mode für unendliche Kontext-Sessions'),
     createdAt: new Date('2025-08-01'),
     updatedAt: new Date('2025-08-01')
+  },
+  // Additional tricks from curated-ki-tips.json
+  {
+    id: '31',
+    title: 'Der Exponential-Mindset Trick',
+    description: 'KI verdoppelt ihre Fähigkeiten alle 7 Monate - so bereitest du dich auf eine Welt vor, wo KI Wochen-Aufgaben in Stunden erledigt!\n\n**Warum es funktioniert:** Wer jetzt lernt, KI zu vertrauen und zu delegieren, wird in 2 Jahren 100x produktiver sein als Skeptiker.',
+    category: 'learning',
+    difficulty: 'advanced',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '20-30 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Identifiziere Aufgaben, die du heute in 1 Stunde erledigst',
+      'Schritt 2: Delegiere diese komplett an KI und validiere nur Ergebnisse',
+      'Schritt 3: Nutze die gewonnene Zeit für strategische Aufgaben',
+      'Schritt 4: Wiederhole monatlich mit immer größeren Aufgaben'
+    ],
+    examples: [
+      'Beispiel 1: Developer delegiert 80% des Codes an KI - Fokus nur auf Architektur',
+      'Beispiel 2: Marketing-Team produziert 20x mehr Content durch KI-Delegation'
+    ],
+    slug: generateSlug('Der Exponential-Mindset Trick'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '32',
+    title: 'Der Leaf-Node Programming Trick',
+    description: 'Entwickle isolierte Code-Module mit KI perfekt - diese Methode revolutioniert die Art, wie du mit großen Codebasen arbeitest!\n\n**Warum es funktioniert:** Leaf Nodes haben keine Abhängigkeiten, daher kann die KI sie komplett autonom entwickeln ohne Seiteneffekte zu riskieren.',
+    category: 'programming',
+    difficulty: 'intermediate',
+    tools: ['Claude Code', 'GitHub Copilot'],
+    timeToImplement: '20-30 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Identifiziere Module ohne externe Abhängigkeiten (z.B. Utility-Funktionen, Datenmodelle)',
+      'Schritt 2: Schreibe klare Spezifikationen mit Input/Output Beispielen',
+      'Schritt 3: Lass die KI das komplette Modul generieren inklusive Tests',
+      'Schritt 4: Integriere das getestete Modul in deine Hauptanwendung'
+    ],
+    examples: [
+      'Beispiel 1: Komplexe Validierungs-Library mit 200+ Regeln in 1 Stunde generiert',
+      'Beispiel 2: Datenkonvertierungs-Module für 15 verschiedene Formate automatisch erstellt'
+    ],
+    slug: generateSlug('Der Leaf-Node Programming Trick'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '33',
+    title: 'Context Window Hacking für Profis',
+    description: 'Verarbeite 10x mehr Code in einem einzigen Prompt - mit diesem Trick umgehst du die Token-Limits geschickt!\n\n**Warum es funktioniert:** Durch intelligente Kompression und Referenzierung nutzt du jeden Token optimal aus und behältst trotzdem den Überblick.',
+    category: 'programming',
+    difficulty: 'advanced',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '15-20 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Erstelle ein Inhaltsverzeichnis mit Dateinamen und Zeilennummern',
+      'Schritt 2: Nutze Kommentare wie "// ... rest unchanged" für irrelevante Teile',
+      'Schritt 3: Referenziere Code-Abschnitte statt sie zu wiederholen',
+      'Schritt 4: Arbeite mit strukturierten Zusammenfassungen statt vollständigem Code'
+    ],
+    examples: [
+      'Beispiel 1: 50.000 Zeilen Codebase in einem 8k Token Prompt analysiert',
+      'Beispiel 2: Komplettes Microservice-Refactoring mit nur 3 Prompts durchgeführt'
+    ],
+    slug: generateSlug('Context Window Hacking für Profis'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '34',
+    title: 'Der Verifikations-Checkpoint Workflow',
+    description: 'Navigiere sicher durch große KI-Projekte mit diesem bewährten Checkpoint-System von Anthropic!\n\n**Warum es funktioniert:** Regelmäßige Verifikation verhindert das Akkumulieren von Fehlern und gibt dir Kontrolle über den Entwicklungsprozess.',
+    category: 'programming',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'Claude Code'],
+    timeToImplement: '25-35 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Definiere klare Meilensteine (alle 200-500 Zeilen Code)',
+      'Schritt 2: Erstelle automatisierte Tests für jeden Checkpoint',
+      'Schritt 3: Lass die KI Code bis zum nächsten Checkpoint generieren',
+      'Schritt 4: Verifiziere und committe nur nach erfolgreichem Test'
+    ],
+    examples: [
+      'Beispiel 1: React-App mit 10.000 Zeilen ohne einen kritischen Bug entwickelt',
+      'Beispiel 2: Backend-API mit 50 Endpoints systematisch in 2 Tagen fertiggestellt'
+    ],
+    slug: generateSlug('Der Verifikations-Checkpoint Workflow'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '35',
+    title: 'KI-Pair-Programming auf Steroiden',
+    description: 'Die Anthropic-Methode für Production Code: So arbeitest du wie ein Senior Developer mit KI als perfektem Partner!\n\n**Warum es funktioniert:** Die Rollenteilung (du = Architekt, KI = Implementierer) maximiert beide Stärken und minimiert Schwächen.',
+    category: 'programming',
+    difficulty: 'advanced',
+    tools: ['Claude Code', 'Cursor'],
+    timeToImplement: '30-40 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Du definierst Architektur und Interfaces',
+      'Schritt 2: KI implementiert die Business Logic',
+      'Schritt 3: Du reviewst kritische Pfade und Edge Cases',
+      'Schritt 4: KI schreibt Tests und Dokumentation'
+    ],
+    examples: [
+      'Beispiel 1: Trading-System mit 99.9% Uptime durch klare Rollenteilung entwickelt',
+      'Beispiel 2: Produktivitätssteigerung um 400% bei gleichbleibender Code-Qualität'
+    ],
+    slug: generateSlug('KI-Pair-Programming auf Steroiden'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '36',
+    title: 'Der 80/20 Code-Review Trick',
+    description: 'Prüfe nur die kritischen 20% manuell und spare 80% Zeit - dieser Trick macht dich zum effizienten Code-Reviewer!\n\n**Warum es funktioniert:** Das Pareto-Prinzip gilt auch für Code: 80% der Bugs verstecken sich in 20% des Codes.',
+    category: 'programming',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '15-20 Minuten',
+    impact: 'medium',
+    steps: [
+      'Schritt 1: Identifiziere kritische Bereiche (Authentifizierung, Datenzugriff, Algorithmen)',
+      'Schritt 2: Lass KI den unkritischen Code automatisch reviewen',
+      'Schritt 3: Fokussiere deine manuelle Review auf die 20% kritischen Code',
+      'Schritt 4: Nutze KI für Stil- und Best-Practice-Checks im Rest'
+    ],
+    examples: [
+      'Beispiel 1: Review-Zeit von 4 Stunden auf 45 Minuten reduziert',
+      'Beispiel 2: Kritische Sicherheitslücke gefunden, die automatische Tools übersehen hätten'
+    ],
+    slug: generateSlug('Der 80/20 Code-Review Trick'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '37',
+    title: 'Der --resume Flag Game-Changer',
+    description: 'Arbeite unterbrechungsfrei an großen Projekten mit Claude Code\'s verstecktem Power-Feature!\n\n**Warum es funktioniert:** Der --resume Flag behält den kompletten Kontext und setzt genau dort fort, wo du aufgehört hast - keine Wiederholungen mehr.',
+    category: 'programming',
+    difficulty: 'beginner',
+    tools: ['Claude Code'],
+    timeToImplement: '5-10 Minuten',
+    impact: 'medium',
+    steps: [
+      'Schritt 1: Starte dein Projekt normal mit Claude Code',
+      'Schritt 2: Bei Unterbrechung merke dir die Session-ID',
+      'Schritt 3: Nutze "claude-code --resume [session-id]" zum Fortsetzen',
+      'Schritt 4: Arbeite nahtlos weiter ohne Kontext zu verlieren'
+    ],
+    examples: [
+      'Beispiel 1: 3-Tages-Projekt ohne einzigen Kontext-Verlust durchgeführt',
+      'Beispiel 2: Team-Kollaboration durch geteilte Session-IDs ermöglicht'
+    ],
+    slug: generateSlug('Der --resume Flag Game-Changer'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '38',
+    title: 'Memory Management für KI-Projekte',
+    description: 'Nutze CLAUDE.md optimal und behalte in riesigen Projekten den Überblick - dieser Trick spart dir stundenlange Erklärungen!\n\n**Warum es funktioniert:** Eine gut strukturierte CLAUDE.md-Datei ist wie ein zweites Gehirn für die KI - sie vergisst nie wichtige Projektdetails.',
+    category: 'productivity',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'Claude Code'],
+    timeToImplement: '20-25 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Erstelle eine CLAUDE.md im Projekt-Root mit Projektübersicht',
+      'Schritt 2: Dokumentiere wichtige Entscheidungen, Konventionen und Patterns',
+      'Schritt 3: Aktualisiere die Datei nach jedem größeren Feature',
+      'Schritt 4: Referenziere die Datei bei neuen Sessions für sofortigen Kontext'
+    ],
+    examples: [
+      'Beispiel 1: 6-Monate-Projekt ohne Wissensverlust zwischen Sessions',
+      'Beispiel 2: Neuer Entwickler in 10 Minuten statt 2 Stunden eingearbeitet'
+    ],
+    slug: generateSlug('Memory Management für KI-Projekte'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '39',
+    title: 'Der Multi-Agent Workflow',
+    description: 'Orchestriere verschiedene KI-Agenten wie ein Dirigent und erreiche Ergebnisse, die eine einzelne KI niemals schaffen würde!\n\n**Warum es funktioniert:** Jede KI hat Stärken - durch Kombination entsteht ein Superhirn, das alle Schwächen ausgleicht.',
+    category: 'productivity',
+    difficulty: 'advanced',
+    tools: ['Claude', 'ChatGPT', 'GitHub Copilot', 'Perplexity'],
+    timeToImplement: '35-45 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Nutze Perplexity für Research und Faktenchecking',
+      'Schritt 2: ChatGPT für kreative Ideenfindung und Brainstorming',
+      'Schritt 3: Claude für komplexe Analyse und Strukturierung',
+      'Schritt 4: GitHub Copilot für die finale Code-Implementierung'
+    ],
+    examples: [
+      'Beispiel 1: Startup-Idee in 4 Stunden von Konzept zu funktionierendem Prototyp',
+      'Beispiel 2: Technische Dokumentation mit 100% Faktentreue und kreativen Beispielen'
+    ],
+    slug: generateSlug('Der Multi-Agent Workflow'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '40',
+    title: 'Intelligent File Navigation',
+    description: 'Navigiere mit KI durch große Codebases wie ein Profi - finde in Sekunden, wofür du sonst Stunden brauchst!\n\n**Warum es funktioniert:** KI versteht semantische Zusammenhänge und findet relevante Dateien basierend auf Funktion, nicht nur Namen.',
+    category: 'programming',
+    difficulty: 'beginner',
+    tools: ['Claude Code', 'Cursor'],
+    timeToImplement: '10-15 Minuten',
+    impact: 'medium',
+    steps: [
+      'Schritt 1: Beschreibe was du suchst in natürlicher Sprache',
+      'Schritt 2: Lass die KI relevante Dateien und Funktionen vorschlagen',
+      'Schritt 3: Nutze "zeige mir ähnliche Implementierungen" für Kontext',
+      'Schritt 4: Springe direkt zu den relevanten Code-Stellen'
+    ],
+    examples: [
+      'Beispiel 1: Bug in 5 Minuten gefunden, der manuell 2 Stunden gedauert hätte',
+      'Beispiel 2: Alle Authentifizierungs-relevanten Dateien in 30 Sekunden identifiziert'
+    ],
+    slug: generateSlug('Intelligent File Navigation'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '41',
+    title: 'Der Incremental Development Trick',
+    description: 'Entwickle schrittweise zum perfekten Code - dieser Ansatz reduziert Bugs um 90% und macht dich schneller!\n\n**Warum es funktioniert:** Kleine, verifizierbare Schritte ermöglichen sofortiges Feedback und verhindern das Anhäufen von Problemen.',
+    category: 'programming',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'Claude Code'],
+    timeToImplement: '20-30 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Beginne mit dem minimal funktionierenden Code',
+      'Schritt 2: Füge Feature für Feature hinzu, teste nach jedem',
+      'Schritt 3: Refactore erst wenn alles funktioniert',
+      'Schritt 4: Optimiere Performance als letzten Schritt'
+    ],
+    examples: [
+      'Beispiel 1: E-Commerce-Platform Bug-frei in 5 Iterationen entwickelt',
+      'Beispiel 2: 70% weniger Debugging-Zeit durch inkrementelle Entwicklung'
+    ],
+    slug: generateSlug('Der Incremental Development Trick'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '42',
+    title: 'Der Feynman-KI-Lernzyklus',
+    description: 'Meistere komplexe Themen durch Erklären an die KI - diese Methode macht dich zum Experten in Rekordzeit!\n\n**Warum es funktioniert:** Wenn du es der KI erklären kannst, hast du es wirklich verstanden. Die KI stellt dabei die perfekten Nachfragen.',
+    category: 'learning',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '15-20 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Erkläre der KI ein komplexes Konzept in deinen Worten',
+      'Schritt 2: Lass die KI Verständnisfragen stellen',
+      'Schritt 3: Identifiziere Lücken in deiner Erklärung',
+      'Schritt 4: Recherchiere und erkläre erneut bis zur Perfektion'
+    ],
+    examples: [
+      'Beispiel 1: Quantenphysik-Grundlagen in 3 Tagen gemeistert statt 3 Wochen',
+      'Beispiel 2: Machine Learning Konzepte so tief verstanden, dass eigene Tutorials erstellt'
+    ],
+    slug: generateSlug('Der Feynman-KI-Lernzyklus'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '43',
+    title: 'Prüfungsvorbereitung 3.0',
+    description: 'Mit KI-generierten Übungsaufgaben zum Prüfungserfolg - diese Methode nutzen Top-Studenten weltweit!\n\n**Warum es funktioniert:** Personalisierte Übungsaufgaben treffen genau deine Schwächen und die KI passt den Schwierigkeitsgrad dynamisch an.',
+    category: 'learning',
+    difficulty: 'beginner',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '20-25 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Gib der KI deine Vorlesungsunterlagen und alte Klausuren',
+      'Schritt 2: Lass dir 20 Übungsaufgaben im Klausur-Stil generieren',
+      'Schritt 3: Löse die Aufgaben und lass die KI korrigieren',
+      'Schritt 4: Fokussiere auf Bereiche mit schlechten Ergebnissen'
+    ],
+    examples: [
+      'Beispiel 1: Mathematik-Note von 3.0 auf 1.3 verbessert in einem Semester',
+      'Beispiel 2: 500+ personalisierte Übungsaufgaben für Staatsexamen generiert'
+    ],
+    slug: generateSlug('Prüfungsvorbereitung 3.0'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '44',
+    title: 'Der Socratic Method Trick',
+    description: 'Entwickle tiefes Verständnis durch KI-Dialoge nach der sokratischen Methode - so lernen Philosophen seit 2000 Jahren!\n\n**Warum es funktioniert:** Durch gezielte Fragen führt dich die KI zu eigenen Erkenntnissen, die tiefer verankert sind als passiv aufgenommenes Wissen.',
+    category: 'learning',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '15-20 Minuten',
+    impact: 'medium',
+    steps: [
+      'Schritt 1: Bitte die KI, dir nur Fragen zu stellen, keine Antworten zu geben',
+      'Schritt 2: Beantworte jede Frage so gut du kannst',
+      'Schritt 3: Lass die KI basierend auf deiner Antwort tiefer bohren',
+      'Schritt 4: Erkenne selbst die Lücken und Widersprüche in deinem Denken'
+    ],
+    examples: [
+      'Beispiel 1: Programmier-Konzepte so tief verstanden, dass eigene Frameworks entwickelt',
+      'Beispiel 2: Philosophische Grundfragen durchdacht und eigene Theorien entwickelt'
+    ],
+    slug: generateSlug('Der Socratic Method Trick'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '45',
+    title: 'Visual Learning mit KI',
+    description: 'Verwandle komplexe Texte in anschauliche Diagramme - dein Gehirn wird es dir danken!\n\n**Warum es funktioniert:** 65% der Menschen sind visuelle Lerner. Diagramme aktivieren beide Gehirnhälften und verbessern die Merkfähigkeit um 400%.',
+    category: 'learning',
+    difficulty: 'beginner',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '10-15 Minuten',
+    impact: 'medium',
+    steps: [
+      'Schritt 1: Gib der KI komplexen Text oder Konzept',
+      'Schritt 2: Fordere verschiedene Visualisierungen an (Flowchart, Mindmap, Diagramm)',
+      'Schritt 3: Lass dir den Code für Mermaid oder PlantUML generieren',
+      'Schritt 4: Rendere die Diagramme und nutze sie zum Lernen'
+    ],
+    examples: [
+      'Beispiel 1: Biochemie-Stoffwechselwege als interaktive Diagramme visualisiert',
+      'Beispiel 2: Software-Architektur in 10 verschiedenen Sichten dargestellt'
+    ],
+    slug: generateSlug('Visual Learning mit KI'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '46',
+    title: 'Der Spaced Repetition KI-Hack',
+    description: 'Perfektes Timing für nachhaltiges Lernen - die KI wird dein persönlicher Lerncoach!\n\n**Warum es funktioniert:** Die Ebbinghaus-Vergessenskurve zeigt: Wiederholung zum richtigen Zeitpunkt verankert Wissen dauerhaft im Langzeitgedächtnis.',
+    category: 'learning',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '25-30 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Erstelle mit KI Karteikarten zu deinem Lernstoff',
+      'Schritt 2: Lass die KI einen Wiederholungsplan erstellen (1, 3, 7, 14, 30 Tage)',
+      'Schritt 3: Die KI testet dich zu den geplanten Zeitpunkten',
+      'Schritt 4: Schwierige Karten werden häufiger wiederholt'
+    ],
+    examples: [
+      'Beispiel 1: 1000 Vokabeln in 30 Tagen dauerhaft gelernt',
+      'Beispiel 2: Medizin-Studium mit 90% Retention-Rate gemeistert'
+    ],
+    slug: generateSlug('Der Spaced Repetition KI-Hack'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '47',
+    title: '48h Customer Discovery mit KI',
+    description: 'Von der Idee zur validierten Zielgruppe in 2 Tagen - dieser Trick macht dich zum Startup-Ninja!\n\n**Warum es funktioniert:** KI kann Tausende von Datenpunkten analysieren und Muster erkennen, die Menschen übersehen würden.',
+    category: 'business',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'Perplexity', 'ChatGPT'],
+    timeToImplement: '30-40 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Beschreibe deine Geschäftsidee und lass KI 10 Zielgruppen vorschlagen',
+      'Schritt 2: Nutze Perplexity für Marktforschung zu jeder Gruppe',
+      'Schritt 3: Erstelle mit KI Interview-Fragen und Umfragen',
+      'Schritt 4: Analysiere Feedback und pivote basierend auf Daten'
+    ],
+    examples: [
+      'Beispiel 1: B2B SaaS-Idee validiert und erste 10 Kunden in einer Woche gewonnen',
+      'Beispiel 2: Zielgruppe um 180° gedreht und dadurch Product-Market-Fit gefunden'
+    ],
+    slug: generateSlug('48h Customer Discovery mit KI'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '48',
+    title: 'Der Pitch Deck Generator',
+    description: 'Erstelle investoren-ready Pitch Decks in 2 Stunden statt 2 Wochen - VCs lieben diese Methode!\n\n**Warum es funktioniert:** KI kennt die Erfolgsformeln von tausenden Pitch Decks und optimiert deine Story für maximale Wirkung.',
+    category: 'business',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '25-35 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Gib der KI deine Geschäftsdaten und Vision',
+      'Schritt 2: Lass dir die klassische 10-Folien-Struktur generieren',
+      'Schritt 3: Verfeinere jede Folie mit spezifischen Daten und Stories',
+      'Schritt 4: Generiere alternative Versionen für verschiedene Investoren-Typen'
+    ],
+    examples: [
+      'Beispiel 1: Serie-A Finanzierung von 2M€ mit KI-generiertem Deck gesichert',
+      'Beispiel 2: Pitch-Deck in 5 Sprachen für internationale Investoren erstellt'
+    ],
+    slug: generateSlug('Der Pitch Deck Generator'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '49',
+    title: 'KI-gestütztes Competitive Analysis',
+    description: 'Analysiere deine Konkurrenz in Stunden statt Wochen - mit Insights, die deine Mitbewerber nicht haben!\n\n**Warum es funktioniert:** KI kann öffentliche Daten aus hunderten Quellen aggregieren und Muster erkennen, die manuell unmöglich zu finden wären.',
+    category: 'business',
+    difficulty: 'advanced',
+    tools: ['Perplexity', 'Claude', 'ChatGPT'],
+    timeToImplement: '35-45 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Liste 5-10 Hauptkonkurrenten und lass KI weitere finden',
+      'Schritt 2: Analysiere mit Perplexity deren Online-Präsenz und Kundenfeedback',
+      'Schritt 3: Lass Claude eine SWOT-Analyse für jeden erstellen',
+      'Schritt 4: Identifiziere Marktlücken und Differenzierungsmöglichkeiten'
+    ],
+    examples: [
+      'Beispiel 1: Marktlücke entdeckt, die zu 300% Umsatzwachstum führte',
+      'Beispiel 2: Preisstrategien der Konkurrenz entschlüsselt und übertroffen'
+    ],
+    slug: generateSlug('KI-gestütztes Competitive Analysis'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '50',
+    title: 'Der Automated Business Plan Writer',
+    description: 'Erstelle strukturierte Geschäftspläne, die Banker und Investoren beeindrucken - in einem Bruchteil der üblichen Zeit!\n\n**Warum es funktioniert:** KI kennt alle wichtigen Business-Plan-Frameworks und kann deine Idee perfekt strukturiert präsentieren.',
+    category: 'business',
+    difficulty: 'beginner',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '30-40 Minuten',
+    impact: 'medium',
+    steps: [
+      'Schritt 1: Beantworte KI-geführte Fragen zu deinem Geschäftsmodell',
+      'Schritt 2: Lass dir einen vollständigen Business-Plan generieren',
+      'Schritt 3: Verfeinere Finansprognosen mit realistischen Annahmen',
+      'Schritt 4: Erstelle Executive Summary und verschiedene Versionen'
+    ],
+    examples: [
+      'Beispiel 1: Bankkredit über 500k€ mit KI-generiertem Plan erhalten',
+      'Beispiel 2: Business-Plan-Wettbewerb gewonnen und 50k€ Preisgeld erhalten'
+    ],
+    slug: generateSlug('Der Automated Business Plan Writer'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '51',
+    title: 'Rapid Prototyping für Non-Techies',
+    description: 'Ohne Code zur Demo-App - beeindrucke Investoren und Kunden mit funktionierenden Prototypen!\n\n**Warum es funktioniert:** Moderne KI kann aus Beschreibungen funktionierende Web-Apps generieren, die professionell aussehen und sich anfühlen.',
+    category: 'design',
+    difficulty: 'beginner',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '20-30 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Beschreibe deine App-Idee in natürlicher Sprache',
+      'Schritt 2: Lass KI HTML/CSS/JavaScript Code generieren',
+      'Schritt 3: Nutze Tools wie CodePen oder JSFiddle zum Testen',
+      'Schritt 4: Iteriere basierend auf Feedback - alles ohne Coding!'
+    ],
+    examples: [
+      'Beispiel 1: Dating-App Prototyp in 3 Stunden erstellt und erste Nutzer gewonnen',
+      'Beispiel 2: Investor-Demo überzeugte so sehr, dass Entwickler-Team finanziert wurde'
+    ],
+    slug: generateSlug('Rapid Prototyping für Non-Techies'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '52',
+    title: 'Der Morning Routine Optimizer',
+    description: 'KI plant deinen perfekten Tag basierend auf deinen Zielen und Biorhythmus - werde zur produktivsten Version deiner selbst!\n\n**Warum es funktioniert:** KI berücksichtigt wissenschaftliche Erkenntnisse zu Chronotypen und kann deine Routine ständig optimieren.',
+    category: 'productivity',
+    difficulty: 'beginner',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '15-20 Minuten',
+    impact: 'medium',
+    steps: [
+      'Schritt 1: Teile der KI deine Ziele, Verpflichtungen und Präferenzen mit',
+      'Schritt 2: Lass eine personalisierte Morgenroutine erstellen',
+      'Schritt 3: Teste die Routine für eine Woche und gib Feedback',
+      'Schritt 4: Die KI optimiert basierend auf deinen Ergebnissen'
+    ],
+    examples: [
+      'Beispiel 1: Produktivität um 40% gesteigert durch optimierte Morgenroutine',
+      'Beispiel 2: Work-Life-Balance verbessert und trotzdem mehr erreicht'
+    ],
+    slug: generateSlug('Der Morning Routine Optimizer'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '53',
+    title: 'Meeting-to-Action Automation',
+    description: 'Verwandle Meeting-Notizen automatisch in ausführbare Tasks - nie wieder vergessene Action Items!\n\n**Warum es funktioniert:** KI erkennt Verantwortlichkeiten, Deadlines und Prioritäten aus unstrukturierten Notizen und erstellt perfekte Task-Listen.',
+    category: 'productivity',
+    difficulty: 'beginner',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '10-15 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Nimm Meeting-Notizen in beliebigem Format',
+      'Schritt 2: Füttere die KI mit den Rohnotizen',
+      'Schritt 3: Erhalte strukturierte Action Items mit Verantwortlichen und Deadlines',
+      'Schritt 4: Exportiere direkt in dein Projektmanagement-Tool'
+    ],
+    examples: [
+      'Beispiel 1: Meeting-Follow-up Zeit von 30 auf 5 Minuten reduziert',
+      'Beispiel 2: 100% Action-Item-Completion-Rate im Team erreicht'
+    ],
+    slug: generateSlug('Meeting-to-Action Automation'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '54',
+    title: 'Der Email Zero KI-Workflow',
+    description: 'Inbox-Management auf Autopilot - erreiche täglich Inbox Zero ohne Stress!\n\n**Warum es funktioniert:** KI kategorisiert, priorisiert und erstellt Antwort-Entwürfe basierend auf deinem Kommunikationsstil.',
+    category: 'productivity',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '25-30 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Trainiere KI mit Beispielen deiner E-Mail-Antworten',
+      'Schritt 2: Erstelle Kategorien und Prioritätsregeln mit KI',
+      'Schritt 3: Lass KI Antwort-Entwürfe für Standard-Anfragen erstellen',
+      'Schritt 4: Review und sende mit einem Klick'
+    ],
+    examples: [
+      'Beispiel 1: E-Mail-Bearbeitungszeit von 2 Stunden auf 20 Minuten täglich reduziert',
+      'Beispiel 2: Antwortzeit auf wichtige E-Mails von Tagen auf Stunden verbessert'
+    ],
+    slug: generateSlug('Der Email Zero KI-Workflow'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '55',
+    title: 'Knowledge Base Building',
+    description: 'Baue dein persönliches Wiki mit KI auf - werde zum wandelnden Lexikon in deinem Fachgebiet!\n\n**Warum es funktioniert:** KI hilft dir, Wissen zu strukturieren, Verbindungen zu erkennen und Lücken zu identifizieren.',
+    category: 'productivity',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '30-40 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Definiere deine Wissensgebiete und Struktur',
+      'Schritt 2: Füttere KI mit deinen Notizen, Artikeln und Ideen',
+      'Schritt 3: Lass KI Zusammenhänge visualisieren und Lücken aufzeigen',
+      'Schritt 4: Erweitere systematisch basierend auf KI-Vorschlägen'
+    ],
+    examples: [
+      'Beispiel 1: 500+ Artikel Knowledge Base in 3 Monaten aufgebaut',
+      'Beispiel 2: Zum gefragten Experten durch systematisches Wissensmanagement geworden'
+    ],
+    slug: generateSlug('Knowledge Base Building'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '56',
+    title: 'Der Decision Matrix Generator',
+    description: 'Treffe komplexe Entscheidungen systematisch und ohne Bias - die KI wird dein objektiver Berater!\n\n**Warum es funktioniert:** KI eliminiert emotionale Verzerrungen und berücksichtigt alle Faktoren gleichwertig für optimale Entscheidungen.',
+    category: 'productivity',
+    difficulty: 'beginner',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '15-20 Minuten',
+    impact: 'medium',
+    steps: [
+      'Schritt 1: Beschreibe deine Entscheidungsoptionen',
+      'Schritt 2: Lass KI relevante Kriterien vorschlagen und gewichten',
+      'Schritt 3: Bewerte jede Option gemeinsam mit der KI',
+      'Schritt 4: Erhalte eine objektive Empfehlung mit Begründung'
+    ],
+    examples: [
+      'Beispiel 1: Jobwechsel-Entscheidung getroffen, die zu 200% Gehaltssteigerung führte',
+      'Beispiel 2: Beste Technologie-Stack für Startup in 30 Minuten ausgewählt'
+    ],
+    slug: generateSlug('Der Decision Matrix Generator'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '57',
+    title: 'Der Viral Content Formula Trick',
+    description: 'KI analysiert erfolgreiche Posts und gibt dir die Geheimformel für viralen Content - werde zum Social Media Star!\n\n**Warum es funktioniert:** KI erkennt Muster in Millionen von Posts und identifiziert die Elemente, die Engagement triggern.',
+    category: 'marketing',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT', 'Perplexity'],
+    timeToImplement: '20-25 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Sammle 20-30 virale Posts aus deiner Nische',
+      'Schritt 2: Lass KI gemeinsame Muster und Erfolgsformeln identifizieren',
+      'Schritt 3: Erstelle eigene Inhalte basierend auf diesen Formeln',
+      'Schritt 4: A/B teste verschiedene Varianten und optimiere'
+    ],
+    examples: [
+      'Beispiel 1: LinkedIn-Post mit 50.000 Views und 500 Kommentaren',
+      'Beispiel 2: Instagram Reel mit 1M Views durch KI-optimierte Hook'
+    ],
+    slug: generateSlug('Der Viral Content Formula Trick'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '58',
+    title: 'Personal Brand Builder',
+    description: 'Erschaffe eine konsistente Online-Präsenz über alle Plattformen - mit KI als deinem Brand Manager!\n\n**Warum es funktioniert:** KI sorgt für einheitliche Messaging, Tonalität und visuelle Identität über alle Kanäle hinweg.',
+    category: 'marketing',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '30-40 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Definiere deine Kern-Werte und Unique Selling Proposition',
+      'Schritt 2: Lass KI einen Brand Guide mit Voice & Tone erstellen',
+      'Schritt 3: Generiere plattform-spezifische Bio-Texte und Content-Vorlagen',
+      'Schritt 4: Erstelle einen Content-Kalender für konsistente Präsenz'
+    ],
+    examples: [
+      'Beispiel 1: Von 0 auf 10k Follower in 3 Monaten durch konsistentes Branding',
+      'Beispiel 2: Speaking-Anfragen verdreifacht durch professionelle Online-Präsenz'
+    ],
+    slug: generateSlug('Personal Brand Builder'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '59',
+    title: 'Der A/B Testing Copywriter',
+    description: 'Generiere Varianten für Tests in Sekunden - finde die Converting-Champions ohne teure Copywriter!\n\n**Warum es funktioniert:** KI kann unendlich viele Variationen erstellen und dabei psychologische Trigger systematisch testen.',
+    category: 'content-creation',
+    difficulty: 'beginner',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '10-15 Minuten',
+    impact: 'medium',
+    steps: [
+      'Schritt 1: Gib der KI deine Original-Copy und Conversion-Ziel',
+      'Schritt 2: Lass 10-20 Varianten mit verschiedenen Ansätzen generieren',
+      'Schritt 3: Wähle die vielversprechendsten 3-5 für den Test',
+      'Schritt 4: Implementiere Gewinner und iteriere weiter'
+    ],
+    examples: [
+      'Beispiel 1: Landing Page Conversion von 2% auf 8% gesteigert',
+      'Beispiel 2: E-Mail Open Rate von 20% auf 45% verbessert'
+    ],
+    slug: generateSlug('Der A/B Testing Copywriter'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '60',
+    title: 'API Documentation auf Steroiden',
+    description: 'Erstelle perfekte API-Docs mit Beispielen in allen gängigen Sprachen - Entwickler werden dich lieben!\n\n**Warum es funktioniert:** KI generiert automatisch konsistente, vollständige Dokumentation mit funktionierenden Code-Beispielen.',
+    category: 'programming',
+    difficulty: 'intermediate',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '25-30 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Gib der KI deine API-Endpoints und Datenmodelle',
+      'Schritt 2: Lass automatisch OpenAPI/Swagger Specs generieren',
+      'Schritt 3: Generiere Code-Beispiele in Python, JS, Java, etc.',
+      'Schritt 4: Erstelle interaktive Tutorials und Troubleshooting-Guides'
+    ],
+    examples: [
+      'Beispiel 1: API-Adoption um 300% gesteigert durch bessere Docs',
+      'Beispiel 2: Support-Tickets um 80% reduziert durch vollständige Dokumentation'
+    ],
+    slug: generateSlug('API Documentation auf Steroiden'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
+  },
+  {
+    id: '61',
+    title: 'Der Database Schema Designer',
+    description: 'Von Requirements zu optimalen Datenbankstrukturen in Minuten - spare dir teure Consultants!\n\n**Warum es funktioniert:** KI kennt Best Practices für Normalisierung, Indizierung und Performance-Optimierung aus tausenden Projekten.',
+    category: 'data-analysis',
+    difficulty: 'advanced',
+    tools: ['Claude', 'ChatGPT'],
+    timeToImplement: '30-35 Minuten',
+    impact: 'high',
+    steps: [
+      'Schritt 1: Beschreibe deine Anwendung und Datenflüsse',
+      'Schritt 2: Lass KI ein normalisiertes Schema vorschlagen',
+      'Schritt 3: Optimiere für spezifische Queries und Performance-Anforderungen',
+      'Schritt 4: Generiere Migration-Scripts und Seed-Daten'
+    ],
+    examples: [
+      'Beispiel 1: E-Commerce DB-Schema skaliert problemlos auf 1M+ Produkte',
+      'Beispiel 2: Query-Performance um 10x verbessert durch KI-optimierte Indizes'
+    ],
+    slug: generateSlug('Der Database Schema Designer'),
+    createdAt: new Date('2025-08-01'),
+    updatedAt: new Date('2025-08-01')
   }
 ]
 
