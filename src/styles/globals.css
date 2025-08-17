@@ -80,18 +80,171 @@
   }
 
   .btn-primary {
-    @apply btn bg-primary-600 text-white;
+    @apply btn bg-primary-600 text-white relative overflow-hidden;
     @apply hover:bg-primary-700 focus:ring-primary-500;
+    box-shadow: 0 4px 15px rgba(34, 153, 221, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 30px rgba(34, 153, 221, 0.4), 0 4px 15px rgba(34, 153, 221, 0.3);
+    transform: translateY(-1px);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 0 20px rgba(34, 153, 221, 0.3), 0 2px 8px rgba(34, 153, 221, 0.2);
   }
 
   .btn-secondary {
-    @apply btn bg-white text-neutral-700 border border-neutral-300;
-    @apply hover:bg-neutral-50 focus:ring-neutral-500;
+    @apply btn bg-neutral-800/50 text-neutral-100 border border-neutral-600;
+    @apply hover:bg-neutral-700/70 focus:ring-neutral-500;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-secondary:hover {
+    @apply border-neutral-500;
+    box-shadow: 0 0 20px rgba(115, 115, 115, 0.2), 0 2px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(115, 115, 115, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);
   }
 
   .btn-text {
     @apply btn text-primary-600;
     @apply hover:text-primary-700 hover:bg-primary-50;
+  }
+
+  /* Form Elements */
+  .form-input {
+    @apply w-full px-4 py-3 bg-neutral-800/50 text-neutral-100 border border-neutral-600;
+    @apply rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+    @apply placeholder:text-neutral-400 transition-all duration-200;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .form-input:hover {
+    @apply border-neutral-500 bg-neutral-800/70;
+    box-shadow: 0 0 20px rgba(34, 153, 221, 0.1);
+  }
+
+  .form-input:focus {
+    @apply bg-neutral-800/80;
+    box-shadow: 0 0 0 3px rgba(34, 153, 221, 0.1), 0 0 30px rgba(34, 153, 221, 0.2);
+    border-color: #2299dd;
+  }
+
+  .form-select {
+    @apply w-full px-4 py-3 bg-neutral-800/50 text-neutral-100 border border-neutral-600;
+    @apply rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+    @apply transition-all duration-200 cursor-pointer;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .form-select:hover {
+    @apply border-neutral-500 bg-neutral-800/70;
+    box-shadow: 0 0 20px rgba(34, 153, 221, 0.1);
+  }
+
+  .form-select:focus {
+    @apply bg-neutral-800/80;
+    box-shadow: 0 0 0 3px rgba(34, 153, 221, 0.1), 0 0 30px rgba(34, 153, 221, 0.2);
+    border-color: #2299dd;
+  }
+
+  .form-textarea {
+    @apply w-full px-4 py-3 bg-neutral-800/50 text-neutral-100 border border-neutral-600;
+    @apply rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+    @apply placeholder:text-neutral-400 transition-all duration-200;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    min-height: 80px;
+    resize: vertical;
+  }
+
+  .form-textarea:hover {
+    @apply border-neutral-500 bg-neutral-800/70;
+    box-shadow: 0 0 20px rgba(34, 153, 221, 0.1);
+  }
+
+  .form-textarea:focus {
+    @apply bg-neutral-800/80;
+    box-shadow: 0 0 0 3px rgba(34, 153, 221, 0.1), 0 0 30px rgba(34, 153, 221, 0.2);
+    border-color: #2299dd;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-neutral-300 mb-2;
+  }
+
+  .form-section {
+    @apply bg-neutral-800/30 border border-neutral-700/50 rounded-xl p-6;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  .form-section:hover {
+    @apply border-neutral-600/50;
+    box-shadow: 0 0 20px rgba(34, 153, 221, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Enhanced Button Styles */
+  .btn-primary {
+    @apply btn bg-primary-600 text-white relative overflow-hidden;
+    @apply hover:bg-primary-700 focus:ring-primary-500;
+    box-shadow: 0 4px 15px rgba(34, 153, 221, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 30px rgba(34, 153, 221, 0.4), 0 4px 15px rgba(34, 153, 221, 0.3);
+    transform: translateY(-1px);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 0 20px rgba(34, 153, 221, 0.3), 0 2px 8px rgba(34, 153, 221, 0.2);
+  }
+
+  .btn-secondary {
+    @apply btn bg-neutral-800/50 text-neutral-100 border border-neutral-600;
+    @apply hover:bg-neutral-700/70 focus:ring-neutral-500;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-secondary:hover {
+    @apply border-neutral-500;
+    box-shadow: 0 0 20px rgba(115, 115, 115, 0.2), 0 2px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(115, 115, 115, 0.1), 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-outline {
+    @apply btn bg-transparent text-neutral-300 border border-neutral-600;
+    @apply hover:bg-neutral-800/30 focus:ring-neutral-500;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .btn-outline:hover {
+    @apply border-neutral-500 text-neutral-100;
+    box-shadow: 0 0 15px rgba(115, 115, 115, 0.1);
   }
 
   /* Badge */

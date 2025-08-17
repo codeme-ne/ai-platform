@@ -137,25 +137,29 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
         <TrickPreview formData={formData} />
 
         {/* Actions */}
-        <div className="flex justify-between bg-neutral-800 border border-neutral-700 rounded-lg p-4">
-          <Button 
-            type="button" 
-            variant="secondary" 
-            onClick={() => setPreviewMode(false)}
-            className="transition-all duration-200 hover:scale-105"
-          >
-            <Edit className="w-4 h-4 mr-2" />
-            Zurück zur Bearbeitung
-          </Button>
-          <Button 
-            type="button" 
-            variant="primary" 
-            onClick={() => onSubmit(formData)}
-            disabled={isSubmitting}
-            className="transition-all duration-200 hover:scale-105 disabled:hover:scale-100"
-          >
-            {isSubmitting ? 'Wird eingereicht...' : 'Trick einreichen'}
-          </Button>
+        <div className="form-section">
+          <div className="flex justify-between">
+            <Button 
+              type="button" 
+              variant="secondary" 
+              onClick={() => setPreviewMode(false)}
+              size="lg"
+              className="transition-all duration-200 hover:scale-105"
+            >
+              <Edit className="w-4 h-4 mr-2" />
+              Zurück zur Bearbeitung
+            </Button>
+            <Button 
+              type="button" 
+              variant="primary" 
+              onClick={() => onSubmit(formData)}
+              disabled={isSubmitting}
+              size="lg"
+              className="transition-all duration-200 hover:scale-105 disabled:hover:scale-100"
+            >
+              {isSubmitting ? 'Wird eingereicht...' : 'Trick einreichen'}
+            </Button>
+          </div>
         </div>
       </div>
     )
@@ -164,12 +168,12 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
   return (
     <form onSubmit={handleSubmit} className="space-y-8 animate-in fade-in-0 duration-300">
       {/* Basis-Informationen */}
-      <div className="bg-neutral-800 border border-neutral-700 rounded-lg p-6">
-        <h2 className="text-lg font-semibold mb-4">Basis-Informationen</h2>
+      <div className="form-section">
+        <h2 className="text-lg font-semibold mb-6 text-neutral-100">Basis-Informationen</h2>
         
-        <div className="space-y-4">
+        <div className="space-y-6">
           <div>
-            <label htmlFor="title" className="block text-sm font-medium text-neutral-300 mb-1">
+            <label htmlFor="title" className="form-label">
               Titel *
             </label>
             <input
@@ -179,13 +183,13 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
               required
               value={formData.title}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-neutral-700 text-neutral-100 border border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 placeholder:text-neutral-400"
+              className="form-input"
               placeholder="z.B. Automatische Meeting-Zusammenfassungen mit ChatGPT"
             />
           </div>
 
           <div>
-            <label htmlFor="description" className="block text-sm font-medium text-neutral-300 mb-1">
+            <label htmlFor="description" className="form-label">
               Beschreibung *
             </label>
             <textarea
@@ -195,13 +199,13 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
               rows={3}
               value={formData.description}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-neutral-700 text-neutral-100 border border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 placeholder:text-neutral-400"
+              className="form-textarea"
               placeholder="Kurze Beschreibung des Tricks..."
             />
           </div>
 
           <div>
-            <label htmlFor="Warum es funktioniert" className="block text-sm font-medium text-neutral-300 mb-1">
+            <label htmlFor="Warum es funktioniert" className="form-label">
               Warum es funktioniert (optional)
             </label>
             <textarea
@@ -210,14 +214,14 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
               rows={2}
               value={formData['Warum es funktioniert']}
               onChange={handleChange}
-              className="w-full px-4 py-2 bg-neutral-700 text-neutral-100 border border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 placeholder:text-neutral-400"
+              className="form-textarea"
               placeholder="Erkläre kurz das Prinzip hinter diesem Trick..."
             />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="category" className="block text-sm font-medium text-neutral-300 mb-1">
+              <label htmlFor="category" className="form-label">
                 Kategorie *
               </label>
               <select
@@ -226,7 +230,7 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
                 required
                 value={formData.category}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-neutral-700 text-neutral-100 border border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 placeholder:text-neutral-400"
+                className="form-select"
               >
                 {categories.map(cat => (
                   <option key={cat.value} value={cat.value}>{cat.label}</option>
@@ -235,7 +239,7 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
             </div>
 
             <div>
-              <label htmlFor="difficulty" className="block text-sm font-medium text-neutral-300 mb-1">
+              <label htmlFor="difficulty" className="form-label">
                 Schwierigkeit *
               </label>
               <select
@@ -244,7 +248,7 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
                 required
                 value={formData.difficulty}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-neutral-700 text-neutral-100 border border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 placeholder:text-neutral-400"
+                className="form-select"
               >
                 {difficulties.map(diff => (
                   <option key={diff.value} value={diff.value}>{diff.label}</option>
@@ -253,9 +257,9 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="timeToImplement" className="block text-sm font-medium text-neutral-300 mb-1">
+              <label htmlFor="timeToImplement" className="form-label">
                 Umsetzungszeit *
               </label>
               <input
@@ -265,13 +269,13 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
                 required
                 value={formData.timeToImplement}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-neutral-700 text-neutral-100 border border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 placeholder:text-neutral-400"
+                className="form-input"
                 placeholder="z.B. 15 Minuten"
               />
             </div>
 
             <div>
-              <label htmlFor="impact" className="block text-sm font-medium text-neutral-300 mb-1">
+              <label htmlFor="impact" className="form-label">
                 Impact *
               </label>
               <select
@@ -280,7 +284,7 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
                 required
                 value={formData.impact}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-neutral-700 text-neutral-100 border border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 placeholder:text-neutral-400"
+                className="form-select"
               >
                 {impacts.map(imp => (
                   <option key={imp.value} value={imp.value}>{imp.label}</option>
@@ -292,35 +296,35 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
       </div>
 
       {/* Schritte */}
-      <div className="bg-neutral-800 border border-neutral-700 rounded-lg p-6">
-        <h2 className="text-lg font-semibold mb-4">Schritt-für-Schritt Anleitung (optional)</h2>
+      <div className="form-section">
+        <h2 className="text-lg font-semibold mb-6 text-neutral-100">Schritt-für-Schritt Anleitung (optional)</h2>
         
-        <div className="space-y-3">
-          <div className="flex gap-2">
+        <div className="space-y-4">
+          <div className="flex gap-3">
             <textarea
               value={newStep}
               onChange={(e) => setNewStep(e.target.value)}
               rows={2}
-              className="flex-1 px-4 py-2 bg-neutral-700 text-neutral-100 border border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 placeholder:text-neutral-400"
+              className="form-textarea flex-1"
               placeholder="Schritt hinzufügen..."
             />
-            <Button type="button" onClick={addStep} variant="outline">
+            <Button type="button" onClick={addStep} variant="outline" size="md" className="self-start">
               <Plus className="w-4 h-4" />
             </Button>
           </div>
           
-          <div className="space-y-2">
+          <div className="space-y-3">
             {formData.steps?.map((step, index) => (
               <div
                 key={index}
-                className="flex items-start gap-3 p-3 bg-neutral-800/50 rounded-lg"
+                className="flex items-start gap-3 p-4 bg-neutral-800/30 border border-neutral-700/30 rounded-lg backdrop-blur-sm"
               >
-                <span className="text-sm font-medium text-neutral-500">{index + 1}.</span>
-                <p className="flex-1 text-sm">{step}</p>
+                <span className="text-sm font-medium text-primary-400 mt-1">{index + 1}.</span>
+                <p className="flex-1 text-sm text-neutral-200">{step}</p>
                 <button
                   type="button"
                   onClick={() => removeStep(index)}
-                  className="text-neutral-400 hover:text-neutral-200"
+                  className="text-neutral-400 hover:text-red-400 transition-colors duration-200 p-1 hover:bg-red-500/10 rounded"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -331,35 +335,35 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
       </div>
 
       {/* Beispiele */}
-      <div className="bg-neutral-800 border border-neutral-700 rounded-lg p-6">
-        <h2 className="text-lg font-semibold mb-4">Beispiele (optional)</h2>
+      <div className="form-section">
+        <h2 className="text-lg font-semibold mb-6 text-neutral-100">Beispiele (optional)</h2>
         
-        <div className="space-y-3">
-          <div className="flex gap-2">
+        <div className="space-y-4">
+          <div className="flex gap-3">
             <textarea
               value={newExample}
               onChange={(e) => setNewExample(e.target.value)}
               rows={2}
-              className="flex-1 px-4 py-2 bg-neutral-700 text-neutral-100 border border-neutral-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 placeholder:text-neutral-400"
+              className="form-textarea flex-1"
               placeholder="Beispiel hinzufügen..."
             />
-            <Button type="button" onClick={addExample} variant="outline">
+            <Button type="button" onClick={addExample} variant="outline" size="md" className="self-start">
               <Plus className="w-4 h-4" />
             </Button>
           </div>
           
-          <div className="space-y-2">
+          <div className="space-y-3">
             {formData.examples?.map((example, index) => (
               <div
                 key={index}
-                className="flex items-start gap-3 p-3 bg-neutral-800/50 rounded-lg"
+                className="flex items-start gap-3 p-4 bg-neutral-800/30 border border-neutral-700/30 rounded-lg backdrop-blur-sm"
               >
-                <span className="text-sm">•</span>
-                <p className="flex-1 text-sm">{example}</p>
+                <span className="text-sm text-primary-400 mt-1">•</span>
+                <p className="flex-1 text-sm text-neutral-200">{example}</p>
                 <button
                   type="button"
                   onClick={() => removeExample(index)}
-                  className="text-neutral-400 hover:text-neutral-200"
+                  className="text-neutral-400 hover:text-red-400 transition-colors duration-200 p-1 hover:bg-red-500/10 rounded"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -370,13 +374,14 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
       </div>
 
       {/* Submit Buttons */}
-      <div className="bg-neutral-800 border border-neutral-700 rounded-lg p-6">
+      <div className="form-section">
         <div className="flex flex-col sm:flex-row justify-between gap-4">
           <Button 
             type="button" 
             variant="secondary" 
             onClick={() => setPreviewMode(true)}
-            className="transition-all duration-200 hover:scale-105 flex items-center justify-center"
+            size="lg"
+            className="transition-all duration-200 hover:scale-105"
           >
             <Eye className="w-4 h-4 mr-2" />
             Vorschau anzeigen
@@ -386,6 +391,7 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
               type="button" 
               variant="secondary" 
               onClick={() => window.history.back()}
+              size="lg"
               className="transition-all duration-200 hover:scale-105"
             >
               Abbrechen
@@ -394,6 +400,7 @@ export const TrickForm = ({ onSubmit, isSubmitting = false, initialData = {} }: 
               type="submit" 
               variant="primary" 
               disabled={isSubmitting}
+              size="lg"
               className="transition-all duration-200 hover:scale-105 disabled:hover:scale-100"
             >
               {isSubmitting ? 'Wird eingereicht...' : 'Trick einreichen'}
