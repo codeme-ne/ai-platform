@@ -2,8 +2,38 @@
   "permissions": {
     "allow": [
       "Bash(npx tsc:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__execute_sql",
+      "Bash(npm run import-generated-tips:*)",
+      "mcp__supabase__list_projects",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_type",
+      "mcp__playwright__browser_evaluate",
+      "Bash(mkdir:*)",
+      "mcp__playwright__browser_press_key",
+      "mcp__playwright__browser_handle_dialog",
+      "mcp__playwright__browser_hover",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Read(//tmp/KI-Tricks-Landing-V0/app/**)",
+      "Read(//tmp/KI-Tricks-Landing-V0/**)",
+      "Read(//tmp/KI-Tricks-Landing-V0/**)",
+      "Read(//tmp/KI-Tricks-Landing-V0/**)",
+      "Bash(npm install:*)"
     ],
     "deny": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase"
+  ]
 }

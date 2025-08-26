@@ -1,234 +1,130 @@
-# KI Tricks Platform - GitHub Copilot Instructions
+### Design-Spezifikation für Webseiten-Gestaltung
 
-**ALWAYS follow these instructions first** and only fallback to additional search and context gathering if the information here is incomplete or found to be in error.
+#### 1. Von Grund auf beginnen (Starting from Scratch)
 
-## Project Overview
+*   **Start mit Features, nicht dem Gesamtlayout**: Beginnen Sie den Designprozess mit der Gestaltung spezifischer, konkreter Funktionalitäten (z.B. eine "Flugsuche" mit Feldern für Start-, Zielort, Datum und Such-Button). **Vermeiden Sie es, zuerst globale Layout-Elemente wie Navigationsleisten oder Sidebars zu entwerfen**, da die dafür notwendigen Informationen erst nach der Feature-Definition vorliegen.
+*   **Details kommen später**: **Verwenden Sie in frühen Phasen Low-Fidelity-Methoden** wie Skizzen auf Papier (z.B. mit einem dicken Filzstift) oder Graustufen-Designs. Dies zwingt Sie, sich auf Layout und Hierarchie zu konzentrieren und Detailversessenheit (Schriftarten, Schatten, Icons) zu vermeiden. **Halten Sie Farben zurück, bis die Hierarchie durch Abstände, Kontrast und Größe funktioniert**.
+*   **Designen Sie nicht zu viel auf einmal**: Arbeiten Sie in kurzen Zyklen. **Entwerfen Sie eine einfache Version des nächsten Features, implementieren Sie es, und iterieren Sie dann**. **Vermeiden Sie es, Funktionalität anzudeuten (z.B. einen "Anhänge"-Bereich), die Sie nicht sofort umsetzen können**, um Verzögerungen zu vermeiden.
+*   **Wählen Sie eine konsistente Persönlichkeit**: Definieren Sie eine Design-Persönlichkeit (z.B. "sicher und professionell", "verspielt", "schlicht"). Dies wird durch folgende konkrete Faktoren beeinflusst:
+    *   **Schriftwahl**: Serifenschriftarten für einen eleganten/klassischen Look, abgerundete Sans-Serifen für verspielt, neutrale Sans-Serifen für schlicht.
+    *   **Farbe**: Blau für sicher/vertraut, Gold für teuer/raffiniert, Pink für verspielt.
+    *   **Eckenradius**: Kleiner Radius ist neutral, großer Radius ist verspielt, kein Radius ist seriös/formal. **Bleiben Sie hier konsistent**.
+    *   **Sprache**: Formeller/professioneller oder freundlicher/lässiger Ton.
+*   **Begrenzen Sie Ihre Design-Auswahlmöglichkeiten**: **Definieren Sie Designsysteme im Voraus** mit einem begrenzten Satz an Optionen für: **Schriftgrößen, Schriftstärken, Zeilenhöhen, Farben, Margins, Paddings, Breiten, Höhen, Box-Schatten, Eckenradien, Rahmenbreiten und Opazitäten**. Dies reduziert die Entscheidungsermüdung und gewährleistet Konsistenz.
 
-KI Tricks Platform is a Next.js 15 web application for discovering and implementing practical AI tips and tricks. The UI is in German and follows a minimalistic design. Built with TypeScript, React 19, and Tailwind CSS.
+#### 2. Hierarchie ist alles (Hierarchy is Everything)
+*   **Visuelle Hierarchie priorisieren**: **Betonen Sie die wichtigsten Elemente und de-betonen Sie sekundäre oder tertiäre Informationen**. Vermeiden Sie, dass alle Elemente um Aufmerksamkeit konkurrieren.
+*   **Größe ist nicht alles für Hierarchie**:
+    *   **Schriftstärke**: Verwenden Sie **normale (z.B. 400 oder 500)** für den meisten Text und **schwerere (z.B. 600 oder 700)** für zu betonenden Text. **Vermeiden Sie Schriftstärken unter 400** für UI-Texte bei kleinen Größen.
+    *   **Farbe**: Verwenden Sie **dunkle Farben für primären Inhalt**, **Grautöne für sekundären Inhalt** und **hellere Grautöne für tertiären Inhalt**.
+*   **Keinen grauen Text auf farbigen Hintergründen**: **Vermeiden Sie grauen Text auf farbigen Hintergründen**, da er ausgewaschen oder deaktiviert wirken kann. Wählen Sie stattdessen eine **neue Farbe mit demselben Farbton wie der Hintergrund** und passen Sie Sättigung und Helligkeit an, um den Kontrast zu reduzieren.
+*   **Betonen durch De-Betonen**: Wenn ein Hauptelement nicht hervorsticht, **de-betonen Sie die konkurrierenden Elemente**. Beispiel: Inaktive Navigationselemente erhalten eine weichere Farbe.
+*   **Labels sind ein letztes Mittel**:
+    *   **Weglassen von Labels**: **Lassen Sie Labels weg, wenn das Datenformat (z.B. E-Mail, Telefonnummer, Preis) oder der Kontext (z.B. "Kundensupport" unter einem Namen) die Bedeutung klar macht**.
+    *   **Gestaltung benötigter Labels**: Wenn Labels erforderlich sind, **behandeln Sie sie als unterstützenden Inhalt**: kleiner, mit geringerem Kontrast oder leichterer Schriftstärke.
+    *   **Betonen von Labels**: Wenn Benutzer nach Labels suchen (z.B. technische Spezifikationen), können diese betont werden (dunklere Farbe für Label, leicht hellere für den Wert).
+*   **Visuelle Hierarchie von Dokumentenhierarchie trennen**: **Verwenden Sie semantische HTML-Tags (z.B. `<h1>`) für ihre Bedeutung, nicht für ihre visuelle Größe**. Visuelle Darstellung sollte die Hierarchie unterstützen. UI-Titel fungieren oft als Labels und sollten visuell kleiner sein, da der Inhalt der Fokus ist.
+*   **Gewicht und Kontrast ausgleichen**:
+    *   **Schwerere Elemente (z.B. solide Icons)** können durch **geringeren Kontrast (weichere Farbe)** ausgeglichen werden.
+    *   **Kontrastarme Elemente (z.B. dünne 1px-Rahmen)** können durch **höheres Gewicht (dickere Rahmen)** betont werden, ohne harsch zu wirken.
+*   **Semantik ist sekundär für Aktionen**: Priorisieren Sie die **visuelle Hierarchie von Aktionen**:
+    *   **Primäre Aktionen**: Auffällig, **hoher Kontrast, solide Hintergrundfarben**.
+    *   **Sekundäre Aktionen**: Klar, aber nicht dominant, z.B. **Outline-Stile oder geringerer Kontrast**.
+    *   **Tertiäre Aktionen**: Unaufdringlich, z.B. **als Links gestaltet**.
+    *   **Destruktive Aktionen**: Wenn nicht die primäre Aktion, dann als sekundäre oder tertiäre Aktion gestalten. Die auffällige (rot, fett) Gestaltung für destruktive Aktionen nur in einem Bestätigungsschritt verwenden.
 
-## Setup & Installation
+#### 3. Layout und Abstände (Layout and Spacing)
+*   **Mit zu viel Weißraum beginnen**: **Geben Sie Elementen zunächst übermäßig viel Raum** und reduzieren Sie ihn dann schrittweise, um eine saubere und einfache Oberfläche zu erhalten.
+*   **Etablieren Sie ein Abstands- und Größensystem**: **Verwenden Sie ein begrenztes Set vordefinierter Werte**. Eine **lineare Skala ist nicht geeignet**. Beginnen Sie mit einem **Basiswert (z.B. 16px)** und erstellen Sie eine Skala, bei der die **relativen Unterschiede zwischen benachbarten Werten am kleinen Ende größer sind (z.B. 33% von 12px zu 16px)** und am großen Ende kleiner werden (z.B. 4% von 500px zu 520px). Stellen Sie sicher, dass keine zwei Werte näher als 25% beieinander liegen.
+*   **Sie müssen nicht den ganzen Bildschirm ausfüllen**: **Nutzen Sie nur den benötigten Platz** (z.B. 600px Breite für Inhalte). Schmalere Layouts sind oft leichter zu interpretieren. Wenden Sie dies auch auf einzelne Sektionen an. Bei breiten UIs können Spalten eine gute Lösung sein, um den Platz besser zu nutzen.
+*   **Grids sind überbewertet**: **Verlassen Sie sich nicht blind auf Spalten-Grids**.
+    *   **Feste Breiten**: Verwenden Sie **feste Breiten** für Elemente (z.B. Seitenleisten), wenn dies sinnvoller ist als prozentuale Breiten. Der Hauptinhaltsbereich kann dann den restlichen Platz flexibel füllen.
+    *   **Max-Width statt Skalierung**: Geben Sie Elementen eine **`max-width`**, damit sie nicht unnötig groß werden, und lassen Sie sie nur schrumpfen, wenn der Bildschirm kleiner als diese `max-width` wird.
+*   **Relative Größen skalieren nicht proportional**: **Vermeiden Sie die Annahme, dass alle UI-Elemente proportional zueinander skalieren sollten** (z.B. Headlines mit `em`-Einheiten), insbesondere bei verschiedenen Bildschirmgrößen. **Große Elemente müssen auf kleineren Bildschirmen schneller schrumpfen als kleine**. Erlauben Sie auch innerhalb von Komponenten (z.B. Buttons) unabhängige Skalierung von Polsterungen/Abständen.
+*   **Eindeutige Abstände vermeiden**: Wenn Gruppen von Elementen nicht durch sichtbare Trenner (Rahmen, Hintergrundfarbe) getrennt sind, **stellen Sie sicher, dass der Abstand ZWISCHEN Gruppen größer ist als der Abstand INNERHALB einer Gruppe**, um die Zugehörigkeit klar zu machen (z.B. Formularfelder, Listenpunkte).
 
-### Prerequisites
-- Node.js (any recent version - app uses built-in Node.js features)
-- npm (comes with Node.js)
+#### 4. Textgestaltung (Designing Text)
+*   **Etablieren Sie eine Typographieskala**: **Begrenzen Sie die Anzahl der verwendeten Schriftgrößen**. Eine **handverlesene Skala ist oft praktischer** für UI-Designs als mathematische modulare Skalen. **Verwenden Sie `px` oder `rem` Einheiten, vermeiden Sie `em` Einheiten** in der Skalendefinition, um Konsistenz zu gewährleisten und unvorhergesehene Grössenänderungen bei verschachtelten Elementen zu verhindern.
+*   **Verwenden Sie gute Schriftarten**:
+    *   **Sichere Wahl**: Neutrale Sans-Serif-Schriftarten (z.B. Systemschriftarten).
+    *   **Qualität**: Bevorzugen Sie Schriftarten mit **mindestens fünf verschiedenen Schnitten (Weights)**.
+    *   **Lesbarkeit**: Optimieren Sie für Lesbarkeit; **vermeiden Sie zu kondensierte Schriftarten mit kurzer x-Höhe für Fließtext**.
+    *   **Orientierung**: Nutzen Sie beliebte Schriftarten und analysieren Sie Schriftarten auf gut gestalteten Websites.
+*   **Zeilenlänge überprüfen**: Die optimale Zeilenlänge für Lesbarkeit liegt zwischen **45 und 75 Zeichen pro Zeile (ca. 20-35em)**. Behalten Sie diese Breite für Absätze bei, auch wenn der Gesamtinhaltsbereich breiter ist (z.B. wegen Bildern).
+*   **Grundlinie, nicht Mitte**: Wenn Sie verschiedene Schriftgrößen in einer Zeile verwenden, **richten Sie diese an der Grundlinie aus, nicht vertikal zentriert**, um ein saubereres Aussehen zu erzielen.
+*   **Zeilenhöhe ist proportional**: Die Zeilenhöhe sollte proportional zur Zeilenlänge und Schriftgröße sein. **Verwenden Sie eine größere Zeilenhöhe für kleine Texte und lange Zeilen**. **Verwenden Sie eine kürzere Zeilenhöhe für große Überschriften** (nahe 1.0).
+*   **Nicht jeder Link braucht eine Farbe**: Wenn viele Elemente Links sind, **betonen Sie Links subtiler** (z.B. mit Schriftstärke oder einer dunkleren Farbe). Für sekundäre Links können Unterstreichungen oder Farbänderungen nur beim Hover-Zustand verwendet werden.
+*   **Mit Blick auf die Lesbarkeit ausrichten**:
+    *   Die meisten Texte sollten **linksbündig** sein.
+    *   **Zentrierte Ausrichtung** ist nur für Überschriften oder kurze Textblöcke geeignet.
+    *   **Rechtsbündige Ausrichtung** für Zahlen in Tabellen.
+    *   **Blocksatz** erfordert immer **Silbentrennung**, um ungleichmäßige Abstände zu vermeiden.
+*   **Laufweite effektiv nutzen**:
+    *   Standardmäßig die **Laufweite der Schriftart belassen**.
+    *   **Verringern Sie die Laufweite für Überschriften**, um sie straffer wirken zu lassen.
+    *   **Erhöhen Sie die Laufweite für Großbuchstabentexte (All-Caps)**, um die Lesbarkeit zu verbessern.
 
-### Installation Commands
-```bash
-# Install dependencies (CRITICAL: Use environment variables for CI)
-PUPPETEER_SKIP_DOWNLOAD=true npm install
-```
+#### 5. Arbeiten mit Farbe (Working with Color)
+*   **Hex für HSL aufgeben**: **Verwenden Sie HSL (Hue, Saturation, Lightness)** anstelle von Hex oder RGB, da es die Farbwahrnehmung des menschlichen Auges intuitiver abbildet.
+*   **Sie brauchen mehr Farben als Sie denken**: Eine gute Farbpalette umfasst:
+    *   **8-10 Grautöne**.
+    *   **5-10 Schattierungen für die Primärfarben**.
+    *   **5-10 Schattierungen für Akzentfarben** (z.B. für Erfolg, Warnung, Fehler, neue Features).
+*   **Schattierungen im Voraus definieren**: **Definieren Sie alle Schattierungen Ihrer Farbpalette im Voraus** (z.B. eine Neuner-Skala von 100-900). **Vermeiden Sie es, Schattierungen "on the fly" zu erstellen**. Beginnen Sie mit einer Grundfarbe, wählen Sie die dunkelsten und hellsten Schattierungen basierend auf dem Verwendungszweck (z.B. Text, Hintergrund) und füllen Sie dann die Lücken aus. **Vertrauen Sie Ihren Augen, nicht nur den mathematischen Werten**.
+*   **Lichtheit darf die Sättigung nicht töten**:
+    *   **Sättigung anpassen**: **Erhöhen Sie die Sättigung, wenn die Helligkeit einer Farbe von 50% abweicht (näher an 0% oder 100% liegt)**, um zu verhindern, dass die Farben ausgewaschen aussehen.
+    *   **Wahrgenommene Helligkeit nutzen**: Um eine Farbe heller oder dunkler erscheinen zu lassen, **rotieren Sie den Farbton (Hue) leicht**. Um Farben heller zu machen, drehen Sie den Farbton zu helleren Hues (60°, 180°, 300°); um sie dunkler zu machen, zu dunkleren Hues (0°, 120°, 240°). **Begrenzen Sie die Farbton-Rotation auf 20-30°**.
+*   **Grautöne müssen nicht grau sein**: **Sättigen Sie Grautöne leicht mit einem Farbton** (Blau für einen kühlen Look, Gelb/Orange für einen warmen Look), um ihnen Persönlichkeit zu verleihen. Achten Sie auf konsistente Sättigung über alle Grautöne.
+*   **Barrierefreiheit muss nicht hässlich sein**:
+    *   **WCAG-Kontrastverhältnisse**: Erfüllen Sie die **WCAG-Kontrastverhältnisse (mind. 4.5:1 für normalen Text, 3:1 für großen Text)**.
+    *   **Kontrast umkehren**: Wenn weißer Text auf farbigem Hintergrund zu dunkel sein müsste, um den Kontrast zu erfüllen, **kehren Sie den Kontrast um: Verwenden Sie dunklen Text auf einem hellen Farbhintergrund**.
+    *   **Farbton rotieren**: Für farbigen Text auf farbigem Hintergrund können Sie den **Farbton (Hue) zu einer von Natur aus helleren Farbe rotieren** (z.B. Cyan, Magenta, Gelb), um den Kontrast zu erhöhen, ohne die Helligkeit zu sehr zu ändern.
+*   **Sich nicht allein auf Farbe verlassen**: **Farbe sollte Informationen unterstützen, niemals das einzige Mittel zur Kommunikation sein**, um Benutzer mit Farbenblindheit nicht auszuschließen. Fügen Sie z.B. Icons hinzu oder verwenden Sie Kontrastunterschiede (hell/dunkel) in Diagrammen.
 
-**NOTE**: Puppeteer installation fails in CI environments due to network restrictions. ALWAYS use `PUPPETEER_SKIP_DOWNLOAD=true` in CI or restricted environments.
+#### 6. Tiefe schaffen (Creating Depth)
+*   **Eine Lichtquelle emulieren**: Imitieren Sie, wie Licht mit Objekten interagiert:
+    *   **Erhabene Elemente**: Machen Sie die **Oberkante heller** (z.B. durch einen oberen Rahmen oder einen kleinen, leicht vertikal versetzten Inset-Box-Schatten) und fügen Sie einen **kleinen, dunklen Box-Schatten darunter** hinzu (mit geringem Unschärferadius, scharfe Kanten).
+    *   **Eingesetzte Elemente**: Machen Sie die **Unterkante heller** (z.B. durch einen unteren Rahmen oder einen leicht negativ vertikal versetzten Inset-Box-Schatten) und fügen Sie einen **kleinen, dunklen Inset-Box-Schatten oben** hinzu.
+*   **Schatten zur Vermittlung von Höhe verwenden**: Schatten vermitteln Elevation auf einer virtuellen Z-Achse.
+    *   **Geringe Erhebung**: **Kleinere, schärfere Schatten** (z.B. für Buttons).
+    *   **Höhere Erhebung**: **Größere, weichere Schatten** (z.B. für Dropdowns, Modals).
+    *   **Schatten-System**: Etablieren Sie ein **festes Schatten-System (z.B. 5 Optionen)**.
+    *   **Interaktion**: Nutzen Sie Schatten für Interaktionen (z.B. größeren Schatten beim Ziehen, kleineren/keinen Schatten beim Klicken).
+*   **Schatten können aus zwei Teilen bestehen**: Kombinieren Sie zwei Schatten für realistischere Effekte:
+    *   **Teil 1**: Ein **größerer, weicherer Schatten** mit deutlichem vertikalen Offset und großem Weichzeichner (simuliert den direkten Lichtschatten).
+    *   **Teil 2**: Ein **engerer, schärferer und dunklerer Schatten** mit geringerem vertikalen Offset und kleinerem Weichzeichner (simuliert den Bereich unter dem Objekt, wo weniger Umgebungslicht hinkommt).
+    *   **Elevation berücksichtigen**: Dieser zweite Schatten sollte **bei höherer Elevation subtiler werden oder ganz verschwinden**.
+*   **Auch flache Designs können Tiefe haben**:
+    *   **Farbe**: Helle Objekte wirken näher, dunkle Objekte weiter weg.
+    *   **Feste Schatten**: Verwenden Sie **kurze, vertikal versetzte Schatten ohne Weichzeichnung**.
+*   **Elemente überlappen, um Ebenen zu schaffen**: **Überlappen Sie verschiedene Elemente**, um den Eindruck mehrerer Ebenen und Tiefe zu erzeugen (z.B. Karten überlappen Hintergründe, Elemente überlappen ihre Eltern). Bei überlappenden Bildern fügen Sie einen **"unsichtbaren Rand"** (passend zur Hintergrundfarbe) hinzu, um Kollisionen zu vermeiden.
 
-### Build & Development
+#### 7. Arbeiten mit Bildern (Working with Images)
+*   **Gute Fotos verwenden**: **Nutzen Sie professionelle Fotografen oder hochwertige Stockfotos**. Vermeiden Sie es, mit Platzhalterbildern zu designen und später schlechte Fotos einzufügen.
+*   **Text benötigt konsistenten Kontrast auf Bildern**: Um Text auf Hintergrundbildern lesbar zu machen, **reduzieren Sie die Dynamik des Bildes**. Methoden:
+    *   **Overlay**: Fügen Sie ein **halbtransparentes Overlay** hinzu (schwarz für hellen Text, weiß für dunklen Text).
+    *   **Bildkontrast reduzieren**: **Senken Sie den Kontrast des Bildes selbst** (passen Sie die Helligkeit an, um zu kompensieren).
+    *   **Bild kolorieren**: Reduzieren Sie den Bildkontrast, entsättigen Sie das Bild und fügen Sie eine **einfarbige Füllung im "Multiply"-Modus** hinzu.
+    *   **Textschatten**: Fügen Sie einen **subtilen Textschatten** hinzu (großer Weichzeichner, kein Offset).
+*   **Alles hat eine beabsichtigte Größe**:
+    *   **Icons**: **Vergrößern Sie keine kleinen Icons**; sie wirken klobig. Wenn größere Bereiche gefüllt werden müssen, **umschließen Sie die Icons mit einer Form mit Hintergrundfarbe**.
+    *   **Screenshots**: **Verkleinern Sie keine detailreichen Screenshots**; Text wird unleserlich. Nehmen Sie Screenshots bei kleineren Bildschirmgrößen auf, verwenden Sie Teilausschnitte oder zeichnen Sie eine **vereinfachte UI-Version** mit Linien anstelle von Text.
+    *   **Favicons/Logos**: **Verkleinern Sie keine großen Logos für Favicons**; **zeichnen Sie eine stark vereinfachte Version neu** in der Zielgröße.
+*   **Benutzergenerierte Inhalte beachten**:
+    *   **Form und Größe kontrollieren**: **Zentrieren Sie Benutzerbilder in festen Containern und schneiden Sie Überschneidendes ab** (z.B. mit `background-size: cover` in CSS).
+    *   **Hintergrund-Überlagerung verhindern**: Wenn Benutzerbilder einen ähnlichen Hintergrund wie Ihre UI haben, verwenden Sie einen **subtilen inneren Box-Schatten oder einen halbtransparenten inneren Rahmen**, um eine visuelle Trennung zu schaffen.
 
-#### Development Server
-```bash
-# Start development server (port 3000, fallback 3001)
-npm run dev
-```
-- Server starts in ~2 seconds
-- Runs on http://localhost:3000
-- Hot reload enabled
-
-#### Production Build
-```bash
-# Build for production (CRITICAL: Use env var for CI)
-SKIP_GOOGLE_FONTS=true npm run build
-```
-- **Build time**: 5-25 seconds (depends on network conditions)
-- **NEVER CANCEL**: Set timeout to 60+ seconds minimum for CI environments
-- **Google Fonts issue**: Use `SKIP_GOOGLE_FONTS=true` in CI environments where fonts.googleapis.com is blocked
-- Generates optimized static pages (83 pages total)
-
-#### Production Server
-```bash
-npm start
-```
-- Serves production build on port 3000
-
-#### Quality Checks
-```bash
-# Run ESLint (takes ~3-5 seconds)
-npm run lint
-```
-- **Expected warnings**: 2 React Hook dependency warnings in admin pages (these are acceptable)
-- All other lint issues should be fixed before committing
-
-### Utility Scripts
-
-#### Build Error Fixing
-```bash
-# Fix common TypeScript build errors
-npm run fix-build
-
-# Remove broken scraped content files  
-npm run fix-build-clean
-```
-
-#### Content Generation (requires external APIs)
-```bash
-# Convert YouTube transcripts to KI tricks
-npm run convert-youtube
-
-# Note: Scraping scripts may not work in CI due to network restrictions
-```
-
-## Environment Configuration
-
-### Required Environment Variables
-
-```bash
-# Admin authentication (required for /admin routes)
-ADMIN_PASSWORD=your-secure-password
-
-# CI/Build environment (when needed)
-SKIP_GOOGLE_FONTS=true          # For CI environments
-PUPPETEER_SKIP_DOWNLOAD=true    # For package installation
-
-# EmailJS (optional - for contact form)
-NEXT_PUBLIC_EMAILJS_SERVICE_ID=xxx
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=xxx  
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=xxx
-```
-
-## Project Structure
-
-```
-src/
-├── app/                 # Next.js 15 app directory
-│   ├── admin/          # Protected admin area (Basic Auth)
-│   ├── api/            # API routes
-│   ├── trick/[slug]/   # Dynamic trick detail pages
-│   └── tricks/         # Tricks listing and submission
-├── components/         # React components
-│   ├── atoms/         # Basic UI components
-│   ├── molecules/     # Composite components  
-│   ├── organisms/     # Complex components
-│   └── layout/        # Layout components
-├── hooks/             # Custom React hooks
-├── lib/               # Utilities and data
-└── styles/            # Global CSS
-scripts/               # Automation scripts
-docs/                  # Documentation
-```
-
-## Key Features & Workflows
-
-### Admin Area Access
-- Routes: `/admin/*`
-- **Authentication**: Basic Auth with username "admin" and ADMIN_PASSWORD
-- Protected by middleware.ts
-- Features: Analytics, pending trick moderation, new trick creation
-
-### Content Management
-- **Mock Data**: 64+ KI tricks in `src/lib/data/mock-data.ts`
-- **Categories**: 8 categories (Programming, Business, Learning, etc.)
-- **User Submissions**: Via `/tricks/einreichen` page
-
-### Development Workflow
-1. **Always run setup**: `PUPPETEER_SKIP_DOWNLOAD=true npm install`
-2. **Start development**: `npm run dev`
-3. **Make changes**: Edit files with hot reload
-4. **Run linting**: `npm run lint` (fix any NEW errors)
-5. **Test build**: `SKIP_GOOGLE_FONTS=true npm run build`
-6. **Commit changes**: Only after successful build
-
-## Validation & Testing
-
-### Manual Validation Required
-After making changes, ALWAYS test these scenarios:
-
-1. **Homepage functionality**:
-   - Navigate to http://localhost:3000
-   - Verify trick categories display correctly
-   - Click "Alle Tricks" - should load tricks page
-
-2. **Tricks listing**:
-   - Navigate to /tricks
-   - Verify 64 tricks are displayed
-   - Test filter functionality (categories, difficulty)
-   - Test search functionality
-
-3. **Individual trick pages**:
-   - Click any trick from listing
-   - Verify trick detail page loads correctly
-   - Check that all trick information displays
-
-4. **Admin area** (if ADMIN_PASSWORD is set):
-   - Navigate to /admin
-   - Authenticate with admin/[ADMIN_PASSWORD]
-   - Verify admin dashboard loads
-
-### No Automated Tests
-- **No Jest/Vitest**: No unit test framework configured
-- **No E2E tests**: No Playwright or Cypress tests
-- **Manual testing only**: Use the validation scenarios above
-
-## Network & CI Considerations
-
-### Known Network Issues
-1. **Google Fonts**: fonts.googleapis.com may be blocked in CI
-   - **Solution**: Use `SKIP_GOOGLE_FONTS=true`
-   
-2. **Puppeteer**: Chrome download fails in restricted environments
-   - **Solution**: Use `PUPPETEER_SKIP_DOWNLOAD=true`
-
-3. **Vercel Analytics**: May fail to load in development
-   - **Expected**: Console warnings about blocked analytics scripts
-
-### Expected Console Messages (Safe to Ignore)
-- "Failed to load resource: net::ERR_BLOCKED_BY_CLIENT" (analytics/fonts)
-- "21st.dev Toolbar" messages (development tooling)
-- React DevTools download message
-
-## Common Issues & Solutions
-
-### Build Failures
-1. **Google Fonts error**: Add `SKIP_GOOGLE_FONTS=true` environment variable
-2. **Puppeteer install fails**: Use `PUPPETEER_SKIP_DOWNLOAD=true npm install`
-3. **TypeScript errors**: Run `npm run fix-build` to auto-fix common issues
-
-### Development Issues
-1. **Port 3000 in use**: Next.js will automatically use 3001
-2. **Hot reload not working**: Restart dev server with `npm run dev`
-3. **Admin access denied**: Check ADMIN_PASSWORD environment variable
-
-### Performance Notes
-- **Build time**: 5-25 seconds (varies by network)
-- **Dev server start**: ~2 seconds
-- **Page load**: Very fast due to static generation
-- **No heavy operations**: All scripts complete within 30 seconds
-
-## Architecture Notes
-
-### Next.js 15 Compatibility
-- Uses new app directory structure
-- Supports React 19 features
-- Dynamic routes use Promise pattern: `params: Promise<{slug: string}>`
-
-### State Management
-- URL-based filter state with useFilters hook
-- Local storage for admin session
-- No global state management library
-
-### Styling
-- **Tailwind CSS**: Primary styling system
-- **No styled-jsx**: Removed for Next.js 15 compatibility
-- **Custom theme**: Based on thegrowthlist.co design
-
-## Deployment
-
-- **Auto-deploys**: Pushes to main branch trigger Vercel deployment
-- **Build requirements**: All environment variables must be set in Vercel
-- **No manual deployment**: All handled through git workflow
-
-## Security
-
-- **Admin routes**: Protected by Basic Auth middleware
-- **Environment variables**: Never commit .env files
-- **No sensitive data**: All trick data is public
-
----
-
-**Remember**: ALWAYS validate your changes by running the manual test scenarios and taking screenshots of any UI changes to ensure the application works correctly.
+#### 8. Letzte Feinheiten (Finishing Touches)
+*   **Standardwerte aufwerten**: Peppen Sie Standard-UI-Elemente auf:
+    *   **Listenpunkte**: Ersetzen Sie Bullet-Points durch **Icons** (Häkchen, Pfeile, oder spezifische Icons).
+    *   **Zitate**: "Befördern" Sie Zitate zu **visuellen Elementen** durch größere Größe und Farbe.
+    *   **Links**: Betonen Sie Links mit **Farbe, Schriftstärke oder individuellen, dicken Unterstreichungen**.
+    *   **Formular-Elemente**: Verwenden Sie **benutzerdefinierte Checkboxen und Radiobuttons in Ihren Markenfarben**.
+*   **Farbe mit Akzenträndern hinzufügen**: Verwenden Sie **farbige Akzenträndern** an strategischen Stellen (z.B. oben auf einer Karte, für aktive Navigationselemente, an der Seite einer Alert-Nachricht, unter einer Überschrift oder über das gesamte Layout), um visuelles Flair hinzuzufügen.
+*   **Hintergründe dekorieren**: Brechen Sie die Monotonie auf:
+    *   **Hintergrundfarbe ändern**: Verwenden Sie eine andere Hintergrundfarbe, eventuell mit einem **subtilen Gradienten** (zwei Farbtöne nicht mehr als 30° auseinander).
+    *   **Wiederholende Muster**: Fügen Sie **subtile, wiederholbare Muster** hinzu (niedriger Kontrast).
+    *   **Einfache Grafiken**: Platzieren Sie einzelne **einfache geometrische Formen oder Teile eines Musters** im Hintergrund (niedriger Kontrast).
+*   **Leere Zustände nicht übersehen**: **Gestalten Sie leere Zustände (Empty States) ansprechend** mit Illustrationen, einer klaren Handlungsaufforderung (Call-to-Action) und blenden Sie unnötige UI-Elemente aus, die erst bei vorhandenem Inhalt relevant sind.
+*   **Weniger Ränder verwenden**: **Vermeiden Sie übermäßige Verwendung von Rändern zur Trennung von Elementen**. Nutzen Sie stattdessen **Box-Schatten, unterschiedliche Hintergrundfarben oder zusätzlichen Abstand**.
+*   **Über den Tellerrand schauen**: **Hinterfragen Sie konventionelle Designs für Komponenten** wie Dropdowns (nutzen Sie Abschnitte, Spalten, Icons), Tabellen (kombinieren Sie Spalten, fügen Sie Bilder/Farbe hinzu) oder Radiobuttons (verwenden Sie auswählbare Karten).
