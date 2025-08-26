@@ -1,0 +1,70 @@
+name: Validate and Import Tricks
+
+on:
+  pull_request:
+    paths:
+      - 'data/*.json'
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/*.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install deps
+        run: npm ci
+      - name: Determine changed file (PR)
+        id: files
+        if: github.event_name == 'pull_request'
+        run: |
+          FILE=$(git diff --name-only "${{ github.event.pull_request.base.sha }}" "${{ github.sha }}" | grep '^data/.*\.json$' | head -n1 || true)
+          echo "file=$FILE" >> $GITHUB_OUTPUT
+      - name: Determine changed file (push)
+        id: files-push
+        if: github.event_name == 'push'
+        run: |
+          FILE=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep '^data/.*\.json$' | head -n1 || true)
+          echo "file=$FILE" >> $GITHUB_OUTPUT
+      - name: Validate tricks JSON
+        run: |
+          FILE="${{ steps.files.outputs.file }}"
+          if [ -z "$FILE" ]; then FILE="${{ steps.files-push.outputs.file }}"; fi
+          if [ -z "$FILE" ]; then echo "No data/*.json changes detected. Skipping."; exit 0; fi
+          npm run -s import-tricks:validate-file -- "$FILE"
+
+  import:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install deps
+        run: npm ci
+      - name: Determine changed file
+        id: files
+        run: |
+          FILE=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" | grep '^data/.*\.json$' | head -n1 || true)
+          echo "file=$FILE" >> $GITHUB_OUTPUT
+      - name: Import to Supabase
+        if: steps.files.outputs.file
+        run: npm run -s import-tricks:file -- "${{ steps.files.outputs.file }}"
+ 
