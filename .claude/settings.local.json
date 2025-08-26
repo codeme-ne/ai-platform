@@ -22,7 +22,13 @@
       "mcp__playwright__browser_press_key",
       "mcp__playwright__browser_handle_dialog",
       "mcp__playwright__browser_hover",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Read(//tmp/KI-Tricks-Landing-V0/app/**)",
+      "Read(//tmp/KI-Tricks-Landing-V0/**)",
+      "Read(//tmp/KI-Tricks-Landing-V0/**)",
+      "Read(//tmp/KI-Tricks-Landing-V0/**)",
+      "Bash(npm install:*)"
     ],
     "deny": []
   },
