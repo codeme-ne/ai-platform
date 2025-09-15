@@ -1,15 +1,45 @@
 {
-  "mcpServers": {
-    "supabase": {
-      "command": "wsl",
-      "args": [
-        "npx",
-        "-y",
-        "@supabase/mcp-server-supabase@latest"
-      ],
-      "env": {
-        "SUPABASE_ACCESS_TOKEN": "sbp_7210ee92921bedc2581073bc8956eb2ecd208d1f"
-      }
-    }
-  }
+	"mcpServers": {
+		"memory": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-memory"
+			]
+		},
+		"task-master-ai": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"--package=task-master-ai",
+				"task-master-ai"
+			],
+			"env": {
+				"ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_API_KEY_HERE",
+				"OPENAI_API_KEY": "YOUR_OPENAI_KEY_HERE",
+				"GOOGLE_API_KEY": "YOUR_GOOGLE_KEY_HERE",
+				"PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_API_KEY_HERE",
+				"MISTRAL_API_KEY": "",
+				"GROQ_API_KEY": "",
+				"OPENROUTER_API_KEY": "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",
+				"XAI_API_KEY": "",
+				"AZURE_OPENAI_API_KEY": "",
+				"OLLAMA_API_KEY": ""
+			}
+		},
+		"supabase": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@supabase/mcp-server-supabase@latest",
+				"--project-ref=oedblaldxusjpcgfoqup"
+			],
+			"env": {
+				"SUPABASE_ACCESS_TOKEN": ""
+			}
+		}
+	}
 }

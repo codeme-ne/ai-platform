@@ -1,39 +1,25 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx tsc:*)",
-      "Bash(npm run build:*)",
-      "mcp__sequential-thinking__sequentialthinking",
-      "mcp__supabase__list_tables",
-      "mcp__supabase__execute_sql",
-      "Bash(npm run import-generated-tips:*)",
-      "mcp__supabase__list_projects",
+      "mcp__task-master-ai__initialize_project",
+      "mcp__task-master-ai__parse_prd",
       "Bash(npm run dev:*)",
-      "Bash(curl:*)",
-      "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_wait_for",
-      "mcp__playwright__browser_click",
-      "mcp__playwright__browser_snapshot",
-      "mcp__playwright__browser_take_screenshot",
-      "mcp__playwright__browser_resize",
-      "mcp__playwright__browser_type",
-      "mcp__playwright__browser_evaluate",
-      "Bash(mkdir:*)",
-      "mcp__playwright__browser_press_key",
-      "mcp__playwright__browser_handle_dialog",
-      "mcp__playwright__browser_hover",
-      "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Read(//tmp/KI-Tricks-Landing-V0/app/**)",
-      "Read(//tmp/KI-Tricks-Landing-V0/**)",
-      "Read(//tmp/KI-Tricks-Landing-V0/**)",
-      "Read(//tmp/KI-Tricks-Landing-V0/**)",
-      "Bash(npm install:*)"
-    ],
-    "deny": []
+      "mcp__task-master-ai__expand_all",
+      "mcp__task-master-ai__analyze_project_complexity",
+      "mcp__task-master-ai__expand_task",
+      "Bash(npx supabase:*)",
+      "mcp__task-master-ai__set_task_status",
+      "Bash(npm run build:*)",
+      "mcp__task-master-ai__get_tasks",
+      "mcp__task-master-ai__get_task",
+      "mcp__task-master-ai__next_task",
+      "mcp__task-master-ai__update_subtask",
+      "Bash(npx playwright screenshot:*)",
+      "WebFetch(domain:www.thegrowthlist.co)"
+    ]
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
-    "supabase"
+    "memory"
   ]
 }
