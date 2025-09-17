@@ -24,7 +24,14 @@
       "mcp__serena__search_for_pattern",
       "mcp__serena__find_file",
       "Bash(npm install:*)",
-      "mcp__serena__list_memories"
+      "mcp__serena__list_memories",
+      "Bash(curl:*)",
+      "Bash(sudo dd:*)",
+      "Bash(sudo chmod:*)",
+      "Bash(sudo apt:*)",
+      "Bash(vercel:*)",
+      "Bash(gh:*)",
+      "Bash(git:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
