@@ -1,4 +1,4 @@
-{
+^{
 	"mcpServers": {
 		"memory": {
 			"type": "stdio",
@@ -17,13 +17,13 @@
 				"task-master-ai"
 			],
 			"env": {
-				"ANTHROPIC_API_KEY": "YOUR_ANTHROPIC_API_KEY_HERE",
+				"ANTHROPIC_API_KEY": "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",
 				"OPENAI_API_KEY": "YOUR_OPENAI_KEY_HERE",
 				"GOOGLE_API_KEY": "YOUR_GOOGLE_KEY_HERE",
 				"PERPLEXITY_API_KEY": "YOUR_PERPLEXITY_API_KEY_HERE",
 				"MISTRAL_API_KEY": "",
 				"GROQ_API_KEY": "",
-				"OPENROUTER_API_KEY": "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",
+				"OPENROUTER_API_KEY": "",
 				"XAI_API_KEY": "",
 				"AZURE_OPENAI_API_KEY": "",
 				"OLLAMA_API_KEY": ""
