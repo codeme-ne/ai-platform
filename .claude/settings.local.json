@@ -31,7 +31,9 @@
       "Bash(sudo apt:*)",
       "Bash(vercel:*)",
       "Bash(gh:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "mcp__serena__get_symbols_overview",
+      "mcp__serena__think_about_collected_information"
     ]
   },
   "enableAllProjectMcpServers": true,
