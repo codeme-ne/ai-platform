@@ -14,6 +14,17 @@
 				"AZURE_OPENAI_API_KEY": "YOUR_AZURE_KEY_HERE",
 				"OLLAMA_API_KEY": "YOUR_OLLAMA_API_KEY_HERE"
 			}
+		},
+		"supabase": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@supabase/mcp-server-supabase@latest",
+				"--project-ref=oedblaldxusjpcgfoqup"
+			],
+			"env": {
+				"SUPABASE_ACCESS_TOKEN": "sbp_fbe6b4276319da73032a611f975e7c3771e1bc99"
+			}
 		}
 	}
 }
